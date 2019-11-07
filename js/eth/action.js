@@ -171,7 +171,7 @@ function run(){
 
             clearInterval(flagMedalsPoints);
             let points = Math.ceil(web3.toDecimal(player[5]) / Math.pow(10,18));
-            let leftower = parseInt((1 - points / medals_points[next_medal])*100);
+            let leftower = parseInt((1 - points / medals_points[next_medal-1])*100);
             letfower = (leftower < 0 ? 0: leftower);
             $('.progress-line').css('right', letfower+'%');
             if(letfower != 0){
@@ -185,7 +185,7 @@ function run(){
             // medal popap
             $('#modal-medal-info > div > div > img').attr('src', 'image/big-medal-'+next_medal+'.png');
             $('#medal-info-points').html(parseInt(points));
-            $('#medal-info-points-awaiting').html(next_medal == 1 ? 0 : medals_points[next_medal]);
+            $('#medal-info-points-awaiting').html(next_medal == 1 ? 0 : medals_points[next_medal-1]);
             if(next_medal == 1){
                 $('#medal-info-score').hide();
                 $('#medal-info-text1').hide();
