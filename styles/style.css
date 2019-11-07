@@ -198,7 +198,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background: url("../image/bg-header.jpg")repeat-x;
     min-height: 192px;
     position: relative;
-    z-index: 100000;
+    z-index: 10000000;
 }
 .flythat-backdrop{
     z-index: 999999999 !important;
@@ -2044,6 +2044,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: flex-end;
     margin-bottom: 20px;
+    width: 100%;
+    justify-content: space-around;
 }
 .footer-btn{
     width: 100px;
@@ -5555,10 +5557,11 @@ body.dialogShowing {
     background-repeat: no-repeat;
     background-position: center;
 }
-.bt-icon{
-    background-image: url("../image/soc-bt.png");
+.yt-icon{
+    background-image: url("../image/youtube.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 55%;
 }
 .social-list{
     display: flex;
@@ -5869,4 +5872,19 @@ body.dialogShowing {
     margin-bottom: 25px;
     color: #326909;
     font-weight: bold;
+}
+.sub-header-title{
+    font-size: 16px;
+    color: #4d4d4d;
+    line-height: normal;
+    font-weight: normal;
+    text-align: center;
+    max-width: 77%;
+    margin-top: 20px;
+    margin-top: 20px;
+}
+.container-questions-faq{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
 }

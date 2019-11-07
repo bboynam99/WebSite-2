@@ -2103,6 +2103,7 @@
     .list-top-footer{
         flex-direction: column;
         align-items: flex-start;
+        width: auto;
     }
     .item-footer-top-list p{
         font-size: 21px;
@@ -2373,7 +2374,6 @@
     }
     .section-title {
         font-size: 30px;
-        color: #7b3701;
         text-align: center;
     }
     .wrapper-mehanizm-block img{
@@ -2714,6 +2714,9 @@
     }
     .next-reward {
         margin-top: 15px;
+    }
+    .header{
+        z-index: 100000;
     }
 
 }
@@ -4655,8 +4658,7 @@
         height: 34px;
         background-size: 43%;
     }
-    .fb-icon,
-    .bt-icon{
+    .fb-icon{
         background-size: 30%;
     }
     .social-item {
