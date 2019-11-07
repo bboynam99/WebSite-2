@@ -385,8 +385,9 @@ function subscribeBeesBought(){
                     'user': event.args.user,
                     'bee': web3.toDecimal(event.args.bee),
                     'count': web3.toDecimal(event.args.count),
-                    'lastLogIndex': last_log_index ? [...last_log_index, ...[event.transactionHash, event.logIndex]] : [event.transactionHash, event.logIndex],
+                    'lastLogIndex': last_log_index ? [...last_log_index, ...[[event.transactionHash, event.logIndex]]] : [[event.transactionHash, event.logIndex]],
                 }
+                localStorage.setItem(COOKIE_NAME, JSON.stringify(storage));
 
                 $('[name="modal-success-action-deposit"]').hide();
                 $('[name="modal-success-action-withdraw"]').hide();
