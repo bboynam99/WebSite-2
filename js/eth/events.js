@@ -216,8 +216,18 @@ function subscribeReferrerPaid(){
 
                     let hive_leader = parseInt($('.hive_leader').html());
                     if(hive_leader < storage['refs'][event.args.referrer].length){
-                        $('.hive_leader').html(storage['refs'][event.args.referrer].length);
+                        hive_leader = storage['refs'][event.args.referrer].length;
                     }
+                    if (storage['refs'][ storage['refs'][event.args.referrer]['ref'] ] != undefined && 
+                        hive_leader < storage['refs'][ storage['refs'][event.args.referrer]['ref'] ].length){
+                        hive_leader = storage['refs'][ storage['refs'][event.args.referrer]['ref'] ].length;
+                    }
+                    if (storage['refs'][ storage['refs'][event.args.referrer]['ref'] ] != undefined &&
+                        storage['refs'][ storage['refs'][ storage['refs'][event.args.referrer]['ref'] ]['ref'] ] != undefined && 
+                        hive_leader < storage['refs'][ storage['refs'][ storage['refs'][event.args.referrer]['ref'] ]['ref'] ].length){
+                        hive_leader = storage['refs'][ storage['refs'][ storage['refs'][event.args.referrer]['ref'] ]['ref'] ].length;
+                    }
+                    $('.hive_leader').html(hive_leader);
                 }
 
                 if(current_account != event.args.referrer){
@@ -428,7 +438,7 @@ function subscribeBeesBought(){
 
             let index = storage['rate'].indexOf(storage['rate'].find(x => x.user === event.args.user));
             let hive_leader = parseInt($('.hive_leader').html());
-            if(hive_leader < storage['rate'][index]['count']){
+            if(hive_leader < storage['refs'][storage['rate'][index]['user']].length){
                 $('.hive_leader').html(storage['rate'][index]['count']);
             }
 
