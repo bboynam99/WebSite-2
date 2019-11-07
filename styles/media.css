@@ -2423,8 +2423,9 @@
         content: '';
         position: absolute;
         left: 0;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
+        top: -6px;
         background: url('../image/big-medal-icon.png')no-repeat;
         background-size: contain;
     }
@@ -2432,8 +2433,9 @@
         content: '';
         position: absolute;
         left: 0;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
+        top: -6px;
         background: url('../image/honey-big.png')no-repeat;
         background-size: contain;
     }
@@ -2441,16 +2443,17 @@
         content: '';
         position: absolute;
         left: 0;
-        width: 45px;
-        height: 45px;
+        top: -6px;
+        width: 40px;
+        height: 40px;
         background: url('../image/wax-big.png')no-repeat;
         background-size: contain;
     }
     .item-result span {
-        font-size: 50px;
+        font-size: 45px;
     }
     .first-rsult, .first-last {
-        padding-left: 60px;
+        padding-left: 53px;
         position: relative;
     }
     .span-text {
@@ -4530,7 +4533,7 @@
         max-width: 193px;
     }
     .item-result span {
-        font-size: 35px;
+        font-size: 25px;
     }
     .go-to-game {
         margin-right: 15px;
