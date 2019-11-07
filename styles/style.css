@@ -1498,16 +1498,21 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding-top: 110px;
     position: relative;
 }
-.wrapper-content-round::before{
+.wrapper-content-round .wrapper-lottie{
+    position: absolute;
+    left: -88px;
+    top: 0;
+    z-index: 101;
+}
+.wrapper-content-round:before{
     content: '';
     position: absolute;
     left: -88px;
-    width: 242px;
-    height: 231px;
     top: 0;
-    background: url("../image/round-bee.png")no-repeat;
     z-index: 101;
     background-size: contain;
+    width: 242px;
+    height: 231px;
 }
 .text-info-round{
     background-color: #63ab36;
@@ -4494,38 +4499,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .container-img-bee img{
     max-width: 160px;
     width: 100%;
-}
-.airdrop-round::before{
-    background: url("../image/1.png")no-repeat;
-    background-size: contain;
-}
-.smart-round::before{
-    background: url("../image/2.png")no-repeat;
-    background-size: contain;
-}
-.crypto-round::before{
-    background: url("../image/3.png")no-repeat;
-    background-size: contain;
-}
-.beetcoin-round::before{
-    background: url("../image/4.png")no-repeat;
-    background-size: contain;
-}
-.space-round::before{
-    background: url("../image/5.png")no-repeat;
-    background-size: contain;
-}
-.droid-round::before{
-    background: url("../image/6.png")no-repeat;
-    background-size: contain;
-}
-.tron-round::before{
-    background: url("../image/7.png")no-repeat;
-    background-size: contain;
-}
-.superbee-round::before{
-    background: url("../image/8.png")no-repeat;
-    background-size: contain;
 }
 .container-img-bee lottie-player{
     width: 170px !important;

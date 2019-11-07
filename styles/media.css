@@ -527,12 +527,17 @@
         bottom: 50px;
         left: 395px;
     }
-    .wrapper-content-round::before{
-        width: 156px;
-        height: 159px;
+    .wrapper-content-round::before,
+    .wrapper-content-round .wrapper-lottie{
+        width: 156px !important;
+        height: 159px !important;
         background-size: contain;
         left: -41px;
         top: -67px;
+    }
+    lottie-player{
+        width: 156px !important;
+        height: 159px !important;
     }
     .item-rounds:nth-child(2n+1){
         padding-left: 171px;
@@ -1751,13 +1756,18 @@
      .item-rounds:nth-child(2n+1)::after{
         display: none;
      }
-     .wrapper-content-round::before{
+    .wrapper-content-round::before,
+    .wrapper-content-round .wrapper-lottie{
         width: 135px;
         height: 135px;
         left: -14px;
         top: -62px;
         background-size: contain;
-     }
+    }
+    lottie-player{
+        width: 135px !important;
+        height: 135px !important;
+    }
      .list-game-rounds{
         margin-left: -55px;
      }
@@ -3969,10 +3979,15 @@
     .button-btn {
         height: 37px;
     }
-    .wrapper-content-round::before{
+    .wrapper-content-round::before,
+    .wrapper-content-round .wrapper-lottie{
         width: 100px;
         height: 100px;
         left: 0;
+    }
+    lottie-player{
+        width: 100px !important;
+        height: 100px !important;
     }
     .window {
         width: 20px;
