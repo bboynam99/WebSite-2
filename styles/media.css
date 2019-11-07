@@ -1,0 +1,4908 @@
+@media screen and (max-width: 1560px) and (min-width: 1024px){
+    .input-form{
+        max-width: 130px;
+        font-size: 25px;
+        background-size: contain;
+    }
+    .wrapper-modal{
+        max-width: 564px;
+        width: 100%;
+        height: 589px;
+        background-size: contain;
+    }
+    .attention-text{
+        margin-bottom: 25px;
+    }
+    .container-modal {
+        min-height: 385px;
+    }
+    .my-bee-home,
+    .my-bee-home span {
+        text-align: center;
+        font-size: 20px;
+    }
+    .container-table {
+        margin: 0 auto;
+        margin-top: 66px;
+        min-height: 395px;
+    }
+    .table-modal {
+        max-width: 485px;
+    }
+    .footer-modal{
+        max-width: 522px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        min-height: 100px;
+    }
+    .footer-input:first-child {
+        margin-right: 30px;
+    }
+    .table-modal tbody{
+        max-height: 351px;
+    }
+    .footer-input{
+        max-width: 230px;
+    }
+    .table-modal tbody tr td {
+        height: 18px;
+    }
+    .table-modal thead th {
+        padding-top: 15px;
+        border-top: none;
+    }
+    .close-modal {
+        width: 50px;
+        height: 50px;
+    }
+    .uley-input span{
+        right: 39px;
+    }
+    .medal-input{
+        width: 60px;
+        height: 60px;
+        top: -3px;
+    }
+    .medal-input img{
+        width: 100%;
+    }
+    .count-bee {
+        font-size: 26px !important;
+    }
+    .count-bee-btn{
+        width: 35px;
+        height: 35px;
+    }
+    .pay-count-bee {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+    .uley-input h3 {
+        margin-left: 10px;
+    }
+    .table-modal tbody tr td{
+        color: #000000;
+        font-weight: bold;
+    }
+    .table-modal tbody tr td span{
+        font-size: 11px;
+        color: #000000;
+    }
+    .table-modal thead th, .table-modal tbody tr td{
+        padding: 6px 10px;
+    }
+    .paseka-window .table-modal thead th:nth-child(3), .paseka-window .table-modal tbody tr td:nth-child(3){
+        width: 22%
+    }
+    .doxod:before{
+        width: 18px;
+        height: 19px;
+    }
+    .activ-honey:before{
+        width: 18px;
+        height: 20px;
+        top: -3px;
+    }
+    .paseca .table-modal tbody {
+        max-height: 354px;
+    }
+    .summa{
+        padding-left: 25px;
+        margin-left: 0;
+    }
+    .doxod{
+        padding-left: 22px;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .nuber-position:before{
+        width: 31px;
+        height: 31px;
+    }
+    .nuber-position{
+        padding-right: 34px;
+    }
+    .pay-bee .container-modal {
+        padding-top: 64px;
+    }
+    .about-bee{
+        max-width: 400px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .img-bee{
+        max-width: 220px;
+        width: 100%;
+        display: block;
+    }
+    .img-bee img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .my-bee-home {
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+    .green-bee-btn,
+    .violet-btn{
+        width: 190px !important;
+        height: 50px;
+        font-size: 18px;
+    }
+    .buy-wax{
+        max-width: 500px;
+        height: 450px;
+    }
+    .pay-wax{
+        margin-bottom: 20px;
+    }
+    .center-change, .center-change span{
+        font-size: 32px;
+    }
+    .limit p {
+        font-size: 18px;
+    }
+    .error-honey{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .container-pay-bee{
+        padding: 8px 10px;
+    }
+    .summa-dohod img{
+        width: 30px;
+        height: auto;
+    }
+    .all-dohod{
+        font-size: 23px;
+    }
+    .balance-footer-block{
+        position: absolute;
+        bottom: 19px;
+        left: 0;
+        right: 0;
+    }
+    .puy-wax .wrapper-bottom-footer-modal {
+        bottom: -15px;
+    }
+    .puy-wax .pay-wax {
+        margin-bottom: 65px;
+    }
+    .puy-wax .title-modal h2 {
+        font-size: 22px;
+    }
+    .modernize .title-modal {
+        max-width: 300px;
+    }
+    .modernize .header-modal {
+        max-width: 347px;
+    }
+    .wrapper-content-box {
+        margin-bottom: 25px;
+    }
+    .margin-bottom {
+        margin-bottom: 25px;
+    }
+    .modernize-btn{
+        height: 50px;
+    }
+    .buy-honey-btn, .lotery-game {
+        width: 230px;
+    }
+    .modernize {
+        max-width: 500px;
+    }
+    .percent-status {
+        font-size: 24px;
+    }
+    .title-content-box{
+        margin-bottom: 11px;
+    }
+    .modernize .balance-footer-block{
+        bottom: 24px;
+    }
+    .cryptobee{
+        max-width: 500px;
+        height: 525px;
+        padding-top: 72px;
+    }
+    .cryptobee .img-bee {
+        max-width: 182px;
+    }
+    .cryptobee .my-bee-home {
+        font-size: 24px;
+    }
+    .item-about-cryptobee p {
+        font-size: 18px;
+    }
+    .price-bee:before{
+        width: 34px;
+        height: 32px;
+        top: -2px;
+    }
+    .price-bee {
+        padding-left: 43px;
+    }
+    .item-about-cryptobee span {
+        font-size: 20px;
+    }
+    .item-about-cryptobee {
+        margin-bottom: 13px;
+    }
+    .hour-wax:before{
+        width: 32px;
+        height: 30px;
+        top: -3px;
+    }
+    .hour-honey:before{
+        width: 29px;
+        height: 30px;
+        top: -3px;
+    }
+    .cryptobee-btn{
+        width: 239px !important;
+    }
+    .item-about-cryptobee:last-child {
+        margin-bottom: 17px;
+    }
+    .cryptobee .my-bee-home {
+        margin-top: 20px;
+    }
+    .cryptobee .plus {
+        margin: 0 0;
+    }
+    .new-round-modal{
+        max-width: 565px;
+        height: 400px;
+        padding-top: 91px;
+    }
+    .img-reward{
+        align-items: center;
+    }
+    .img-reward img{
+        max-width: 150px;
+        width: 100%;
+        display: block;
+    }
+    .give-medale {
+        font-size: 24px;
+        margin-top: 32px;
+        margin-bottom: 27px;
+    }
+    .title-reward {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .wrapper-reward span {
+        font-size: 30px;
+    }
+    .wax-reward:before{
+        width: 50px;
+        height: 43px;
+    }
+    .wax-reward {
+        padding-left: 59px;
+    }
+    .honey-reward:before{
+        width: 43px;
+        height: 45px;
+    }
+    .next-medal {
+        font-size: 18px;
+        margin-top: 9px;
+    }
+    .info-buy-honey, .info-buy-honey span{
+        font-size: 18px;
+    }
+    .reward-btn {
+        width: 195px;
+        height: 53px;
+        bottom: -11px;
+    }
+    .modal-ok{
+        height: 293px;
+    }
+    .modal-ok .container-modal {
+        min-height: 269px;
+    }
+    .wrapper-ok{
+        max-width: 150px;
+        margin-bottom: 30px;
+    }
+    .wrapper-ok img{
+        width: 100%;
+    }
+    .modal-ok .modal-btn {
+        width: 200px;
+        height: 55px;
+        bottom: -9px;
+        font-size: 21px;
+    }
+    .center-block{
+        width: 900px;
+    }
+    .top-progress{
+        max-width: 635px;
+        height: 25px;
+        border: 4px solid #feeb93
+    }
+    .medal-after{
+        width: 65px;
+        height: 65px;
+        background-size: contain;
+        top: -21px;
+        right: -10px;
+    }
+
+    .button-btn{
+        width: 100px;
+        height: 40px;
+    }
+    .reit{
+        width: 85px;
+    }
+    .button-btn.error-close{
+        bottom: 105px;
+        position: absolute;
+    }
+    .back{
+        width: 119px;
+    }
+    .wrapper-input{
+        margin-right: 25px;
+    }
+    .btn-back-wrapper{
+        margin-right: 15px;
+    }
+    .btn-back-wrapper{
+        height: 41px;
+    }
+    .wrapper-social-list {
+        top: 190px;
+    }
+    .cripto-transfer{
+        top: 100px
+    }
+    .social-item{
+        margin-bottom: 6px;
+    }
+    .btn-drop-down{
+        width: 38px;
+        height: 38px;
+    }
+    .drop-down-lg{
+        height: 38px;
+    }
+    .btn-drop-down span,
+    .list-db li span{
+        font-size: 12px;
+    }
+    .container-bottom-input{
+        margin-top: 25px;
+    }
+    .header{
+        min-height: 165px;
+        background-size: 100% 94px;
+    }
+    .left-block, .right-block{
+        max-height: 86px;
+    }
+    .container-game{
+        max-width: 1000px;
+        padding-bottom: 100px;
+    }
+    .header-section{
+        max-width: 328px;
+        padding: 5px;
+    }
+    .name-title h1{
+        font-size: 20px;
+    }
+    .name-title{
+        padding: 12px 16px;
+        max-width: 189px;
+    }
+    .btn-green{
+        width: 83px;
+    }
+    .info-item{
+        max-width: 135px;
+        padding: 5px;
+    }
+    .statistic-item{
+        max-width: 153px;
+    }
+    .list-statistic{
+        justify-content: center;
+    }
+    .result-info{
+        font-size: 16px;
+    }
+    .result{
+        padding: 10px 0;
+    }
+    .section-game{
+        min-height: 300px;
+        margin-top: 90px;
+    }
+    .statistic-item{
+        padding-top: 86px;
+        max-width: 146px;
+        margin-right: 25px;
+    }
+    .investment:before{
+        width: 76px;
+        height: 78px;
+        top: 16px;
+    }
+    .players:before{
+        width: 89px;
+        height: 105px;
+        top: 2px;
+    }
+    .bee:before{
+        width: 125px;
+        height: 125px;
+    }
+    .won:before{
+        width: 76px;
+        height: 78px;
+        top: 16px;
+    }
+    .hive:before{
+        width: 74px;
+        height: 100px;
+        top: 6px;
+    }
+    .score{
+        padding: 10px 0;
+    }
+    .item-time{
+        width: 210px;
+        height: 41px;
+        padding: 5px;
+    }
+    .wax-and-honey-in-time{
+        top: -13px;
+    }
+    .score p{
+        font-size: 20px;
+    }
+    .item-rounds:nth-child(2n+1)::after{
+        width: 180px;
+        height: 45px;
+        top: 43%;
+    }
+    .trumpet-left{
+        background-position: 88px;
+        top: -5px;
+    }
+    .trumpet-top{
+        background-size: 81%;
+    }
+    .trumpet-wax{
+        height: 116px;
+        background-size: contain;
+    }
+    .trumpet-honey{
+        height: 116px;
+        background-size: contain;
+        right: 70px;
+    }
+    .active-bank{
+        max-width: 195px;
+        width: 100%;
+        height: 207px;
+    }
+    .active-bank img{
+        width: 100%;
+    }
+    .wrapper-active-honey{
+        right: -7px;
+    }
+    .wrapper-active{
+        height: 370px;
+        bottom: 50px;
+        left: 395px;
+    }
+    .wrapper-content-round::before{
+        width: 156px;
+        height: 159px;
+        background-size: contain;
+        left: -41px;
+        top: -67px;
+    }
+    .item-rounds:nth-child(2n+1){
+        padding-left: 171px;
+    }
+    .item-rounds{
+        max-width: 640px;
+        height: 260px;
+        background-size: contain;
+        margin-top: 87px;;
+    }
+    .text-info-round{
+        padding: 10px;
+        max-width: 300px;
+    }
+    .header-round{
+        max-width: 446px;
+        margin-right: 50px;
+    }
+
+    .title-round{
+        font-size: 18px;
+    }
+    .wrapper-content-round{
+        padding-top: 0;
+    }
+    .sotu-container::before{
+        width: 516px;
+        height: 145px;
+    }
+    .sotu-container{
+        max-width: 524px;
+        margin-top: 10px;
+        height: 188px;
+    }
+    .hexagon-1 {
+        left: 13px;
+        top: 27px;
+    }
+    .hexagon-3 {
+        left: 90px;
+        top: 27px;
+    }
+    .hexagon-4 {
+        left: 128px;
+        top: 5px;
+    }
+    .hexagon-2 {
+        left: 52px;
+        top: 5px;
+    }
+    .hexagon{
+        height: 46px;
+        width: 40px;
+    }
+    .active-bee img {
+        display: block;
+        width: 41px;
+        height: 38px;
+    }
+    .hexagon-5 {
+        left: 167px;
+        top: 27px;
+    }
+    .hexagon-6 {
+        left: 204px;
+        top: 5px;
+    }
+    .hexagon-7 {
+        left: 243px;
+        top: 27px;
+    }
+    .hexagon-8 {
+        left: 281px;
+        top: 5px;
+    }
+    .hexagon-9 {
+        left: 320px;
+        top: 27px;
+    }
+    .hexagon-10 {
+        left: 357px;
+        top: 5px;
+    }
+    .hexagon-11 {
+        right: 89px;
+        top: 27px;
+    }
+    .hexagon-12 {
+        right: 52px;
+        top: 5px;
+    }
+    .hexagon-13 {
+        left: 14px;
+        top: 72px;
+    }
+    .hexagon-14 {
+        left: 52px;
+        top: 50px;
+    }
+    .hexagon-15 {
+        left: 90px;
+        top: 72px;
+    }
+    .hexagon-16 {
+        top: 50px;
+        left: 128px;
+    }
+    .hexagon-17 {
+        top: 72px;
+        left: 167px;
+    }
+    .hexagon-18 {
+        top: 50px;
+        left: 204px;
+    }
+    .hexagon-19 {
+        top: 72px;
+        left: 243px;
+    }
+    .hexagon-20 {
+        top: 50px;
+        left: 281px;
+    }
+    .hexagon-21 {
+        top: 72px;
+        left: 320px;
+    }
+    .hexagon-22 {
+        top: 50px;
+        left: 357px;
+    }
+    .hexagon-23 {
+        top: 72px;
+        left: 395px;
+    }
+    .hexagon-24 {
+        top: 50px;
+        right: 52px;
+    }
+    .hexagon-25 {
+        top: 72px;
+        right: 14px;
+    }
+    .hexagon-26 {
+        top: 27px;
+        right: 14px;
+    }
+    .hexagon-27 {
+        top: 95px;
+        left: 52px;
+    }
+    .hexagon-28 {
+        top: 95px;
+        left: 128px;
+    }
+    .hexagon-29 {
+        top: 95px;
+        left: 204px;
+    }
+    .hexagon-30 {
+        top: 95px;
+        left: 281px;
+    }
+    .hexagon-31 {
+        top: 95px;
+        left: 357px;
+    }
+    .hexagon-32 {
+        top: 95px;
+        right: 52px;
+    }
+    .hexagon-33 {
+       display: none;
+    }
+    .trx-rounde span{
+        font-size: 12px;
+    }
+    .namber-wax{
+        font-size: 14px;
+    }
+    .drop-big{
+        width: 74px;
+        height: 129px;
+        bottom: 37px;
+    }
+    .drop-big img{
+        width: 100%;
+    }
+    .drop-big span{
+        font-size: 20px;
+        margin-top: 12px;
+    }
+    .text-drop{
+        top: 38%;
+        max-width: 74px;
+    }
+    .trx-rounde{
+        left: -6px;
+    }
+    .wrapper-content-round.no-active-round::after{
+        left: 36px;
+        right: 23px;
+        top: 21px;
+        bottom: 20px;
+    }
+    .item-rounds:nth-child(2n)::after{
+        width: 98px;
+        height: 45px;
+        top: 43%;
+    }
+    .item-rounds:nth-child(2n) {
+        padding-left: 86px;
+    }
+    .game-rounds:before{
+        bottom: 141px;
+    }
+    .item-rounds:last-child::after{
+        width: 135px;
+        top: 40%;
+        height: 53px;
+    }
+    .window:before{
+        height: 92%;
+    }
+
+    .wrapper-footer-content{
+        padding: 9px 0 32px 0;
+    }
+    .item-footer-top-list p{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .footer{
+        padding-top: 10px;
+    }
+    .give-big-medal img{
+        width: 140px;
+    }
+    .give-medale-1{
+        font-size: 21px;
+        margin-top: 9px;
+        margin-bottom: 10px;
+    }
+    .reward-2{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .new-round-modal-2{
+        max-width: 565px;
+        height: 416px;
+        padding-top: 72px;
+    }
+    .hexagon::after{
+        top: 16px;
+        right: 28px;
+    }
+    .drop-honey{
+        margin-bottom: 100px;
+    }
+    .drop-wax{
+        margin-bottom: 55px;
+    }
+    .modernize-btn{
+        width: 200px;
+        height: 50px;
+    }
+    .airdrop{
+        height: 400px;
+        padding-top: 94px;
+        background-size: contain;
+        max-width: 500px;
+    }
+    @keyframes animationFr{
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        3% {
+            opacity: 0.5;
+            transform: translate(0, -48px);
+        }
+        4%, 100% {
+            opacity: 0;
+        }
+
+    }
+    @-moz-keyframes animationFr{
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        3% {
+            opacity: 0.5;
+            transform: translate(0, -48px);
+        }
+        4%, 100% {
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes animationFr {
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        3% {
+            opacity: 0.5;
+            transform: translate(0, -48px);
+        }
+        4%, 100% {
+            opacity: 0;
+        }
+    }
+
+    @-o-keyframes animationFr {
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        3% {
+            opacity: 0.5;
+            transform: translate(0, -48px);
+        }
+        4%, 100% {
+            opacity: 0;
+        }
+    }
+
+    @-ms-keyframes animationFr {
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        3% {
+            opacity: 0.5;
+            transform: translate(0, -48px);
+        }
+        4%, 100% {
+            opacity: 0;
+        }
+    }
+    .new-game-modal .green-bee-btn{
+        bottom: 0px;
+    }
+    .error-img img{
+        max-width: 135px;
+    }
+    .error-modal .container-modal {
+        min-height: 283px;
+    }
+    .error-text{
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    .error-close{
+        width: 135px;
+        height: 46px;
+        bottom: -60px;
+    }
+    .tryba-drop:nth-child(28),
+    .tryba-drop:nth-child(29),
+    .tryba-drop:nth-child(30),
+    .tryba-drop:nth-child(31),
+    .tryba-drop:nth-child(32),
+    .tryba-drop:nth-child(33),
+    .tryba-drop:nth-child(34),
+    .tryba-drop:nth-child(35),
+    .tryba-drop:nth-child(36),
+    .tryba-drop:nth-child(37),
+    .tryba-drop:nth-child(38){
+        display: none;
+    }
+    .wrapper-reffer-link{
+        max-width: 483px;
+    }
+    .paseca .table-modal tbody {
+        max-height: 262px;
+    }
+    .wrapper-reffer-link + .container-table {
+        margin-top: 25px;
+        min-height: 292px;
+    }
+    .reffer-link-container {
+        padding: 10px;
+        max-width: 98%;
+        width: 100%;
+    }
+    .glashatai {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 200px;
+    }
+    .container-questions{
+        height: 435px;
+        overflow-y: auto;
+    }
+    .title-carousel{
+        font-size: 60px;
+    }
+    .sub-title-carousel{
+        font-size: 30px;
+        max-width: 490px;
+        line-height: 42px;
+    }
+    .slider-btn {
+        width: 220px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .container-fluid{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container-bee-carousel-item{
+        padding: 0;
+    }
+    .center-change .lotery-wax{
+        font-size: 44px;
+    }
+    .center-change .jeckpot{
+        font-size: 50px;
+    }
+    .lotery-wax::before {
+        width: 40px;
+        height: 40px;
+    }
+    .lotery-wax{
+        padding-right: 44px;
+    }
+    .center-change {
+        margin-bottom: 16px;
+    }
+    .your-reit, .your-reit span{
+        font-size: 32px;
+    }
+    .limit-bee{
+        font-size: 16px;
+        margin-top: 12px;
+    }
+}
+
+@media only screen and (max-width: 1366px) and (orientation:portrait){
+    .wrapper-modal.error-modal {
+        height: auto;
+    }
+    .slider-btn{
+        width: 200px;
+        height: 46px;
+        font-size: 16px;
+    }
+    .title-carousel{
+        font-size: 40px;
+    }
+    .sub-title-carousel{
+        line-height: 36px;
+        font-size: 22px;
+        max-width: 375px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1024px){
+    .blue-btn,
+    .withdraw-btn{
+        width: 80px;
+    }
+    .wrapper-modal{
+        z-index: 100000000000000000000;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 320px){
+    .item-representative:nth-child(4n){
+         margin-right: 40px;
+     }
+    .item-representative:nth-child(3n){
+        margin-right: 0;
+    }
+    .lotery-game{
+        width: 200px;
+        height: 40px;
+    }
+    .container-avatar-representative{
+        width: 145px;
+        height: 145px;
+    }
+    .container-avatar-representative img{
+        max-width: 135px;
+        width: 100%;
+    }
+    .item-representative {
+        max-width: 230px;
+    }
+    .wrapper-avatar-representative {
+        position: relative;
+        max-width: 155px;
+    }
+    .button-btn.copy-this-link {
+        width: 165px;
+    }
+    .container-contact-info{
+        padding-top: 55px;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 320px){
+    .title-carousel {
+        font-size: 30px;
+    }
+    .sub-title-carousel {
+        line-height: 35px;
+        font-size: 18px;
+        max-width: 300px;
+        margin-bottom: 25px;
+    }
+    .carousel-bee .carousel-indicators li {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+}
+@media screen and (max-width: 1000px) and (min-width: 320px){
+    .wrapper-modal{
+        max-width: 100%;
+        width: 100%;
+        height: 100vh;
+        background: none;
+        background-color: #e6fef1;
+        z-index: 999999999999999;
+    }
+    .header-modal{
+        position: relative;
+        top: 0;
+        max-width: 100%;
+        border-radius: 0;
+        border: none;
+        background: url("../image/mobile-bg.png")repeat-x;
+    }
+    .title-modal{
+        background: transparent;
+        align-items: center;
+        max-width: none;
+        justify-content: flex-start;
+    }
+    .close-modal {
+        width: 30px;
+        height: 30px;
+    }
+    .flythat .flythat-close{
+        top: 10px;
+        right: 17px;
+    }
+    .container-table{
+        margin-top: 25px;
+        min-height: auto;
+        max-height: 50vh;
+    }
+    .footer-modal {
+        position: fixed;
+        bottom: 0;
+        border-radius: 0;
+        max-width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+    .paseca .table-modal tbody {
+        max-height: 100vh;
+    }
+    .table-modal tbody tr td{
+        height: 16px;
+    }
+    .table-modal thead th, .table-modal tbody tr td{
+        padding: 8px;
+    }
+    .table-modal tbody {
+        max-height: 55vh;
+    }
+    .left-block,
+    .right-block{
+        display: none !important;
+    }
+    .center-block{
+        background: none;
+        margin: 0 auto;
+    }
+    .header{
+        min-height: 251px;
+        background: url("../image/mobile-bg.png")repeat-x;
+        background-size: contain;
+    }
+    .section-game{
+        display: none;
+    }
+    .top-progress{
+        max-width: 600px;
+        margin-left: 144px;
+    }
+    .container-bottom-input{
+        flex-direction: column;
+    }
+    .wrapper-input{
+        margin-right: 0;
+        max-width: 600px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .wrapper-input:last-child{
+        margin-top: 15px;
+    }
+    .list-button-menu{
+        display: block;
+        padding: 40px 0;
+    }
+    .btn-menu{
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(to bottom, rgba(216,233,245,1) 0%, rgba(187,208,233,1) 100%);
+        box-shadow: 1px -6px 0px -1px rgba(175,195,210,1) inset, 1px 6px 0px -1px rgba(223,238,248,1) inset;
+    }
+     .btn-menu:hover{
+        background: linear-gradient(to bottom, rgba(187,208,233,1) 0%, rgba(216,233,245,1) 100%);
+        box-shadow: 1px -6px 0px -1px rgba(223,238,248,1) inset, 1px 6px 0px -1px rgba(175,195,210,1) inset;
+
+    }
+
+    .btn-menu:after{
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        background-position: center;
+        background-image: url("../image/menu.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .new-round-modal .header-modal {
+        max-width: 100%;
+    }
+    .airdrop .container-modal {
+        min-height: auto;
+    }
+    .airdrop{
+        padding-top: 0;
+    }
+    .airdrop .img-reward{
+        margin-top: 94px;
+    }
+    .pay-bee .container-modal {
+        padding-top: 0;
+    }
+    .header-modal{
+        box-shadow: none;
+    }
+    .about-bee {
+        margin-top: 10px;
+        line-height: 15px;
+    }
+    .img-bee{
+        align-items: center;
+    }
+    .flythat img {
+        max-width: 140px;
+    }
+    .my-bee-home, .my-bee-home span{
+        font-size: 18px;
+    }
+    .my-bee-home {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    .my-bee-home span.count-bee {
+        font-size: 22px;
+    }
+    .green-bee-btn {
+        width: 238px;
+        height: 40px;
+        font-size: 16px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .new-game-modal .green-bee-btn{
+        bottom: 22px;
+    }
+    .green-bee-btn:after,
+    .violet-btn:after{
+        border-radius: 10px;
+    }
+    .about-bee{
+        font-size: 14px;
+    }
+    .wrapper-bottom-footer-modal{
+        bottom: 67px;
+        max-width: 250px;
+        padding: 3px;
+        z-index: 1000;
+    }
+    .container-pay-bee{
+        padding: 5px 7px;
+        max-width: 100%;
+    }
+    .summa-dohod img{
+        max-width: 20px;
+    }
+    .all-dohod{
+        font-size: 20px;
+    }
+    .cryptobee{
+        padding-top: 0;
+    }
+    .cryptobee .header-modal{
+        max-width: 100%;
+    }
+    .cryptobee .my-bee-home {
+        font-size: 20px;
+    }
+    .price-bee:before{
+        width: 31px;
+        height: 29px;
+    }
+    .item-about-cryptobee p {
+        font-size: 16px;
+    }
+    .item-about-cryptobee span {
+        font-size: 20px;
+    }
+    .price-bee {
+        padding-left: 37px;
+        position: relative;
+    }
+    .item-about-cryptobee {
+        margin-bottom: 10px;
+    }
+    .hour-wax:before{
+        width: 30px;
+        height: 30px;
+    }
+    .hour-honey:before{
+        width: 27px;
+        height: 29px;
+    }
+    .hour-honey{
+        padding-left: 30px;
+    }
+    .plus {
+        margin: 0 2px;
+    }
+    .item-about-cryptobee:last-child {
+        margin-bottom: 15px;
+    }
+    .more-resourse .title-modal{
+        max-width: 100%;
+        background: transparent;
+    }
+    .more-resourse .img-bee{
+        margin-top: 60px;
+    }
+    .pay-bee-more .img-bee{
+        margin-top: 20px;
+    }
+    .pay-bee-more img {
+        max-width: 136px;
+    }
+    .more-resourse img {
+        max-width: 134px;
+    }
+    .pay-bee .title-modal h2 {
+        font-size: 20px;
+    }
+    .summa-dohod img{
+        max-width: 30px;
+    }
+    .pay-bee-more .balance-footer-block {
+        bottom: 28px;
+    }
+    .pay-bee .balance-footer-block {
+        bottom: 98px;
+    }
+    .buy-wax {
+        padding-top: 0;
+    }
+    .pay-wax{
+        margin-top: 20px;
+    }
+    .puy-wax .pay-wax {
+        max-width: 327px;
+        margin-bottom: 50px;
+    }
+    .center-change, .center-change span{
+        font-size: 30px;
+    }
+    .center-change .lotery-wax{
+        font-size: 50px;
+    }
+    .center-change{
+        margin-bottom: 15px;
+    }
+    .buy-input {
+        background-color: #fff;
+        border: 2px solid #60be19;
+        border-radius: 10px;
+        max-width: 300px;
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #7b3701;
+    }
+    .pay-count-bee{
+        border: 2px solid #60be19;
+        background-color: #fff;
+    }
+    .puy-wax .wrapper-bottom-footer-modal {
+        bottom: 70px;
+    }
+    .error-honey{
+        font-size: 18px;
+    }
+    .pay-wax {
+        text-align: center;
+        font-size: 14px;
+    }
+    .title-modal h2{
+        font-size: 24px;
+    }
+    .modernize .title-modal {
+        max-width: 100%;
+    }
+    .modernize .header-modal {
+        max-width: 100%;
+    }
+    .percent-status span {
+        font-size: 34px;
+        font-weight: bold;
+    }
+    .percent-status {
+        font-size: 22px;
+    }
+    .modernize-btn {
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        position: relative;
+        border-radius: 10px;
+    }
+    .modernize-btn:after{
+        border-radius: 10px;
+    }
+    .margin-bottom {
+        margin-bottom: 20px;
+    }
+    .modernize .pay-wax {
+        max-width: 327px;
+        margin-bottom: 40px;
+    }
+    .modernize .balance-footer-block {
+        bottom: 96px;
+    }
+    .modernize .title-modal h2 {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    .new-round-modal-2{
+        padding-top: 0;
+    }
+    .new-round-modal-2 .header-modal {
+        max-width: 100%;
+    }
+    .img-reward {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .give-medale{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .title-reward {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    .wrapper-reward span {
+        font-size: 28px;
+    }
+    .wax-reward:before{
+        width: 50px;
+        height: 42px;
+    }
+    .wax-reward {
+        padding-left: 61px;
+    }
+    .honey-reward:before{
+        width: 43px;
+        height: 42px;
+    }
+    .honey-reward {
+        padding-left: 53px;
+        position: relative;
+    }
+    .next-medal {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .next-reward span {
+        font-size: 22px;
+    }
+    .next-reward .wax-reward {
+        padding-left: 35px;
+    }
+    .next-reward .wax-reward:before {
+        width: 31px;
+        height: 25px;
+        top: -2px;
+    }
+    .next-reward .honey-reward:before {
+        width: 25px;
+        height: 26px;
+        top: -2px;
+    }
+    .reward-btn {
+        width: 212px;
+        height: 45px;
+        bottom: 23px;
+    }
+    .modal-ok .header-modal {
+        max-width: 100%;
+    }
+    .modal-ok{
+        padding-top: 0;
+    }
+    .wrapper-ok{
+        margin-top: 40px;
+    }
+    .wrapper-ok img {
+        max-width: 165px;
+    }
+    .buy-wax .balance-footer-block {
+        bottom: 95px;
+    }
+    .puy-wax .balance-footer-block {
+        bottom: 88px;
+    }
+    .modernize .balance-footer-block {
+        bottom: 96px;
+    }
+    .cryptobee .balance-footer-block {
+        bottom: 95px;
+    }
+
+
+    .btn-back-mobile-wrapper{
+        background: linear-gradient(to bottom, rgba(77,142,44,1) 0%, rgba(84,150,48,1) 100%);
+        z-index: 20000;
+        border-radius: 10px;
+        padding: 0 1px;
+        -webkit-box-shadow: 0px -1px 1px 5px rgba(81,168,48,1);
+        -moz-box-shadow: 0px -1px 1px 5px rgba(81,168,48,1);
+        box-shadow: 0px -1px 1px 5px rgba(81,168,48,1);
+        width: 50px;
+        position: absolute;
+        top: 20px;
+        left: 60px;
+    }
+    .medal-after{
+        right: -11px;
+    }
+    .balance-footer-block span{
+        font-size: 11px;
+    }
+    .balance-footer-block{
+        bottom: 23px;
+    }
+    .title-header-mobile{
+       font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left: 133px;
+        margin-top: 20px;
+    }
+    .header-mobile{
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        background: url("../image/bg-header.jpg")repeat-x;
+        padding-bottom: 20px;
+
+    }
+    .header-mobile .close-modal{
+        right: 40px;
+        top: 22px;
+        width: 54px;
+        height: 54px;
+    }
+    .header-mobile .drop-down-lg{
+        margin-right: 50px;
+        margin-right: 113px;
+        margin-top: 25px;
+    }
+    .list-button-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-menu .button-btn{
+       width: 300px;
+    }
+    .item-menu .reit{
+        margin-bottom: 20px;
+    }
+    .item-menu .back span{
+        position: initial;
+    }
+    .item-menu .back span::after {
+        content: '';
+        position: absolute;
+        background: url("../image/arrow-rg.png");
+        width: 18px;
+        height: 14px;
+        left: 17px;
+    }
+    .item-menu .btn-back-wrapper{
+        margin-bottom: 20px;
+        background-color: rgba(155,155,155,0.31);
+        -webkit-box-shadow: 0px 0px 0px 4px rgba(155,155,155,0.31);
+        -moz-box-shadow: 0px 0px 0px 4px rgba(155,155,155,0.31);
+        box-shadow: 0px 0px 0px 4px rgba(155,155,155,0.31);
+    }
+    .item-menu .reit::after{
+        -webkit-box-shadow: 0px 0px 0px 4px rgba(155,155,155,0.31);
+        -moz-box-shadow: 0px 0px 0px 4px rgba(155,155,155,0.31);
+        box-shadow: 0px 0px 0px 4px rgba(155,155,155,0.31);
+    }
+    .wrapper-mobile-menu{
+        background-color: #ffffff;
+        display: none;
+    }
+    .mobile-menu{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        display: block;
+    }
+    .wrapper-mobile-list{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 10000;
+    }
+    .wrapper-mobile-menu .section-game{
+        background: none;
+        margin-top: 30px;
+        display: flex;
+    }
+    .wrapper-mobile-menu .list-statistic {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .statistic-item{
+       max-width: 224px;
+       margin-top: 20px;
+    }
+   .wrapper-mobile-menu .name-title{
+        max-width: none;
+   }
+    .wrapper-mobile-menu .container-list-statistic{
+        margin-top: 65px;
+    }
+    .wrapper-mobile-menu .info-item{
+        margin: 0 auto;
+    }
+    .footer-modal-mobile{
+        background: linear-gradient(to bottom, rgba(140,210,100,1) 0%, rgba(112,199,62,1) 100%);
+        padding-top: 40px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        border-top: 4px solid #dcdfe1;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    .close-mobile{
+        width: 300px;
+        position: relative;
+    }
+    .close-mobile::after{
+        content: '';
+        position: absolute;
+        box-shadow: 0px -1px 1px 5px rgba(81,168,48,1);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .wrapper-mobile-list .result{
+        padding: 7px 0;
+    }
+    .wrapper-mobile-list .title-item{
+        margin: 4px 0;
+        margin-top: 0;
+    }
+     .wrapper-mobile-list .info-item{
+        border-radius: 15px;
+     }
+     .active-mobile-menu  .header-mobile{
+        display: flex;
+     }
+     .active-mobile-menu .wrapper-mobile-menu{
+        display: block;
+        overflow-y: scroll;
+        max-height: calc(100vh - 91px);
+     }
+     .mechanism{
+        margin-top: 210px;
+     }
+     .wax-and-honey-in-time{
+        top: -164px;
+     }
+     .score{
+        padding: 10px 0;
+        border-radius: 10px;
+     }
+     .item-time{
+        border-radius: 15px;
+        height: 45px;
+        padding: 5px;
+        width: 208px;
+     }
+     .wax-time{
+        margin-right: 20px;
+     }
+     .pipes{
+        max-width: 665px;
+     }
+     .trumpet-top{
+        width: 96%;
+         background-position: left 22px top;
+         background-size: cover;
+         height: 30px;
+     }
+    .trumpet-honey{
+        height: 116px;
+        background-size: contain;
+        right: -4px;
+    }
+    .trumpet-wax{
+        left: 0;
+    }
+    .bg-body::before,
+    .bg-body::after{
+        display: none;
+    }
+    .wrapper-btn-upgrade{
+       display: none;
+    }
+    .mobile-upgrade{
+        display: block;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        top: -22px;
+        transform: translateX(-50%);
+    }
+     .mobile-upgrade .upgrade-btn{
+        width: 300px;
+     }
+     .active-bank img{
+        max-width: 175px;
+        width: 100%; 
+     }
+     .wrapper-active{
+         left: 246px;
+     }
+     .wrapper-active-honey{
+         right: -70px;
+     }
+     .mechanism{
+        min-height: auto;
+        max-height: 504px;
+     }
+     .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        bottom: 29px;
+         left: 11%;
+     }
+     .drop-honey{
+        width: 28px;
+        height: 50px;
+        margin-bottom: 116px;
+     }
+     .drop-wax{
+        width: 40px;
+        height: 37px;
+        margin-bottom: 69px;
+     }
+     .game-rounds::before{
+         background-position: 2.2% 100%;
+     }
+     .item-rounds:nth-child(2n+1),
+     .item-rounds:nth-child(2n){
+        padding-left: 0;
+     }
+     .item-rounds:nth-child(2n)::after,
+     .item-rounds:nth-child(2n+1)::after{
+        display: none;
+     }
+     .wrapper-content-round::before{
+        width: 135px;
+        height: 135px;
+        left: -14px;
+        top: -62px;
+        background-size: contain;
+     }
+     .list-game-rounds{
+        margin-left: -55px;
+     }
+    .game-rounds{
+        max-width: 665px;
+        margin: 0 auto;
+    }
+    .window{
+        left: 14px;
+    }
+     .header-round{
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 330px;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        top: -58px;
+        margin-right: 49px;
+     }
+     .text-info-round{
+        background-color: transparent;
+        max-width: 318px;
+     }
+     .title-round,
+     .info-round{
+        color: #31651a;
+     }
+     .info-round{
+        font-weight: normal;
+     }
+     .btn-blue{
+         width: 100%;
+    }
+    .btn-blue::after{
+        -webkit-box-shadow: 0px 0px 0px 4px rgba(162,162,162,0.5);
+        -moz-box-shadow: 0px 0px 0px 4px rgba(162,162,162,0.5);
+        box-shadow: 0px 0px 0px 4px rgba(162,162,162,0.5);
+    }
+    .item-rounds{
+        max-width: 540px;
+        width: 95%;
+        height: 222px;
+        background-size: contain;
+        padding-top: 100px;
+        margin: 0 auto;
+
+    }
+    .sotu-container::before{
+      width: 451px;
+      height: 115px;
+      background-position: center;
+      right: 3px;
+      top: 3px;
+    }
+    .sotu-container{
+       max-width: 453px;
+       height: 120px;
+       background-position: center;
+        margin-top: 26px;
+    }
+    .list-game-rounds{
+        max-width: 720px;
+    }
+    .wrapper-content-round{
+        padding-top: 0;
+        position: relative;
+    }
+    .hexagon{
+        height: 39px;
+        width: 33px;
+    }
+    .hexagon-container  img{
+        max-width: 34px;
+    }
+    .hexagon-1 {
+        left: 20px;
+        top: 22px;
+    }
+    .hexagon-2 {
+        left: 52px;
+        top: 3px;
+    }
+    .hexagon-3 {
+        left: 84px;
+        top: 22px;
+    }
+    .hexagon-4 {
+        left: 115px;
+        top: 3px;
+    }
+    .hexagon-5 {
+        left: 147px;
+        top: 22px;
+    }
+    .hexagon-6 {
+        left: 178px;
+        top: 3px;
+    }
+    .hexagon-7 {
+        left: 210px;
+        top: 22px;
+    }
+    .hexagon-8 {
+        left: 241px;
+        top: 3px;
+    }
+    .hexagon-9 {
+        left: 272px;
+        top: 22px;
+    }
+    .hexagon-10 {
+        left: 304px;
+        top: 3px;
+    }
+    .hexagon-11 {
+        right: 86px;
+        top: 22px;
+    }
+    .hexagon-12 {
+        right: 55px;
+        top: 3px;
+    }
+    .hexagon-13 {
+        left: 20px;
+        top: 59px;
+    }
+    .hexagon-14 {
+        left: 52px;
+        top: 41px;
+    }
+    .hexagon-15 {
+        top: 59px;
+        left: 84px;
+    }
+    .hexagon-16 {
+        top: 41px;
+        left: 115px;
+    }
+    .hexagon-17 {
+        top: 59px;
+        left: 147px;
+    }
+    .hexagon-18 {
+        top: 41px;
+        left: 178px;
+    }
+    .hexagon-19 {
+        top: 59px;
+        left: 210px;
+    }
+    .hexagon-20 {
+        top: 41px;
+        left: 240px;
+    }
+    .hexagon-21 {
+        top: 59px;
+        left: 272px;
+    }
+    .hexagon-22 {
+        top: 41px;
+        left: 303px;
+    }
+    .hexagon-23 {
+        top: 59px;
+        left: 334px;
+    }
+    .hexagon-24 {
+        top: 41px;
+        right: 55px;
+    }
+    .hexagon-25 {
+        top: 59px;
+        right: 22px;
+    }
+    .hexagon-26 {
+        top: 23px;
+        right: 23px;
+    }
+    .hexagon-27 {
+        top: 78px;
+        left: 52px;
+    }
+    .hexagon-28 {
+        top: 78px;
+        left: 115px;
+    }
+    .hexagon-29 {
+        top: 78px;
+        left: 178px;
+    }
+    .hexagon-30 {
+        top: 78px;
+        left: 241px;
+    }
+    .hexagon-31 {
+        top: 78px;
+        left: 303px;
+    }
+    .hexagon-32 {
+        top: 78px;
+        right: 55px;
+    }
+    .namber-wax{
+        font-size: 16px;
+    }
+    .center-content-round{
+        position: absolute;
+        width: 100%;
+        top: 43px;
+    }
+    .drop-big img{
+        max-width: 65px;
+        width: 100%;
+    }
+    .drop-big{
+        width: 65px;
+        bottom: -103px;
+    }
+    .drop-big span{
+        font-size: 18.46px;
+    }
+    .text-drop{
+        max-width: 65px;
+        top: 39%;
+        transform: translateY(-50%);
+    }
+    .header-round a{
+        width: 100%;
+    }
+     .header-round a::after{
+        -webkit-box-shadow: 0px 0px 0px 4px rgba(162,162,162,0.5);
+        -moz-box-shadow: 0px 0px 0px 4px rgba(162,162,162,0.5);
+        box-shadow: 0px 0px 0px 4px rgba(162,162,162,0.5);
+    }
+        @keyframes animationFr{
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        3% {
+            opacity: 0.5;
+            transform: translate(0, -45px);
+        }
+        4%, 100% {
+            opacity: 0;
+        }
+
+    }
+
+    @-moz-keyframes animationFr{
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        3% {
+            opacity: 0.5;
+            transform: translate(0, -45px);
+        }
+        4%, 100% {
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes animationFr {
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        3% {
+            opacity: 0.5;
+            transform: translate(0, -45px);
+        }
+        4%, 100% {
+            opacity: 0;
+        }
+    }
+
+    @-o-keyframes animationFr {
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        3% {
+            opacity: 0.5;
+            transform: translate(0, -45px);
+        }
+        4%, 100% {
+            opacity: 0;
+        }
+    }
+
+    @-ms-keyframes animationFr {
+        0% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        3% {
+            opacity: 0.5;
+            transform: translate(0, -45px);
+        }
+        4%, 100% {
+            opacity: 0;
+        }
+    }
+    .active-trx span{
+        left: -5px;
+        font-size: 12px;
+    }
+    .wrapper-content-round.no-active-round::after {
+        left: 18px;
+        right: 16px;
+        top: 16px;
+        bottom: -93px;
+    }
+    .top-footer-content{
+        flex-direction: column;
+    }
+    .footer-btn{
+        display: none;
+    }
+    .mobile-footer-btn{
+        display: flex;
+    }
+    .wrapper-top-footer-logo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-top-footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .item-footer-top-list p{
+        font-size: 21px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .bottom-footer-content{
+        flex-direction: column-reverse;
+         border-top: 1px solid  #73a858;
+    }
+    .wrapper-info-game p{
+        margin-top: 20px;
+    }
+    .wrapper-info-game{
+        margin: 0 auto;
+        max-width: 360px;
+        width: 100%;
+
+    }
+    .list-social-footer{
+        min-height: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .container-list-footer{
+        padding: 0 20px;
+        border-bottom: 1px solid #73a858;
+    }
+    .item-social-footer{
+        margin: 24px 0;
+    }
+    .item-footer-top-list p{
+        display: inline-block;
+        max-width: 360px;
+    }
+    .wrapper-footer-content{
+        padding: 25px 0 23px 0;
+    }
+    .input-form{
+        font-size: 30px;
+        max-width: 100%;
+    }
+
+    .hexagon::after{
+        top: 15px;
+        right: 23px;
+    }
+    .mobile-upgrade{
+        display: flex;
+    }
+    .active-mobile-menu .btn-back-mobile-wrapper{
+        position: fixed;
+    }
+    .container-list-statistic{
+        margin-bottom: 126px;
+    }
+    .trumpet-left{
+        background-position: left 10px top;
+        top: -5px;
+    }
+    .footer-modal{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    .close-modal-mobile{
+        width: 256px;
+        margin-top: 15px;
+        display: flex;
+    }
+    .wrapper-footer-input + .close-modal-mobile{
+        margin-top: 0;
+    }
+    .paseca  .wrapper-footer-input + .close-modal-mobile{
+        margin-top: 15px;
+    }
+    .modal-bee-footer-mobile{
+        display: flex;
+        min-height: 80px;
+        padding-bottom: 0;
+    }
+    .limit p{
+        font-size: 16px;
+    }
+    .error-modal{
+        padding-top: 0;
+    }
+    .error-close {
+        width: 179px;
+        height: 40px;
+        position: absolute;
+        top: inherit;
+        bottom: 13px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 18px;
+        box-shadow: 1px -6px 0px -1px rgba(224, 140, 22, 0.8) inset, 1px 6px 0px -1px rgba(255, 204, 79, 0.8) inset;
+    }
+    .wrapper-reffer-link{
+        margin-top: 10px;
+    }
+     .wrapper-reffer-link + .container-table {
+        margin-top: 13px;
+        min-height: 422px;
+    }
+    .reffer-link-container{
+        padding: 10px;
+    }
+    .wrapper-result-mehanica{
+        text-align: center;
+    }
+    .wrapper-list-statistic .statistic-item{
+        max-width: 173px !important;
+    }
+    .container-questions {
+        height: 435px;
+        overflow-y: auto;
+    }
+    .center-change{
+        margin-bottom: 30px;
+    }
+    .paseka-window .table-modal thead th:nth-child(3), .paseka-window .table-modal tbody tr td:nth-child(3){
+        width: 22%
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 997px) {
+    .top-progress{
+        max-width: 411px;
+    }
+    .input-form {
+        max-width: 95px;
+        font-size: 20px;
+        padding-left: 37px;
+    }
+    .wrapper-input {
+        margin-right: 15px;
+    }
+    .wax {
+        background-size: 34px 27px;
+    }
+    .honey {
+        background-size: 26px 26px;
+    }
+    .blue-btn, .withdraw-btn {
+        width: 61px;
+        font-size: 11px;
+    }
+    .violet-btn{
+        width: 169px;
+        font-size: 18px;
+    }
+    .input-form {
+        max-width: 75px;
+        font-size: 18px;
+    }
+    .bottom-footer-content{
+        justify-content: space-around;
+    }
+    .wrapper-top-footer-logo{
+        max-width: 121px;
+    }
+    .top-footer-content{
+        justify-content: space-around;
+    }
+    .center-block {
+        width: 483px;
+    }
+
+
+}
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+    .navbar-landing-nav .list-nav{
+        display: none;
+    }
+    .questions .modal-btn{
+        bottom: 22px;
+    }
+    .container-questions{
+        margin-top: 40px;
+    }
+   .btn-back-mobile-wrapper-landing{
+        display: flex;
+    }
+     .mobile-wrapper-menu-landing {
+        border-top: 2px solid #367d11;
+        margin-top: 20px;
+        padding-top: 20px;
+     }
+    .mobile-wrapper-menu-landing .list-nav{
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 998px) and (min-width: 320px) {
+    .header-round{
+        top: -71px;
+    }
+    .landing-statistic-item{
+        max-width: 180px;
+    }
+    .landing-statistic-item::before {
+        left: 0;
+    }
+    .item-representative{
+        margin-right: 30px;
+    }
+    .item-representative:nth-child(3n) {
+        margin-right: 30px;
+    }
+    .item-representative:nth-child(4n) {
+        margin-right: 30px;
+    }
+    .about-bee{
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 990px) and (min-width: 320px) {
+    .sng-list .item-btn:nth-child(4n) {
+        margin-right: 30px;
+    }
+    .sng-list .item-btn:nth-child(3n) {
+        margin-right: 0;
+    }
+    .more-list {
+        width: 85%;
+    }
+
+}
+@media screen and (max-width: 950px) and (min-width: 320px) {
+    .trumpet-left {
+        background-position: left 31px top;
+        top: -5px;
+    }
+    .mehanica-game{
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper-game-screen{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .name-type-medal {
+        font-size: 18px;
+        color: #7b3701;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .big-text {
+        font-size: 22px;
+        margin-right: 5px;
+    }
+    .container-img-type-medal img{
+        max-width: 90%;
+    }
+    .regomendation-about-medal {
+        font-size: 18px;
+    }
+    .section-medal {
+        padding: 80px 0 70px;
+    }
+    .section-title {
+        font-size: 30px;
+        color: #7b3701;
+        text-align: center;
+    }
+    .wrapper-mehanizm-block img{
+        max-width: 93%;
+    }
+    .container-text-mehanizm{
+        max-width: 226px;
+    }
+    .text-mehanizm,
+    .result-text-block{
+        font-size: 20px;
+    }
+    .item-text{
+        font-size: 18px;
+    }
+    .container-row {
+        margin-top: 85px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper-my-honey img {
+        max-width: 440px;
+        width: 100%;
+    }
+    .wrapper-my-honey {
+        display: flex;
+        justify-content: center;
+    }
+    .container-item-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 46px;
+    }
+    .item-text{
+        max-width: 100%;
+        text-align: justify;
+    }
+    .jcarousel-control-prev, .jcarousel-control-next, .carousel-bee .carousel-control-prev-icon, .carousel-bee .carousel-control-next-icon{
+        width: 25px;
+        height: 49px;
+    }
+    .medal-before::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 45px;
+        height: 45px;
+        background: url('../image/big-medal-icon.png')no-repeat;
+        background-size: contain;
+    }
+    .honey-before::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 45px;
+        height: 45px;
+        background: url('../image/honey-big.png')no-repeat;
+        background-size: contain;
+    }
+    .wax-before::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 45px;
+        height: 45px;
+        background: url('../image/wax-big.png')no-repeat;
+        background-size: contain;
+    }
+    .item-result span {
+        font-size: 50px;
+    }
+    .first-rsult, .first-last {
+        padding-left: 60px;
+        position: relative;
+    }
+    .span-text {
+        margin: 0 28px;
+    }
+    .mehanica-game {
+        flex-wrap: wrap;
+        padding-bottom: 70px;
+    }
+    .section-bonus {
+        padding: 70px 0;
+    }
+    .carousel-bee .carousel-indicators li {
+        width: 15px;
+        height: 15px;
+        margin-right: 15px;
+    }
+    .text-header-block {
+        margin: 10px 0 0;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .text-header-about-bee{
+        font-size: 18px;
+    }
+    .text-about-game {
+        max-width: 100%;
+    }
+    .mehanica-game .col:nth-child(4), .mehanica-game .col:nth-child(5) {
+        margin-top: 45px;
+    }
+
+    .game-rounds::before {
+        background-position: 5.5% 100%;
+    }
+    .window {
+        left: 35px;
+    }
+    .list-game-rounds {
+        margin-left: -31px;
+    }
+    .trumpet-top{
+        background-position: left 41px top;
+    }
+
+}
+@media screen and (max-width: 915px) and (min-width: 320px) {
+    .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        left: 9%;
+    }
+
+}
+@media screen and (max-width: 865px) and (min-width: 320px) {
+     .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        bottom: 29px;
+        left: 7%;
+    }
+    .top-progress {
+        max-width: 598px;
+        margin-left: 111px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 320px){
+    .container-game{
+        overflow-y: hidden;
+    }
+    .tryba-drop:nth-child(28) {
+        top: 2509px;
+        left: 2px;
+    }
+    .tryba-drop:nth-child(29) {
+        top: 2522px;
+        left: 2px;
+    }
+    .wrapper-social-list {
+        top: 281px;
+    }
+    .award-btn {
+        width: 74px;
+        height: 26px !important;
+        font-size: 11px;
+    }
+    .top-progress {
+        max-width: 521px;
+        margin-left: 120px;
+    }
+    .cripto-transfer{
+        top: 26%;
+        z-index: 1000000;
+        width: 48px;
+        height: 52px;
+        font-size: 15px;
+    }
+    @-webkit-keyframes shadow-btn {to {box-shadow: 0 0 0 10px rgba(175,255,124,0.3);}}
+    @-moz-keyframes shadow-btn {to {box-shadow: 0 0 0 10px rgba(175,255,124,0.3);}}
+    @-ms-keyframes shadow-btn {to {box-shadow: 0 0 0 10px rgba(175,255,124,0.3);}}
+    @keyframes shadow-btn {to {box-shadow: 0 0 0 10px rgba(175,255,124,0.3);}}
+    .pipes{
+        max-width: 521px;
+    }
+    .game-rounds::before{
+        background-position: 15.1% 100%;
+    }
+    .banner{
+        display: none;
+    }
+    .mobile-banner{
+        display: block;
+    }
+    .title-carousel {
+        font-size: 42px;
+    }
+    .sub-title-carousel {
+        line-height: 38px;
+        font-size: 24px;
+        max-width: 356px;
+        margin-bottom: 25px;
+    }
+    .none-active, .none-active:hover{
+        opacity: 1;
+    }
+    .trumpet-top{
+        width: 93%;
+        background-position: left 18px top;
+    }
+    .top-progress {
+        max-width: 544px;
+        margin-left: 121px;
+    }
+    .wrapper-input{
+        max-width: 622px;
+    }
+    .trumpet-left {
+        background-position: left 8px top;
+        top: -5px;
+    }
+    .game-rounds::before {
+        background-position: 13.3% 100%;
+    }
+
+    .window {
+        left: 84px;
+    }
+    .list-game-rounds {
+        margin-left: 0;
+    }
+    .wrapper-active {
+        left: 176px;
+    }
+    .img-container-bee img {
+        max-width: 160px;
+        width: 100%;
+    }
+    .tron-logo {
+        max-width: 160px;
+        width: 100%;
+    }
+    .about-text {
+        font-size: 18px;
+        color: #4d4d4d;
+        margin-bottom: 40px;
+        max-width: 75%;
+        text-align: center;
+    }
+    .item-all-bee:nth-child(2n){
+        margin-right: 0;
+    }
+    .item-all-bee{
+        max-width: 235px;
+    }
+    .result-bee-title, .title-price-bee, .title-about-medal{
+        font-size: 14px;
+    }
+    .price-bee-text, .product-bee-text, .block-tetx-medal-result, .big-text {
+        color: #e76402;
+        font-size: 14px;
+    }
+    .percent-big {
+        font-size: 20px;
+    }
+    .item-representative {
+        margin-right: 20px;
+        max-width: 233px;
+    }
+    .item-representative:nth-child(2n){
+        margin-right: 0;
+    }
+    .item-representative:nth-child(3n){
+        margin-right: 20px;
+    }
+    .item-representative:nth-child(4n){
+        margin-right: 0;
+    }
+    .stub-text{
+        font-size: 16px;
+        max-width: 407px;
+    }
+    .stub,
+    .stub-container{
+        height: 152px;
+    }
+    .stub-container{
+        background-size: 100% 100%;
+    }
+    .list-btn .item-btn:nth-child(3n){
+        margin-right: 30px;
+    }
+    .list-btn .item-btn:nth-child(2n){
+        margin-right: 0;
+    }
+    .sng-list .item-btn:nth-child(3n) {
+        margin-right: 30px;
+    }
+    .sng-list .item-btn:nth-child(2n) {
+        margin-right: 0;
+    }
+    .sng-list .item-btn:last-child {
+        margin-right: 0;
+    }
+    .link-blockquote {
+        padding-left: 47px;
+    }
+    .tabs{
+        flex-direction: column;
+    }
+    .tabs li{
+        min-height: 82px;
+    }
+    .tabs li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tabs li a{
+        margin: 25px 0;
+    }
+    .pay-count-bee {
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .count-bee-btn {
+        width: 31px;
+        height: 32px;
+    }
+    .limit-bee{
+        font-size: 16px;
+        margin-top: 9px;
+    }
+    .your-reit, .your-reit span{
+        margin: 7px 0;
+    }
+    .wax-reward:before {
+        width: 40px;
+        height: 36px;
+    }
+    .wax-reward {
+        padding-left: 49px;
+    }
+    .next-reward {
+        margin-top: 15px;
+    }
+
+}
+@media screen and (max-width: 1024px)and (min-width: 768px) and (orientation:portrait){
+    .wrapper-modal{
+        height: 64vh;
+    }
+    .wrapper-modal .header-modal{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .table-modal tbody tr td:last-child,
+    .table-modal thead th:last-child{
+        width: 29%;
+    }
+
+    .wrapper-modal.new-round-modal-2{
+        height: 57vh;
+    }
+    .wrapper-modal.buy-wax.puy-wax{
+        height: 58vh;
+    }
+    .buy-wax .balance-footer-block {
+        bottom: 84px;
+    }
+    .wrapper-modal.buy-wax{
+        height: 60vh;
+    }
+    .wrapper-modal.buy-wax .balance-footer-block {
+        bottom: 93px;
+    }
+    .wrapper-modal.new-round-modal.airdrop{
+        height: 57vh;
+    }
+    .wrapper-modal.pay-bee{
+        height: 57vh;
+    }
+    .wrapper-modal.pay-bee .balance-footer-block{
+        bottom: 96px;
+    }
+    .wrapper-modal.cryptobee{
+        height: 63vh;
+    }
+    .error-modal{
+        padding-top: 0;
+    }
+    .wrapper-modal.error-modal{
+        height: 52vh;
+    }
+    .error-close{
+        width: 211px;
+        height: 46px;
+        position: absolute;
+        bottom: 16px;
+    }
+    .error-modal .container-modal {
+        min-height: 383px;
+    }
+    .error-img img {
+        max-width: 175px;
+    }
+    .error-img{
+        margin-top: 40px;
+    }
+    .error-text{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 737px) and (min-width: 415px) and (orientation: landscape) {
+    .flythat img {
+        max-width: 90px;
+    }
+    .wrapper-ok{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .wrapper-ok img{
+        max-width: 92px;
+    }
+    .info-buy-honey, .info-buy-honey span{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .wax-reward:before {
+        width: 40px;
+        height: 32px;
+    }
+    .wax-reward:before{
+        top: -3px;
+    }
+    .wrapper-reward span {
+        font-size: 25px;
+    }
+    .wax-reward {
+        padding-left: 45px;
+    }
+    .title-modal{
+        padding: 3px 10px;
+    }
+    .title-modal h2 {
+        font-size: 20px;
+    }
+    .flythat .flythat-close {
+        top: 2px;
+        right: 17px;
+    }
+    .modal-bee-footer-mobile{
+        min-height: 50px;
+        padding-bottom: 8px;
+    }
+    .reward-btn {
+        width: 203px;
+        height: 36px;
+        bottom: 14px;
+        font-size: 14px;
+    }
+    .give-medale {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        font-size: 15px;
+    }
+    .title-reward {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+    .next-medal {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .next-reward {
+        margin-top: 12px;
+    }
+    .summa-dohod img{
+        max-width: 25px;
+    }
+    .all-dohod {
+        font-size: 16px;
+    }
+    .wrapper-bottom-footer-modal{
+        max-width: 200px;
+        bottom: 54px;
+    }
+    .container-pay-bee {
+        padding: 3px 0;
+        border-radius: 9px;
+    }
+    .cryptobee .balance-footer-block {
+        bottom: 39px;
+        z-index: 100;
+    }
+    .balance-footer-block{
+        border-radius: 15px;
+        max-width: 139px;
+        height: 41px;
+        padding-top: 3px;
+    }
+    .about-bee {
+        margin-top: 11px;
+        line-height: 15px;
+        margin-bottom: 5px;
+    }
+    .cryptobee .my-bee-home {
+        font-size: 16px;
+    }
+    .my-bee-home {
+        margin-top: 10px;
+        margin-bottom: 7px;
+    }
+    .price-bee:before {
+        width: 21px;
+        height: 19px;
+    }
+    .price-bee:before{
+        top: 0px;
+    }
+    .item-about-cryptobee span {
+        font-size: 18px;
+    }
+    .price-bee {
+        padding-left: 27px;
+        position: relative;
+    }
+    .item-about-cryptobee p {
+        font-size: 12px;
+    }
+    .item-about-cryptobee {
+        margin-bottom: 5px;
+    }
+    .hour-honey:before {
+        width: 17px;
+        height: 19px;
+    }
+    .hour-honey:before{
+        top: 0px;
+    }
+    .hour-wax:before {
+        width: 20px;
+        height: 20px;
+    }
+    .hour-wax:before{
+        top: 0;
+    }
+    .close-modal-mobile{
+        width: 215px;
+        height: 37px;
+        font-size: 14px;
+    }
+    .cryptobee .header-modal .title-modal h2 {
+        font-size: 20px;
+    }
+    .hour-wax {
+        position: relative;
+        padding-left: 24px;
+    }
+    .cryptobee .about-bee{
+        padding-bottom: 5px;
+    }
+    .cryptobee .close-modal-mobile{
+        position: absolute;
+        right: 20px;
+        margin-top: 20px;
+    }
+    .cryptobee .wrapper-bottom-footer-modal{
+        bottom: 17px;
+    }
+    .cryptobee .green-bee-btn{
+        top: inherit;
+        position: absolute;
+        bottom: 18px;
+        left: 20px;
+        font-size: 14px;
+        width: 216px;
+        height: 37px;
+    }
+    .cryptobee .green-bee-btn::after{
+        display: none;
+    }
+    .footer-modal-mobile{
+        padding-top: 26px;
+    }
+    .uley-input{
+        height: 46px;
+    }
+    .uley-input span{
+        top: 14px;
+    }
+    .center-change {
+        margin-bottom: 13px;
+    }
+    .puy-wax .pay-wax {
+        margin-bottom: 5px;
+        margin-top: 6px;
+    }
+    .percent-status {
+        font-size: 20px;
+    }
+    .percent-status span {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .balance-footer-block::after{
+        border-radius: 15px;
+    }
+    .buy-input{
+        height: 35px;
+    }
+    .buy-honey-bank h3{
+        margin-bottom: 8px;
+    }
+    .buy-honey-bank{
+        margin-bottom: 10px;
+    }
+    .error-honey {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 13px;
+    }
+    .puy-wax .wrapper-bottom-footer-modal {
+        bottom: 57px;
+    }
+    .puy-wax .balance-footer-block {
+        bottom: 67px;
+    }
+    .pay-wax {
+        margin-top: 10px;
+        margin-bottom: 12px;
+        max-width: 505px;
+    }
+    .wax-span::before, .wax-span-change::before{
+        width: 25px;
+        height: 25px;
+        background-size: contain;
+    }
+    .lotery-wax::before {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+    }
+    .center-change, .center-change span {
+        font-size: 25px;
+    }
+    .wax-span, .wax-span-change {
+        padding-left: 31px;
+        position: relative;
+        margin-right: 14px;
+    }
+    .lotery-wax{
+        padding-left: 55px;
+        position: relative;
+        margin-right: 0;
+    }
+    .many-change::before{
+        width: 25px;
+        height: 25px;
+    }
+    .footer-flex{
+        display: flex;
+        justify-content: center;
+    }
+    .many-change {
+        margin-left: 12px;
+        padding-left: 33px;
+        position: relative;
+    }
+    .green-bee-btn,
+    .violet-btn{
+        height: 35px;
+        font-size: 14px;
+    }
+    .buy-wax .balance-footer-block {
+        bottom: 71px;
+    }
+    .small-medal {
+        width: 25px;
+        height: 25px;
+    }
+    .wrapper-content-box{
+        margin-bottom: 15px;
+    }
+    .percent-status span {
+        font-size: 27px;
+        font-weight: bold;
+    }
+    .title-content-box {
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .modernize-btn{
+        font-size: 14px;
+        font-weight: bold;
+        height: 37px;
+        width: 233px;
+    }
+    .airdrop .img-reward {
+        margin-top: 40px;
+    }
+    .about-bee{
+        text-align: center;
+        max-width: 595px;
+    }
+    .my-bee-home, .my-bee-home span {
+        font-size: 16px;
+    }
+    .my-bee-home{
+        margin-bottom: 0;
+    }
+    .count-bee {
+        font-size: 24px !important;
+    }
+    .pay-bee .balance-footer-block {
+        bottom: 71px;
+    }
+    .more-nead{
+        margin-bottom: 15px;
+    }
+    .limit p {
+        font-size: 14px;
+    }
+    .limit p a{
+        font-size: 17px;
+    }
+    .new-game{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .container-adress-wallet h3{
+        font-size: 14px;
+        color: #7b3701;
+        margin-bottom: 5px;
+    }
+    .wallet-input {
+        border-radius: 10px;
+        border: 2px solid #e38d11;
+        padding: 5px 5px;
+        background-color: #f6f3da;
+        color: #7b3701;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+        outline: none;
+    }
+    .container-adress-wallet {
+        margin: 0 auto;
+        max-width: 330px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .attention-text {
+        font-size: 14px;
+        color: #f24f1e;
+        max-width: 297px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .game-info {
+        font-size: 14px;
+        color: #4d4d4d;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 242px;
+        padding-left: 47px;
+        position: relative;
+    }
+    .game-info::before{
+        top: -5px;
+        width: 40px;
+        height: 40px;
+    }
+    .new-game img{
+        max-width: 105px;
+    }
+    .error-modal{
+        padding-top: 0;
+    }
+    .error-close {
+        width: 179px;
+        height: 40px;
+        position: absolute;
+        top: inherit;
+        bottom: 13px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 18px;
+        box-shadow: 1px -6px 0px -1px rgba(224, 140, 22, 0.8) inset, 1px 6px 0px -1px rgba(255, 204, 79, 0.8) inset;
+    }
+    .error-img img {
+        max-width: 135px;
+    }
+    .change-lotery {
+        margin-bottom: 3px;
+    }
+    .center-change .lotery-wax {
+        font-size: 27px;
+        padding-left: 0;
+        padding-right: 30px;
+    }
+    .center-change .lotery-wax::before {
+        width: 26px;
+        height: 26px;
+        background-size: contain;
+        bottom: 0;
+        top: 0;
+    }
+    .stories{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .center-change .jeckpot {
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .lotery-game{
+        height: 33px;
+    }
+    .your-reit, .your-reit span{
+        font-size: 26px;
+    }
+
+}
+
+@media screen and (max-width: 720px) and (min-width: 320px) {
+     .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        bottom: 29px;
+        left: 5%;
+    }
+    .trumpet-wax {
+        left: 0;
+        background-size: contain;
+        height: 112px;
+    }
+}
+@media screen and (max-width: 700px) and (min-width: 320px){
+    .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        bottom: 29px;
+        left: 4%;
+    }
+    .wrapper-input {
+        max-width: 600px;
+    }
+    .top-progress {
+        max-width: 506px;
+        margin-left: 121px;
+    }
+}
+@media screen and (max-width: 685px) and (min-width: 320px){
+     .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        bottom: 29px;
+        left: 3%;
+    }
+    .wrapper-input {
+        max-width: 560px;
+    }
+    .top-progress {
+        max-width: 473px;
+        margin-left: 121px;
+    }
+}
+
+@media only screen and (max-width: 667px) and (min-width: 360px)and (orientation: landscape) {
+    .flythat img {
+        max-width: 70px;
+    }
+    .wrapper-ok{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .wrapper-ok img{
+        max-width: 92px;
+    }
+    .give-medale {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+    .wax-reward:before {
+        width: 25px;
+        height: 20px;
+        top: 2px;
+    }
+    .wrapper-reward span {
+        font-size: 20px;
+    }
+    .wax-reward {
+        padding-left: 31px;
+    }
+    .next-medal {
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .next-reward .wax-reward:before {
+        width: 25px;
+        height: 20px;
+        top: 2px;
+    }
+    .next-reward {
+        margin-top: 10px;
+    }
+    .center-change, .center-change span {
+        font-size: 18px;
+    }
+    .center-change {
+        margin-bottom: 8px;
+    }
+    .change-lotery{
+        padding: 5px 0;
+    }
+    .many-change::before{
+        top: -4px;
+    }
+    .wax-span::before, .wax-span-change::before{
+        top: -4px;
+    }
+    .buy-input {
+        height: 30px;
+        font-size: 16px;
+    }
+    .buy-honey-bank{
+        max-width: 270px;
+    }
+    .pay-wax{
+        font-size: 12px;
+    }
+    .error-honey {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .buy-wax .balance-footer-block {
+        bottom: 66px;
+    }
+    .buy-wax .wrapper-bottom-footer-modal {
+        max-width: 196px;
+        border-radius: 10px;
+    }
+    .container-pay-bee {
+        padding: 2px;
+        border-radius: 7px;
+    }
+    .summa-dohod img {
+        max-width: 22px;
+    }
+    .buy-honey-bank h3 {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .percent-status {
+        font-size: 16px;
+    }
+    .title-content-box{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .percent-status span {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .wrapper-content-box {
+        margin-bottom: 7px;
+    }
+    .about-bee {
+        font-size: 12px;
+    }
+    .green-bee-btn,
+    .violet-btn{
+        width: 190px;
+    }
+    .summa-dohod img {
+        max-width: 15px;
+    }
+    .pay-bee .container-pay-bee {
+        padding: 0;
+        border-radius: 7px;
+    }
+    .pay-bee .balance-footer-block {
+        bottom: 66px;
+    }
+    .count-bee {
+        font-size: 20px !important;
+    }
+    .my-bee-home, .my-bee-home span {
+        font-size: 14px;
+    }
+    .my-bee-home {
+        margin-top: 8px;
+    }
+    .cryptobee .green-bee-btn{
+        width: 197px;
+    }
+    .close-modal-mobile {
+        width: 197px;
+        height: 37px;
+        font-size: 14px;
+    }
+    .error-img img {
+        max-width: 130px;
+    }
+
+}
+
+
+@media screen and (max-width: 665px) and (min-width: 320px){
+    .header{
+        padding: 0 40px;
+    }
+    .btn-back-mobile-wrapper{
+        left: 40px;
+    }
+    .top-progress {
+        max-width: 484px;
+        margin-left: 90px;
+    }
+    .wrapper-input {
+        max-width: 100%;
+    }
+     .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        left: 3%;
+        bottom: 6px;
+    }
+     .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        max-width: 160px;
+        background-size: contain;
+    }
+    .active-bank img {
+        max-width: 150px;
+        width: 100%;
+    }
+    .pipes{
+        min-height: 452px;
+    }
+    .wrapper-active-honey {
+        right: -56px;
+        bottom: 23px;
+    }
+    .wrapper-active {
+        left: 186px;
+        bottom: 23px;
+    }
+    .mechanism{
+        background-position: 100% 93%;
+    }
+}
+@media screen and (max-width: 645px) and (min-width: 320px){
+    .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        left: 1%;
+        bottom: 6px;
+    }
+    .active-bank img {
+        max-width: 130px;
+        width: 100%;
+    }
+    .wrapper-active {
+        left: 194px;
+    }
+    .wrapper-active-honey {
+        right: -45px;
+    }
+
+    .game-rounds::before {
+        background-position: 12.3% 100%;
+    }
+    .window {
+        left: 75px;
+    }
+    .mechanism {
+        margin-top: 170px;
+    }
+    .wax-and-honey-in-time {
+        top: -123px;
+    }
+    .header {
+        padding: 0 20px;
+    }
+    .btn-back-mobile-wrapper {
+        left: 20px;
+    }
+    .top-progress {
+        max-width: 498px;
+        margin-left: 90px;
+    }
+
+}
+
+@media only screen and (max-width: 640px) and (min-width: 360px) and (orientation: landscape) {
+    .img-reward{
+        margin-top: 15px;
+    }
+    .title-reward{
+        margin-bottom: 10px;
+    }
+    .small-medal{
+        width: 20px;
+        height: 24px;
+    }
+    .buy-input {
+        height: 25px;
+        font-size: 14px;
+    }
+    .buy-honey-bank {
+        max-width: 235px;
+    }
+    .green-bee-btn ,
+    .violet-btn{
+        width: 180px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .balance-footer-block span {
+        font-size: 10px;
+    }
+    .buy-wax .balance-footer-block {
+        bottom: 64px;
+    }
+    .balance-footer-block {
+        border-radius: 15px;
+        max-width: 129px;
+        height: 40px;
+        padding-top: 1px;
+    }
+    .modernize-btn {
+        font-size: 12px;
+        font-weight: bold;
+        height: 30px;
+        width: 200px;
+    }
+    .airdrop .img-reward img {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .airdrop .img-reward {
+        margin-top: 19px;
+    }
+    .about-bee {
+        margin-top: 10px;
+        line-height: 15px;
+    }
+    .cryptobee .green-bee-btn {
+        width: 184px;
+        font-size: 12px;
+    }
+    .wrapper-bottom-footer-modal {
+        max-width: 197px;
+    }
+    .cryptobee .close-modal-mobile {
+        width: 186px;
+        font-size: 12px;
+    }
+    .limit-bee {
+        font-size: 13px;
+        margin-top: 6px;
+    }
+    .game-need{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    .change-sponsor {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 625px) and (min-width: 320px){
+    .top-progress {
+        max-width: 492px;
+        margin-left: 78px;
+    }
+     .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        left: 0;
+        bottom: 6px;
+    }
+
+}
+@media screen and (max-width: 610px) and (min-width: 320px){
+    .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        max-width: 140px;
+        background-size: contain;
+        bottom: 0;
+        height: 313px;
+    }
+    .game-rounds::before {
+        background-position: 9.5% 100%;
+    }
+    .window {
+        left: 54px;
+    }
+    .trumpet-honey {
+        right: 0;
+    }
+    .wrapper-active-honey {
+        right: -23px;
+    }
+    .pipes {
+        min-height: 422px;
+    }
+    .text-block-upgrade{
+        padding: 10px 0;
+        font-size: 16px;
+    }
+    .upgrade {
+        width: 90px;
+        top: 73px;
+    }
+    .mobile-upgrade .upgrade-btn {
+        width: 250px;
+    }
+    .trumpet-honey {
+        right: 18px;
+    }
+    .trumpet-top {
+        width: 89%;
+    }
+    .top-progress {
+        max-width: 483px;
+        margin-left: 78px;
+    }
+    .mobile-wrapper-menu-landing .list-nav {
+        flex-direction: column;
+    }
+    .nav-list-item{
+        margin: 10px 0;
+    }
+
+}
+@media screen and (max-width: 600px) and (min-width: 320px){
+    .wrapper-input {
+        max-width: 90%;
+    }
+    .input-form {
+        font-size: 28px;
+        max-width: 70%;
+    }
+    .top-progress {
+        max-width: 448px;
+        margin-left: 78px;
+    }
+
+}
+@media screen and (max-width: 572px) and (min-width: 320px){
+
+
+}
+@media screen and (max-width: 565px) and (min-width: 320px){
+    .top-progress {
+        max-width: 431px;
+        margin-left: 78px;
+    }
+    .wrapper-active-honey {
+        right: 0;
+    }
+    .mobile-upgrade{
+        left: 49%;
+    }
+    .trumpet-top {
+        width: 87%;
+    }
+    .trumpet-honey {
+        right: 40px;
+    }
+    .trumpet-wax {
+        left: -4px;
+    }
+    .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        max-width: 131px;
+        background-size: contain;
+        bottom: 0;
+        height: 293px;
+    }
+    .active-bank img {
+        max-width: 121px;
+        width: 100%;
+    }
+    .wrapper-active-honey {
+        overflow: hidden;
+    }
+    .wrapper-active {
+        left: 196px;
+        overflow: hidden;
+    }
+    .center-block{
+        max-width: 521px;
+    }
+    .top-progress {
+        max-width: 393px;
+        margin-left: 96px;
+    }
+    .btn-back-mobile-wrapper {
+        left: 40px;
+    }
+
+}
+@media screen and (max-width: 540px) and (min-width: 320px){
+    .top-progress {
+        max-width: 382px;
+        margin-left: 100px;
+    }
+    .trumpet-left {
+        background-position: left 33px top;
+        top: -5px;
+    }
+    .trumpet-top {
+        background-position: left 43px top;
+    }
+    .window {
+        left: 48px;
+    }
+    .wrapper-content-round::before{
+        left: 0;
+    }
+    .item-representative:nth-child(3) {
+        margin-right: 20px;
+    }
+    .item-representative:nth-child(2n) {
+        margin-right: 0;
+    }
+    .item-representative:nth-child(4n) {
+        margin-right: 0;
+    }
+    .item-representative {
+        margin-right: 20px;
+        max-width: 233px;
+    }
+
+}
+@media screen and (max-width: 510px) and (min-width: 320px){
+    .item-representative:nth-child(3) {
+        margin-right: 0;
+    }
+    .item-representative:nth-child(3n) {
+        margin-right: 0;
+    }
+    .item-representative:nth-child(2n) {
+        margin-right: 0;
+    }
+    .item-representative:nth-child(4n) {
+        margin-right: 0;
+    }
+    .item-representative {
+        margin-right: 0;
+        max-width: 244px;
+    }
+}
+@media screen and (max-width: 475px) and (min-width: 320px){
+    .go-to-game{
+        width: 125px;
+        height: 45px;
+    }
+    .navbar-landing-nav {
+        margin-right: 20px;
+    }
+    .container-logo img{
+        max-width: 80px;
+    }
+    .item-result{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .paseka-window .table-modal thead th:nth-child(3), .paseka-window .table-modal tbody tr td:nth-child(3){
+        width: 20%
+    }
+}
+@media screen and (max-width: 415px) and (min-width: 320px){
+    .btn-back-mobile-wrapper{
+        left: 20px;
+    }
+    .mobile-banner {
+        width: 100%;
+    }
+    .wrapper-social-list{
+        top: 263px;
+        right: 5px;
+    }
+    .cripto-transfer{
+        right: 5px;
+    }
+    .game-need {
+        font-size: 14px;
+        max-width: 300px;
+    }
+    .center-change .jeckpot{
+        font-size: 40px;
+    }
+    .change-lotery{
+        max-width: 90%;
+    }
+    .list-db{
+        max-height: 146px;
+        overflow-y: auto;
+    }
+    .title-carousel {
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+    .sub-title-carousel {
+        line-height: 35px;
+        font-size: 18px;
+        max-width: 308px;
+        margin-bottom: 18px;
+    }
+    .container-fluid{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .carousel-bee .carousel-control-prev, .carousel-bee .carousel-control-next {
+        width: 12%;
+    }
+    .container-bee-carousel-item{
+        padding: 0;
+    }
+    .item-all-bee{
+        margin-right: 0;
+    }
+    .container-questions {
+        margin: 0 auto;
+        margin-top: 22px;
+        width: 92%;
+    }
+    .title-item-questions {
+        font-size: 16px;
+    }
+    .wrapper-content-list-result{
+        text-align: center;
+    }
+    .top-progress{
+        margin-left: 77px;
+        max-width: 285px;
+        height: 25px;
+    }
+    .stub-text {
+        font-size: 13px;
+        max-width: 318px;
+        line-height: 16px;
+    }
+    .stub-text a{
+        font-size: 13px;
+    }
+    .stub{
+        height: 110px;
+    }
+    .stub-container{
+        min-height: 110px;
+        height: 110px;
+    }
+    .medal-after{
+        background-size: contain;
+        top: -14px;
+        width: 54px;
+        height: 54px;
+    }
+    .wrapper-input{
+        max-width: 366px;
+    }
+    .input-form{
+        max-width: 164px;
+    }
+    .score p{
+        font-size: 15px;
+    }
+    .score span {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .limit-bee {
+        font-size: 14px;
+    }
+    .score{
+        padding: 0 0;
+        border-radius: 8px;
+        height: 34px;
+    }
+    .wrapper-modal{
+        z-index: 100000000000000000000;
+    }
+    .item-time{
+        border-radius: 10px;
+        height: 36px;
+        padding: 3px;
+        width: 150px;
+    }
+    .wax-time{
+        margin-right: 15px;
+    }
+    .mobile-upgrade .upgrade-btn{
+        width: 150px;
+    }
+    .mechanism {
+        margin-top: 145px;
+    }
+    .wax-and-honey-in-time {
+        top: -100px;
+    }
+    .pipes {
+        max-width: 340px;
+        min-height: 352px;
+    }
+    .game-rounds:before{
+        width: 42px;
+    }
+    .window{
+        left: 58px;
+    }
+    .trumpet-top {
+        width: 86%;
+        background-position: left 28px top;
+        height: 28px;
+    }
+    .trumpet-left{
+        background-position: left 21px top;
+        height: 448px;
+        width: 80px;
+        background-size: contain;
+    }
+     .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        background-size: contain;
+        left: 15px;
+        max-width: 115px;
+    }
+    .trumpet-honey{
+        height: 107px;
+        position: absolute;
+        top: -2px;
+        right: 16px;
+        width: 42px;
+        background-size: contain;
+    }
+    .trumpet-wax{
+        height: 105px;
+        position: absolute;
+        top: 0;
+        width: 45px;
+        background-size: contain;
+        left: 45%;
+    }
+    .mobile-upgrade{
+        left: 51%;
+    }
+    .text-block-upgrade{
+        background-color: rgba(147,147,147, 0.5);
+        border-radius: 10px;
+        text-align: center;
+        padding: 12px 0;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .upgrade {
+        width: 81px;
+        margin: 0 auto;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+    }
+    .mechanism:after{
+        height: 47px;
+        z-index: 152;
+        background-size: cover;
+    }
+    .mehanizm-container, .mehanizm-bear, .mehanizm-honey, .mehanizm-raccoon, .mehanizm-opossum, .mehanizm-beek, .mehanizm-ai{
+        bottom: -32px;
+    }
+    .active-bank img {
+        max-width: 93px;
+        width: 100%;
+    }
+    .wrapper-active{
+        left: 128px;
+        height: 225px;
+        bottom: 26px;
+        overflow: hidden;
+    }
+    .drop-wax {
+        width: 25px;
+        height: 23px;
+    }
+    .wrapper-active-honey{
+        height: 233px;
+        bottom: 24px;
+        right: -7px;
+        overflow: hidden;
+    }
+    .drop-honey {
+        width: 18px;
+        height: 45px;
+        margin: 0 auto;
+        margin-bottom: 103px;
+    }
+    .header-round{
+        max-width: 200px;
+    }
+    .info-round{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .title-round{
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    .button-btn {
+        height: 37px;
+    }
+    .wrapper-content-round::before{
+        width: 100px;
+        height: 100px;
+        left: 0;
+    }
+    .window {
+        width: 20px;
+        height: 100%;
+        position: absolute;
+        left: 55px;
+    }
+    .window:before{
+        width: 30px;
+        background-size: contain;
+        height: 95%;
+    }
+    .game-rounds:before{
+        width: 30px;
+        left: 55px;
+        bottom: 152px;
+    }
+    .item-rounds{
+        height: 143px;
+    }
+    .drop-big {
+        width: 52px;
+        bottom: -2px;
+        height: 79px;
+    }
+    .text-drop {
+        max-width: 48px;
+        top: 62%;
+        transform: translateY(-53%);
+    }
+    .wrapper-content-round.no-active-round::after {
+        left: 17px;
+        right: 13px;
+        top: -5px;
+        bottom: -29px;
+        border-radius: 13px;
+    }
+    .sotu-container::before {
+        width: 301px;
+        height: 81px;
+        right: 1px;
+        top: 3px;
+    }
+    .sotu-container {
+        max-width: 304px;
+        height: 85px;
+        margin-top: -14px;
+    }
+    .hexagon {
+        height: 27px;
+        width: 23px;
+    }
+    .namber-wax {
+        font-size: 12px;
+    }
+    .hexagon-container img {
+        max-width: 24px;
+    }
+    .hexagon-1 {
+        left: 8px;
+        top: 17px;
+    }
+    .hexagon-2 {
+        left: 30px;
+        top: 4px;
+    }
+    .hexagon-3 {
+        left: 52px;
+        top: 17px;
+    }
+    .hexagon-4 {
+        left: 74px;
+        top: 4px;
+    }
+    .hexagon-5 {
+        left: 96px;
+        top: 17px;
+    }
+    .hexagon-6 {
+        left: 118px;
+        top: 4px;
+    }
+    .hexagon-7 {
+        left: 141px;
+        top: 17px;
+    }
+    .hexagon-8 {
+        left: 163px;
+        top: 4px;
+    }
+    .hexagon-9 {
+        left: 185px;
+        top: 17px;
+    }
+    .hexagon-10 {
+        left: 207px;
+        top: 4px;
+    }
+    .hexagon-11 {
+        right: 52px;
+        top: 17px;
+    }
+    .hexagon-12 {
+        right: 31px;
+        top: 4px;
+    }
+    .hexagon-13 {
+        left: 8px;
+        top: 42px;
+    }
+    .hexagon-14 {
+        left: 30px;
+        top: 30px;
+    }
+    .hexagon-15 {
+        top: 30px;
+        left: 74px;
+    }
+    .hexagon-16 {
+        top: 42px;
+        left: 52px;
+    }
+    .hexagon-17 {
+        top: 42px;
+        left: 96px;
+    }
+    .hexagon-18 {
+        top: 30px;
+        left: 118px;
+    }
+    .hexagon-19 {
+        top: 42px;
+        left: 141px;
+    }
+    .hexagon-20 {
+        top: 30px;
+        left: 163px;
+    }
+    .hexagon-21 {
+        top: 42px;
+        left: 185px;
+    }
+    .hexagon-22 {
+        top: 30px;
+        left: 207px;
+    }
+    .hexagon-23 {
+        top: 42px;
+        left: 228px;
+    }
+    .hexagon-24 {
+        top: 30px;
+        right: 30px;
+    }
+    .hexagon-25 {
+        top: 42px;
+        right: 8px;
+    }
+    .hexagon-26 {
+        top: 17px;
+        right: 8px;
+    }
+    .hexagon-27 {
+        top: 56px;
+        left: 29px;
+    }
+    .hexagon-28 {
+        top: 56px;
+        left: 74px;
+    }
+    .hexagon-29 {
+        top: 56px;
+        left: 118px;
+    }
+    .hexagon-30 {
+        top: 56px;
+        left: 163px;
+    }
+    .hexagon-31 {
+        top: 56px;
+        left: 207px;
+    }
+    .hexagon-32 {
+        top: 56px;
+        right: 30px;
+    }
+    .tryba-drop:first-child{
+        top: 12px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(2) {
+        top: 97px;
+        right: -4px;
+    }
+    .tryba-drop:nth-child(3) {
+        top: 180px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(4) {
+        top: 264px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(5) {
+        top: 349px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(6) {
+        top: 430px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(7) {
+        top: 517px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(8) {
+        top: 600px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(9) {
+        top: 688px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(10) {
+        top: 770px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(11) {
+        top: 856px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(12) {
+        top: 941px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(13) {
+        top: 1027px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(14) {
+        top: 1109px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(15) {
+        top: 1194px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(16) {
+        top: 1277px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(17) {
+        top: 1364px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(18) {
+        top: 1447px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(19) {
+        top: 1533px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(20) {
+        top: 1616px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(21){
+        top: 1701px;
+        left: 3px;
+    }
+    .tryba-drop:nth-child(22),
+    .tryba-drop:nth-child(23),
+    .tryba-drop:nth-child(24),
+    .tryba-drop:nth-child(25),
+    .tryba-drop:nth-child(26),
+    .tryba-drop:nth-child(27){
+        display: none;
+    }
+    .tryba-drop{
+        height: 37px;
+    }
+    .container-game{
+        padding-bottom: 40px;
+    }
+    .content-footer{
+        max-width: 340px;
+    }
+    .wrapper-top-footer-logo{
+        max-width: 340px;
+    }
+    .footer{
+        padding-top: 10px;
+    }
+    .wrapper-info-game p{
+        margin-left: 20px;
+    }
+    .header{
+        min-height: 227px;
+    }
+    .item-footer-top-list p {
+        font-size: 18px;
+    }
+    .title-header-mobile{
+        margin-left: 89px;
+        margin-top: 17px;
+    }
+    .header-mobile .drop-down-lg {
+        margin-right: 88px;
+        margin-top: 16px;
+    }
+    .header-mobile .close-modal {
+        right: 14px;
+        top: 11px;
+        width: 54px;
+        height: 54px;
+    }
+    .header-section{
+        max-width: 320px;
+        padding: 5px;
+    }
+    .name-title{
+        padding: 7px 10px;
+    }
+    .name-title h1 {
+        font-size: 24px;
+    }
+    .footer-modal-mobile{
+        padding-top: 30px;
+    }
+    .active-mobile-menu .wrapper-mobile-menu{
+        max-height: calc(100vh - 91px);
+    }
+    .active-mobile-menu .header-mobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10000;
+    }
+    .list-button-menu{
+        margin-top: 82px;
+    }
+    .item-menu .reit{
+        margin-bottom: 20px;
+    }
+    .table-modal{
+        max-width: 340px;
+    }
+    .table-modal tbody tr td span{
+        font-size: 11px;
+    }
+    .bee-home {
+        max-width: 76px;
+    }
+    .activ-honey:before{
+        width: 14px;
+        height: 13px;
+        left: 0;
+        top: -2px;
+    }
+    .doxod:before{
+        width: 14px;
+        height: 13px;
+    }
+    .doxod{
+        padding-right: 0;
+        padding-left: 12px;
+        margin-right: 4px;
+    }
+    .summa{
+        padding-left: 21px;
+        margin-left: 2px;
+    }
+    .table-modal thead th:last-child {
+        width: 30%;
+    }
+    .table-modal thead th{
+        font-size: 13px;
+    }
+    .table-modal tbody tr td:last-child {
+        width: 30%;
+    }
+    .footer-input{
+        max-width: 162px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .uley-input{
+        flex-direction: row;
+    }
+    .footer-input:first-child {
+        margin-right: 10px;
+    }
+    .footer-input span{
+        font-size: 16px;
+    }
+    .footer-input h3 {
+        font-size: 11px;
+    }
+    .table-modal tbody {
+        max-height: 55vh;
+    }
+    .table-modal thead th, .table-modal tbody tr td {
+        padding: 5px 3px;
+    }
+    .uley-input span {
+        position: absolute;
+        right: 36px;
+        top: 16px;
+        font-size: 18px;
+    }
+    .medal-input{
+        width: 54px;
+        height: 54px;
+        top: -3px;
+    }
+    .medal-input img{
+        width: 100%;
+    }
+    .uley-input{
+        max-width: 230px;
+        height: 47px;
+    }
+    .uley-input h3 {
+        margin-left: 10px;
+        color: #ffffff;
+        font-size: 13px;
+    }
+    .nuber-position:before{
+        width: 30px;
+        height: 30px;
+    }
+    .nuber-position{
+        padding-right: 30px;
+    }
+    .container-list-statistic{
+        margin-bottom: 66px;
+    }
+    .about-bee {
+        font-size: 13px;
+        max-width: 340px;
+    }
+    .item-about-cryptobee p {
+        font-size: 14px;
+    }
+    .price-bee:before {
+        width: 25px;
+        height: 24px;
+    }
+    .item-about-cryptobee span {
+        font-size: 18px;
+    }
+    .hour-wax:before {
+        width: 25px;
+        height: 25px;
+    }
+    .hour-honey:before {
+        width: 22px;
+        height: 23px;
+    }
+    .cryptobee .header-modal .title-modal h2 {
+        font-size: 20px;
+    }
+    .more-nead p {
+        font-size: 20px;
+        font-weight: bold;
+        color: #16b60a;
+        margin-right: 16px;
+    }
+    .more-nead span {
+        font-size: 30px;
+        font-weight: bold;
+        color: #16b60a;
+        padding-left: 45px;
+    }
+    .more-many::before{
+        width: 30px;
+        height: 30px;
+    }
+    .more-nead{
+        margin-bottom: 20px;
+    }
+    .pay-wax{
+        font-size: 13px;
+    }
+    .next-medal{
+        text-align: center;
+    }
+    .btn-menu{
+        height: 46px;
+    }
+    .header-round {
+        top: -85px;
+    }
+    .container-list-footer{
+        padding: 0;
+    }
+    .wrapper-modal{
+        height: 100%;
+    }
+    .cryptobee{
+        height: 100%;
+    }
+    .container-bottom-input{
+        margin-top: 30px;
+    }
+    .wrapper-modal {
+        z-index: 9999999999 !important;
+    }
+    .cryptobee .img-bee img {
+        max-width: 105px;
+    }
+    .my-bee-home {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .wrapper-modal.error-modal{
+        height: 100%;
+    }
+    .landing-statistic-item {
+        max-width: 193px;
+        margin-right: 0;
+    }
+    .landing-statistic-item .info-item{
+        max-width: 193px;
+    }
+    .item-result span {
+        font-size: 35px;
+    }
+    .go-to-game {
+        margin-right: 15px;
+        position: relative;
+        height: 40px;
+        width: 130px;
+    }
+    .btn-menu-landing{
+        height: 45px;
+    }
+    .landing-header{
+        padding: 13px 5px;
+    }
+    .header-navigation .go-to-game{
+        width: 100px;
+    }
+    .reffer-link-container{
+        padding: 8px;
+    }
+    .wrapper-reffer-link{
+        max-width: 321px;
+    }
+    .title-reffer {
+        font-size: 12px;
+        color: #4d4d4d;
+        margin-bottom: 5px;
+    }
+    .wrapper-reffer-link + .container-table {
+        margin-top: 15px;
+    }
+    .table-arrow {
+        width: 8px;
+        height: 15px;
+        float: right;
+    }
+    .text-col-right{
+        text-align: justify;
+    }
+    .text-col-left{
+        text-align: justify;
+    }
+    .page-link,
+    .pagination-more{
+        width: 40px;
+        text-align: center;
+        height: 40px;
+    }
+    .page-item {
+        margin-right: 13px;
+    }
+
+    .wrapper-list-statistic .statistic-item{
+        max-width: 193px !important;
+        margin-right: 0;
+    }
+    .wrapper-list-statistic .statistic-item .info-item{
+        max-width: 193px;
+    }
+    .mobile-upgrade {
+        display: none;
+    }
+    .lotery-wax::before {
+        width: 36px;
+        height: 36px;
+    }
+    .center-change .lotery-wax {
+        font-size: 40px;
+        padding-right: 45px;
+    }
+    .center-change .jeckpot {
+        margin-bottom: 5px;
+    }
+    .change-sponsor{
+        font-size: 14px;
+    }
+}
+@media only screen  and (max-width: 415px){
+    .buy-wax .balance-footer-block {
+        bottom: 80px;
+    }
+    .pay-bee .balance-footer-block {
+        bottom: 80px;
+    }
+
+    .wrapper-modal.new-round-modal-2{
+        height: 100%;
+    }
+    .wrapper-modal.pay-bee{
+        height: 100%;
+    }
+    .wrapper-modal.cryptobee{
+        height: 100%;
+    }
+    .wrapper-modal.buy-wax{
+        height: 100%;
+    }
+    .wrapper-modal.new-round-modal.airdrop{
+        height: 100%;
+    }
+    .wrapper-modal.new-game-modal{
+        height: 100%;
+    }
+    .center-change .jeckpot{
+        margin-bottom: 14px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 375px) and (min-width: 320px) {
+    .trumpet-left{
+        background-position: left 44px top;
+    }
+    .trumpet-top {
+        width: 86%;
+        background-position: left 51px top;
+        height: 28px;
+    }
+    .social-link {
+        width: 31px;
+        height: 34px;
+        font-size: 10px;
+    }
+    .social-icon{
+        width: 31px;
+        height: 34px;
+        background-size: 43%;
+    }
+    .fb-icon,
+    .bt-icon{
+        background-size: 30%;
+    }
+    .social-item {
+        margin-bottom: 6px;
+    }
+    .cripto-transfer {
+        top: 195px;
+    }
+    .trumpet-wax{
+        height: 105px;
+        position: absolute;
+        top: 0;
+        width: 45px;
+        background-size: contain;
+        left: 48%;
+    }
+    .tryba-drop:nth-child(9) {
+        top: 772px;
+        left: 2px;
+    }
+    .tryba-drop:nth-child(19) {
+        top: 1701px;
+        left: 2px;
+    }
+    .mobile-upgrade{
+        left: 54%;
+    }
+    .wrapper-active{
+        left: 140px;
+        height: 225px;
+        bottom: 26px;
+        overflow: hidden;
+    }
+    .upgrade {
+        width: 81px;
+        margin: 0 auto;
+        position: absolute;
+        top: 103px;
+        left: 0;
+        right: 0;
+    }
+    .top-progress{
+        margin-left: 77px;
+        max-width: 234px;
+        height: 25px;
+    }
+    .wrapper-input{
+        max-width: 312px;
+    }
+    .wrapper-content-round.no-active-round::after {
+        left: 13px;
+        right: 11px;
+        top: 16px;
+        bottom: -29px;
+        border-radius: 13px;
+    }
+    .center-change .jeckpot {
+        font-size: 36px;
+    }
+    .sotu-container {
+        max-width: 304px;
+        height: 85px;
+        margin-top: -5px;
+    }
+    .drop-big {
+        width: 52px;
+        bottom: -17px;
+        height: 79px;
+    }
+    .trumpet-left {
+        background-position: left 34px top;
+    }
+    .header-round {
+        top: -71px;
+    }
+    .cryptobee .flythat img {
+        max-width: 120px;
+    }
+    .center-change {
+        margin-bottom: 15px;
+    }
+    .pay-wax{
+        margin-bottom: 18px;
+    }
+    .container-logo img{
+        max-width: 70px;
+    }
+    .landing-header{
+        padding: 10px 5px;
+    }
+    .img-container-bee img {
+        max-width: 133px;
+        width: 100%;
+    }
+    .tron-logo {
+        max-width: 133px;
+        width: 100%;
+        margin-left: 20px;
+    }
+    .go-to-game {
+        width: 120px;
+    }
+    .header-sections{
+        padding-bottom: 25px;
+    }
+
+    .item-btn{
+        margin-right: 0;
+    }
+    .btn-item-green, .btn-item {
+        width: 230px !important;
+        font-size: 14px;
+    }
+    .list-btn .item-btn:nth-child(3n) {
+        margin-right: 0;
+    }
+    .sng-list .item-btn,
+    .sng-list .item-btn:nth-child(3n){
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px)  and (orientation:portrait){
+    .buy-wax .balance-footer-block {
+        bottom: 82px;
+    }
+    .pay-bee .balance-footer-block {
+        bottom: 82px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .wrapper-modal.new-round-modal-2{
+        height: 100%;
+    }
+    .wrapper-modal.pay-bee{
+        height: 100%;
+    }
+    .wrapper-modal.cryptobee{
+        height: 100%;
+    }
+    .wrapper-modal.buy-wax{
+        height: 100%;
+    }
+    .wrapper-modal.new-round-modal.airdrop{
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .wrapper-modal.new-round-modal-2{
+        height: 100%;
+    }
+    .wrapper-modal.pay-bee{
+        height: 100%;
+    }
+    .wrapper-modal.cryptobee{
+        height: 100%;
+    }
+    .wrapper-modal.buy-wax{
+        height: 100%;
+    }
+    .wrapper-modal.new-round-modal.airdrop{
+        height: 100%;
+    }
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 640px)  and (orientation:portrait){
+    .buy-wax .balance-footer-block {
+        bottom: 93px;
+    }
+    .pay-bee .balance-footer-block {
+        bottom: 91px;
+    }
+    .puy-wax .balance-footer-block{
+        bottom: 95px;
+    }
+    .wrapper-modal.buy-wax.puy-wax .balance-footer-block {
+        bottom: 87px;
+    }
+    .wrapper-modal.buy-wax.puy-wax.modernize .balance-footer-block{
+        bottom: 95px;
+    }
+
+    .my-bee-home {
+        margin-top: 18px;
+        margin-bottom: 11px;
+    }
+    .table-modal tbody tr td:last-child {
+        width: 33%;
+        white-space: nowrap;
+    }
+    .table-modal thead th:last-child {
+        width: 33%;
+        white-space: nowrap;
+    }
+    .nuber-position:before {
+        width: 20px;
+        height: 20px;
+    }
+    .nuber-position:before{
+        top: -5px;
+    }
+    .table-modal tbody tr td:last-child{
+        white-space: nowrap !important;
+    }
+    .table-modal tbody tr td span {
+        white-space: nowrap;
+    }
+    .nuber-position {
+        padding-right: 20px;
+    }
+    .activ-honey:before{
+        top: -1px;
+    }
+    .attention-text {
+        font-size: 14px;
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 18px;
+    }
+    .wallet-input {
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 16px;
+        width: 100%;
+        font-weight: bold;
+        outline: none;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .container-adress-wallet {
+        margin: 0 auto;
+        max-width: 300px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .container-adress-wallet h3 {
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .game-info {
+        font-size: 14px;
+        color: #4d4d4d;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 250px;
+        padding-left: 48px;
+        position: relative;
+    }
+    .game-info::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -5px;
+        width: 40px;
+        height: 40px;
+    }
+    .error-text{
+        margin-top: 25px;
+    }
+
+}
+@media screen and (max-width: 360px) and (min-width: 320px) {
+    .header-round {
+        top: -71px;
+        margin-right: 36px;
+    }
+
+}
+
