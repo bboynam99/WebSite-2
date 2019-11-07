@@ -204,11 +204,13 @@ function subscribeReferrerPaid(){
                     storage['refs'][event.args.user]['ref'] = event.args.referrer;
 
                     // level 2
-                    if(storage['refs'][event.args.referrer]['ref'] != undefined){
+                    if (storage['refs'][event.args.referrer]['ref'] != undefined && 
+                        storage['refs'][ storage['refs'][event.args.referrer]['ref'] ].indexOf(event.args.user) == -1){
                         storage['refs'][ storage['refs'][event.args.referrer]['ref'] ].push(event.args.user);
                     }
                     // level 3
-                    if(storage['refs'][event.args.referrer]['ref'] != undefined && storage['refs'][ storage['refs'][event.args.referrer]['ref'] ]['ref'] != undefined){
+                    if (storage['refs'][event.args.referrer]['ref'] != undefined && storage['refs'][ storage['refs'][event.args.referrer]['ref'] ]['ref'] != undefined &&
+                        storage['refs'][ storage['refs'][ storage['refs'][event.args.referrer]['ref'] ]['ref'] ].indexOf(event.args.user) == -1){
                         storage['refs'][ storage['refs'][ storage['refs'][event.args.referrer]['ref'] ]['ref'] ].push(event.args.user);
                     }
 
