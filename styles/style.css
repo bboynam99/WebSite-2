@@ -2173,7 +2173,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     right: 0;
     margin: 0 auto;
     top: -22px;
-    max-width: 277px;
+     max-width: fit-content;
+     max-width: -moz-fit-content;
+     min-width: 250px;
     width: 100%;
  }
  .title-modal{
@@ -2283,8 +2285,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .table-modal thead th:first-child{
     width: 22.5%;
 }
+.table-modal.table-super thead th:first-child {
+    width: 14.5%;
+}
 .table-modal tbody tr td:first-child{
     width: 22.5%;
+}
+.table-modal.table-super tbody tr td:first-child{
+    width: 14.5%;
 }
 .table-modal thead th:last-child{
     width: 25%;
@@ -2809,6 +2817,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .buy-honey-btn{
     width: 250px;
 }
+.buy-honey-btn span{
+    color: #873c01;
+    margin: 0 4px;
+    font-size: 20px;
+}
+.buy-honey-btn span:hover{
+    color: #fff;
+}
 .puy-wax .pay-wax{
     max-width: 327px;
     margin-bottom: 75px;
@@ -3144,6 +3160,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-weight: bold;
     margin: 0 auto;
     text-align: center;
+    max-width: 90%;
 }
 .new-round-modal-2 {
     background: url(../image/bg-modal-small.png)no-repeat;
@@ -5394,19 +5411,62 @@ body.dialogShowing {
 .cripto-transfer{
     position: fixed;
     right: 10px;
-    width: 60px;
-    height: 70px;
+    width: 65px;
+    height: 75px;
     font-weight: bolder;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 130px;
-    color: #176000;
+    color: #fff;
     background: url("../image/eth.png")no-repeat;
     background-size: contain;
     z-index: 100000;
 
+}
+.cripto-transfer::after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 100%;
+    animation: radial-pulse 1s infinite;
+}
+.cripto-transfer::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 100%;
+    border: 1px solid rgba(237,114,3,1);
+    animation: pulse 1s infinite;
+}
+@keyframes radial-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(237,114,3,0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(237,114,3,0);
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
 .center-change .lotery-wax {
     font-size: 50px;
@@ -5781,4 +5841,32 @@ body.dialogShowing {
     text-align: center;
     font-size: 20px;
     margin-top: 19px;
+}
+.monet-style{
+    margin-left: 3px;
+}
+.distribution{
+    display: flex;
+    align-items: center;
+}
+.distribution-monet{
+    margin-left: 3px;
+}
+.distribution p{
+    font-weight: bold;
+    font-size: 16px;
+}
+.distribution-wrapper{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.invest-info{
+    font-size: 23px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 78%;
+    margin-bottom: 25px;
+    color: #326909;
+    font-weight: bold;
 }

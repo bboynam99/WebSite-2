@@ -1040,6 +1040,10 @@
     .container-contact-info{
         padding-top: 55px;
     }
+    .cripto-transfer::after {
+        top: -1px;
+        bottom: -1px;
+    }
 }
 @media screen and (max-width: 1024px) and (min-width: 320px){
     .title-carousel {
@@ -3196,6 +3200,13 @@
     }
     .your-reit, .your-reit span{
         font-size: 26px;
+    }
+    .invest-info{
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .buy-honey-btn span{
+        font-size: 16px;
     }
 
 }
