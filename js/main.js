@@ -115,6 +115,9 @@ $(document).ready(function () {
         fadeIn: 'slow'
     }); 
     */
+    $("#modal-text25").flythat({
+        fadeIn: 'slow'
+    });
 
     $(".btn-menu").click(function() {
 

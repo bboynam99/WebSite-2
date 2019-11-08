@@ -527,12 +527,17 @@
         bottom: 50px;
         left: 395px;
     }
-    .wrapper-content-round::before{
-        width: 156px;
-        height: 159px;
+    .wrapper-content-round::before,
+    .wrapper-content-round .wrapper-lottie{
+        width: 156px !important;
+        height: 159px !important;
         background-size: contain;
         left: -41px;
         top: -67px;
+    }
+    lottie-player{
+        width: 156px !important;
+        height: 159px !important;
     }
     .item-rounds:nth-child(2n+1){
         padding-left: 171px;
@@ -1034,6 +1039,10 @@
     }
     .container-contact-info{
         padding-top: 55px;
+    }
+    .cripto-transfer::after {
+        top: -1px;
+        bottom: -1px;
     }
 }
 @media screen and (max-width: 1024px) and (min-width: 320px){
@@ -1751,13 +1760,18 @@
      .item-rounds:nth-child(2n+1)::after{
         display: none;
      }
-     .wrapper-content-round::before{
+    .wrapper-content-round::before,
+    .wrapper-content-round .wrapper-lottie{
         width: 135px;
         height: 135px;
         left: -14px;
         top: -62px;
         background-size: contain;
-     }
+    }
+    lottie-player{
+        width: 135px !important;
+        height: 135px !important;
+    }
      .list-game-rounds{
         margin-left: -55px;
      }
@@ -2089,6 +2103,7 @@
     .list-top-footer{
         flex-direction: column;
         align-items: flex-start;
+        width: auto;
     }
     .item-footer-top-list p{
         font-size: 21px;
@@ -2359,7 +2374,6 @@
     }
     .section-title {
         font-size: 30px;
-        color: #7b3701;
         text-align: center;
     }
     .wrapper-mehanizm-block img{
@@ -2409,8 +2423,9 @@
         content: '';
         position: absolute;
         left: 0;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
+        top: -6px;
         background: url('../image/big-medal-icon.png')no-repeat;
         background-size: contain;
     }
@@ -2418,8 +2433,9 @@
         content: '';
         position: absolute;
         left: 0;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
+        top: -6px;
         background: url('../image/honey-big.png')no-repeat;
         background-size: contain;
     }
@@ -2427,16 +2443,17 @@
         content: '';
         position: absolute;
         left: 0;
-        width: 45px;
-        height: 45px;
+        top: -6px;
+        width: 40px;
+        height: 40px;
         background: url('../image/wax-big.png')no-repeat;
         background-size: contain;
     }
     .item-result span {
-        font-size: 50px;
+        font-size: 45px;
     }
     .first-rsult, .first-last {
-        padding-left: 60px;
+        padding-left: 53px;
         position: relative;
     }
     .span-text {
@@ -2700,6 +2717,9 @@
     }
     .next-reward {
         margin-top: 15px;
+    }
+    .header{
+        z-index: 100000;
     }
 
 }
@@ -3186,6 +3206,13 @@
     }
     .your-reit, .your-reit span{
         font-size: 26px;
+    }
+    .invest-info{
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .buy-honey-btn span{
+        font-size: 16px;
     }
 
 }
@@ -3969,10 +3996,15 @@
     .button-btn {
         height: 37px;
     }
-    .wrapper-content-round::before{
+    .wrapper-content-round::before,
+    .wrapper-content-round .wrapper-lottie{
         width: 100px;
         height: 100px;
         left: 0;
+    }
+    lottie-player{
+        width: 100px !important;
+        height: 100px !important;
     }
     .window {
         width: 20px;
@@ -4501,7 +4533,7 @@
         max-width: 193px;
     }
     .item-result span {
-        font-size: 35px;
+        font-size: 25px;
     }
     .go-to-game {
         margin-right: 15px;
@@ -4629,8 +4661,7 @@
         height: 34px;
         background-size: 43%;
     }
-    .fb-icon,
-    .bt-icon{
+    .fb-icon{
         background-size: 30%;
     }
     .social-item {

@@ -198,7 +198,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background: url("../image/bg-header.jpg")repeat-x;
     min-height: 192px;
     position: relative;
-    z-index: 100000;
+    z-index: 10000000;
 }
 .flythat-backdrop{
     z-index: 999999999 !important;
@@ -1498,16 +1498,21 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding-top: 110px;
     position: relative;
 }
-.wrapper-content-round::before{
+.wrapper-content-round .wrapper-lottie{
+    position: absolute;
+    left: -88px;
+    top: 0;
+    z-index: 101;
+}
+.wrapper-content-round:before{
     content: '';
     position: absolute;
     left: -88px;
-    width: 242px;
-    height: 231px;
     top: 0;
-    background: url("../image/round-bee.png")no-repeat;
     z-index: 101;
     background-size: contain;
+    width: 242px;
+    height: 231px;
 }
 .text-info-round{
     background-color: #63ab36;
@@ -2039,6 +2044,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: flex-end;
     margin-bottom: 20px;
+    width: 100%;
+    justify-content: space-around;
 }
 .footer-btn{
     width: 100px;
@@ -2168,7 +2175,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     right: 0;
     margin: 0 auto;
     top: -22px;
-    max-width: 277px;
+     max-width: fit-content;
+     max-width: -moz-fit-content;
+     min-width: 250px;
     width: 100%;
  }
  .title-modal{
@@ -2278,8 +2287,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .table-modal thead th:first-child{
     width: 22.5%;
 }
+.table-modal.table-super thead th:first-child {
+    width: 14.5%;
+}
 .table-modal tbody tr td:first-child{
     width: 22.5%;
+}
+.table-modal.table-super tbody tr td:first-child{
+    width: 14.5%;
 }
 .table-modal thead th:last-child{
     width: 25%;
@@ -2804,6 +2819,14 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .buy-honey-btn{
     width: 250px;
 }
+.buy-honey-btn span{
+    color: #873c01;
+    margin: 0 4px;
+    font-size: 20px;
+}
+.buy-honey-btn span:hover{
+    color: #fff;
+}
 .puy-wax .pay-wax{
     max-width: 327px;
     margin-bottom: 75px;
@@ -3139,6 +3162,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-weight: bold;
     margin: 0 auto;
     text-align: center;
+    max-width: 90%;
 }
 .new-round-modal-2 {
     background: url(../image/bg-modal-small.png)no-repeat;
@@ -3637,7 +3661,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     align-items: center;
 }
 .item-result span{
-    font-size: 60px;
+    font-size: 48px;
     color: #326909;
     font-weight: bold;
 }
@@ -4494,38 +4518,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .container-img-bee img{
     max-width: 160px;
     width: 100%;
-}
-.airdrop-round::before{
-    background: url("../image/1.png")no-repeat;
-    background-size: contain;
-}
-.smart-round::before{
-    background: url("../image/2.png")no-repeat;
-    background-size: contain;
-}
-.crypto-round::before{
-    background: url("../image/3.png")no-repeat;
-    background-size: contain;
-}
-.beetcoin-round::before{
-    background: url("../image/4.png")no-repeat;
-    background-size: contain;
-}
-.space-round::before{
-    background: url("../image/5.png")no-repeat;
-    background-size: contain;
-}
-.droid-round::before{
-    background: url("../image/6.png")no-repeat;
-    background-size: contain;
-}
-.tron-round::before{
-    background: url("../image/7.png")no-repeat;
-    background-size: contain;
-}
-.superbee-round::before{
-    background: url("../image/8.png")no-repeat;
-    background-size: contain;
 }
 .container-img-bee lottie-player{
     width: 170px !important;
@@ -5421,19 +5413,62 @@ body.dialogShowing {
 .cripto-transfer{
     position: fixed;
     right: 10px;
-    width: 60px;
-    height: 70px;
+    width: 65px;
+    height: 75px;
     font-weight: bolder;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 130px;
-    color: #176000;
+    color: #fff;
     background: url("../image/eth.png")no-repeat;
     background-size: contain;
     z-index: 100000;
 
+}
+.cripto-transfer::after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 100%;
+    animation: radial-pulse 1s infinite;
+}
+.cripto-transfer::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    right: -4px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 100%;
+    border: 1px solid rgba(237,114,3,1);
+    animation: pulse 1s infinite;
+}
+@keyframes radial-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(237,114,3,0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(237,114,3,0);
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
 .center-change .lotery-wax {
     font-size: 50px;
@@ -5522,10 +5557,11 @@ body.dialogShowing {
     background-repeat: no-repeat;
     background-position: center;
 }
-.bt-icon{
-    background-image: url("../image/soc-bt.png");
+.yt-icon{
+    background-image: url("../image/youtube.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 55%;
 }
 .social-list{
     display: flex;
@@ -5808,4 +5844,47 @@ body.dialogShowing {
     text-align: center;
     font-size: 20px;
     margin-top: 19px;
+}
+.monet-style{
+    margin-left: 3px;
+}
+.distribution{
+    display: flex;
+    align-items: center;
+}
+.distribution-monet{
+    margin-left: 3px;
+}
+.distribution p{
+    font-weight: bold;
+    font-size: 16px;
+}
+.distribution-wrapper{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.invest-info{
+    font-size: 23px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 78%;
+    margin-bottom: 25px;
+    color: #326909;
+    font-weight: bold;
+}
+.sub-header-title{
+    font-size: 16px;
+    color: #4d4d4d;
+    line-height: normal;
+    font-weight: normal;
+    text-align: center;
+    max-width: 77%;
+    margin-top: 20px;
+    margin-top: 20px;
+}
+.container-questions-faq{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
 }
