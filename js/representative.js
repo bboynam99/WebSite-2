@@ -52,7 +52,7 @@ $(document).ready(function () {
                                     '                   <img src="'+data.values[i][2]+'" alt="representative photo">' +
                                     '               </div>' +
                                     '               <div class="position-status-block">' +
-                                    '                   <img src="image/big-medal-1.png" alt="medal status">' +
+                                    '                   <img src="image/_big-medal-1.png" alt="medal status">' +
                                     '                   <h4 class="number-medal">'+referrals+'</h4>' +
                                     '               </div>' +
                                     '           </div>' +
