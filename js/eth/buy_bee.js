@@ -96,9 +96,15 @@ $('[name="bee_type_button"]').click(function(event){
                 $('[name="modal-buy-bee-not-enough"]').hide();
             }
 
-            if(!bees_can_unlock[element.split('bee_type_button_')[1]-1]){
+            if(!bees_can_unlock[element.split('bee_type_button_')[1]-1] || (element.split('bee_type_button_')[1]-1 == 6 && medal < 9)){
+                $('#modal-unlock-bee-about-first').hide();
+                $('#modal-unlock-bee-about-failed').hide();
+                $('#modal-unlock-bee-about-last').hide();
+
                 if(element.split('bee_type_button_')[1]-1 == 1){
                     $('#modal-unlock-bee-about-first').show();    
+                } else if(element.split('bee_type_button_')[1]-1 == 7){
+                    $('#modal-unlock-bee-about-last').show();
                 } else {
                     $('#modal-unlock-bee-about-failed').show();
                 }
@@ -108,11 +114,11 @@ $('[name="bee_type_button"]').click(function(event){
             } else {
                 $('#modal-unlock-bee-about-first').hide();   
                 $('#modal-unlock-bee-about-failed').hide();
+                $('#modal-unlock-bee-about-last').hide();
                 $('#modal-unlock-bee-about-success').show();
                 $('[name="modal-buy-bee-button"]').show();
             }
         } else {
-
             $('[name="modal-buy-bee-button"]').show();
             if($('#modal-bee-buy-input').val() * bee_levels_prices[id-1] > balanceHoney*1.1+balanceWax){
                 $('[name="modal-buy-bee-button"]').prop('disabled', true);
@@ -122,6 +128,11 @@ $('[name="bee_type_button"]').click(function(event){
                 $('[name="modal-buy-bee-button"]').prop('disabled', false);
                 $('[name="modal-buy-bee-not-enough"]').hide();
                 $('#modal-buy-bee-comment').show();
+            }
+
+            if(id == 8 && superBeeUnlocked){
+                $('[name="modal-buy-bee-button"]').prop('disabled', false);
+                $('[name="modal-buy-bee-not-enough"]').hide();    
             }
 
             $('#modal-buy-bee').flythat("show");
@@ -169,7 +180,7 @@ $('#modal-bee-buy-input').on('input', function(){
 });
 
 $('[name="modal-buy-bee-button"]').click(function(){
-    if($('#modal-buy-bee-button').prop('disabled') || !bees_can_unlock[element.split('bee_type_button_')[1]-1]){
+    if($('#modal-buy-bee-button').prop('disabled') || (!bees_can_unlock[element.split('bee_type_button_')[1]-1] && id != 8) || (id == 8 && !superBeeUnlocked)){
         return;
     }
 

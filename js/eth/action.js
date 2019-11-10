@@ -66,6 +66,8 @@ let balanceWax = 0;
 let airdropCollected = false;
 let registered = false;
 let unlockedBee = 0;
+let superBeeUnlocked = false;
+let medal = 0;
 
 let last_playerBees;
 let last_airdropCollected;
@@ -80,6 +82,7 @@ let medalAwardedEvent;
 let beesBoughtEvent;
 let qualityUpdatedEvent;
 let beeUnlockedEvent;
+let userAddedToBonusEvent;
 
 function getActualBalance(){
     setTimeout(function(){
@@ -91,6 +94,9 @@ function getActualBalance(){
             
             balanceHoney = Math.ceil(web3.toDecimal(actual_balance[0]) / Math.pow(10,18));
             balanceWax = Math.ceil(web3.toDecimal(actual_balance[1]) / Math.pow(10,18));
+            if(!airdropCollected && balanceWax > 0){
+                balanceWax -= 1000;
+            }
             $('#balanceHoney').val(format_number(balanceHoney));
             $('#balanceWax').val(format_number(balanceWax));
         });
@@ -158,8 +164,9 @@ function run(){
         // $('#balanceHoney').val(format_number(balanceHoney));
         // $('#balanceWax').val(format_number(balanceWax));
 
+        medal = web3.toDecimal(player[6]);
         let next_medal = web3.toDecimal(player[6]) + 1;
-        if(registered){
+        if(registered && next_medal == 1){
             next_medal++;
         }
         $('.medal-after').css('background', 'url("../image/medal-'+next_medal+'.png")no-repeat');
@@ -244,6 +251,14 @@ function run(){
         // unlockedBee
         unlockedBee = web3.toDecimal(player[9]);
     });
+
+    web3.eth.contract(ABI).at(CONTRACT_ADDRESS).superBeeUnlocked(function(err, isUnlocked){
+        if(err){
+            console.log("ERROR", "web3.superBeeUnlocked", err);
+            return;
+        }
+        superBeeUnlocked = isUnlocked;
+    });
     
     web3.eth.contract(ABI).at(CONTRACT_ADDRESS).playerBees(current_account, function(err, bees){
         if(err){
@@ -268,7 +283,7 @@ function run(){
             last_airdropCollected = airdropCollected;
             last_registered = registered;
             last_unlockedBee = unlockedBee;
-            fillBeesWaxes(playerBees, airdropCollected, registered, unlockedBee);
+            fillBeesWaxes(playerBees, airdropCollected, registered, unlockedBee, superBeeUnlocked);
         }
     }, 200);
 }
@@ -325,6 +340,7 @@ function clearAllPlayerVariables(){
     if(rewardCollectedEvent != undefined) rewardCollectedEvent.stopWatching();
     if(qualityUpdatedEvent != undefined) qualityUpdatedEvent.stopWatching();
     if(beeUnlockedEvent != undefined) beeUnlockedEvent.stopWatching();
+    if(userAddedToBonusEvent != undefined) userAddedToBonusEvent.stopWatching();
 
     totalDeposited = 0;
     totalWithdrawed = 0;

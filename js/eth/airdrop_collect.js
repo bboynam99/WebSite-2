@@ -4,6 +4,7 @@ $("#modal-medal-info").flythat({});
 $("#tx-info").flythat({});
 
 $('#modal-collect-airdrop-init-button').click(function(){
+    console.log(airdropCollected, !registered);
     if(airdropCollected || !registered){
         return;
     }

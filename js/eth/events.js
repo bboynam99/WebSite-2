@@ -22,6 +22,7 @@ function subscribeEvents(){
         subscribeRewardCollected();
         subscribeQualityUpdated();
         subscribeBeeUnlocked();
+        subscribeUserAddedToBonus();
     }, 200);
 }
 
@@ -193,6 +194,9 @@ function subscribeReferrerPaid(){
                     block_timestamp = data.timestamp*1000;
                 }
 
+                if(storage['refs'] == undefined){
+                    storage['refs'] = [];
+                }
                 if(storage['refs'][event.args.referrer] == undefined){
                     storage['refs'][event.args.referrer] = [];
                 }
@@ -438,7 +442,10 @@ function subscribeBeesBought(){
 
             let index = storage['rate'].indexOf(storage['rate'].find(x => x.user === event.args.user));
             let hive_leader = parseInt($('.hive_leader').html());
-            if(hive_leader < storage['refs'][storage['rate'][index]['user']].length){
+            if(storage['refs'] == undefined){
+                storage['refs'] = [];
+            }
+            if(storage['refs'][storage['rate'][index]['user']] != undefined && hive_leader < storage['refs'][storage['rate'][index]['user']].length){
                 $('.hive_leader').html(storage['rate'][index]['count']);
             }
 
@@ -545,6 +552,39 @@ function subscribeBeeUnlocked(){
             
             clearAllPlayerVariables();
             run();
+        }
+    });
+}
+
+function subscribeUserAddedToBonus(){
+    let lastUserAddedToBonus = storage['userAddedToBonus'];
+    let fromBlock = (lastUserAddedToBonus == undefined ? CREATE_CONTRACT_BLOCK : lastUserAddedToBonus['blockNumber']);
+
+    if(storage['userAddedToBonus'] == undefined){
+        storage['userAddedToBonus'] = [];
+    }
+
+    userAddedToBonusEvent = web3.eth.contract(ABI).at(CONTRACT_ADDRESS).UserAddedToBonus({}, {
+        fromBlock: fromBlock,
+        toBlock: 'latest',
+    });
+
+    userAddedToBonusEvent.watch(function(err, event){
+        if(err){
+            console.log("ERROR", "eth_UserAddedToBonus", err.toString());
+        } else {
+            if(storage['userAddedToBonus']['users'] == undefined){
+                storage['userAddedToBonus']['users'] = [];
+            }
+
+            if(storage['userAddedToBonus']['users'].indexOf(event.args.user) != -1){
+                return;
+            }
+
+            storage['userAddedToBonus']['blockNumber'] = event.blockNumber;
+            storage['userAddedToBonus']['users'].push(event.args.user);
+
+            localStorage.setItem(COOKIE_NAME, JSON.stringify(storage));
         }
     });
 }
