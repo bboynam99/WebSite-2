@@ -2086,8 +2086,10 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .bottom-footer-content{
     display: flex;
-    justify-content: space-between;
     margin-top: 8px;
+}
+.container-list-footer{
+    margin-left: 204px;
 }
 .list-social-footer{
     display: flex;
@@ -2483,6 +2485,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     margin: 0 auto;
     line-height: 23px;
     margin-bottom: 15px;
+    text-align: center;
 }
 .footer-pay{
     margin-top: 28px;
@@ -2849,7 +2852,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .modernize .pay-wax{
     max-width: 331px;
-    margin-bottom: 81px;
+    margin-bottom: 40px;
 }
 .modernize-btn{
     margin: 0 auto;
@@ -2858,6 +2861,9 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     height: 65px;
     position: relative;
     border-radius: 15px;
+}
+.modernize-btn div{
+    color: #643006;
 }
 .modernize-btn:after{
     content: '';
@@ -2879,10 +2885,18 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     margin-bottom: 43px;
 }
 .title-content-box{
-    color: #333333;
+    color: #643006;
     font-size: 20px;
     font-weight: bold;
+    margin: 0 auto;
     margin-bottom: 15px;
+    max-width: 90%;
+}
+.title-max-level{
+    margin-top: 40px;
+}
+.curent-status{
+    margin-top: 40px;
 }
 .percent-status{
     font-size: 26px;
@@ -3144,7 +3158,8 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     font-size: 24px;
 }
 .modal-ok .header-modal{
-    max-width: 326px;
+    max-width: fit-content;
+    min-width: 300px;
 }
 .modal-ok .title-modal{
     max-width: none;
@@ -3164,9 +3179,13 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     text-align: center;
     max-width: 90%;
 }
+a.ok-title,
+a.ok-title:hover{
+    color: #60be19;
+}
 .new-round-modal-2 {
-    background: url(../image/bg-modal-small.png)no-repeat;
-    height: 532px;
+    background: url(../image/bg-modal-big.png)no-repeat;
+    height: 627px;
     padding-top: 94px;
 }
 .new-round-modal-2 .header-modal {
@@ -3467,6 +3486,18 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background: url("../image/bitcoin.svg")no-repeat;
     background-size: contain;
 }
+.twitter-link {
+    background: url("../image/twitter1.png")no-repeat;
+    background-size: contain;
+}
+.discord-link {
+    background: url("../image/discord.png") no-repeat;
+    background-size: contain;
+}
+.facebook-link{
+    background: url("../image/fb.png") no-repeat;
+    background-size: contain;
+}
 .messag-link{
     background: url("../image/chat.svg")no-repeat;
     background-size: contain;
@@ -3542,6 +3573,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .slider-btn:hover{
     background: linear-gradient(to bottom, rgba(93,181,49,1) 0%, rgba(118,201,71,1) 100%);
     box-shadow: 1px -6px 0px -1px rgba(135,208,92,1) inset, 1px 6px 0px -1px rgba(85,170,44,1) inset;
+    color: #fff;
 }
 .slider-btn::after{
     content: '';
@@ -4498,18 +4530,26 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     width: 34px;
     height: 27px;
 }
-.active-link-page,
-.glashatai{
+.active-link-page{
     background: linear-gradient(to bottom, rgba(246,218,27,1) 0%, rgba(250,188,4,1) 100%);
     box-shadow: 1px -6px 0px -1px rgba(238, 176,1, 0.7) inset, 1px 6px 0px -1px rgba(246, 224,53, 0.7) inset;
     color: #000;
+}
+.glashatai{
+    background: linear-gradient(to bottom, rgba(118,201,71,1) 0%, rgba(93,181,49,1) 100%);
+    box-shadow: 1px -6px 0px -1px rgba(85,170,44,1) inset, 1px 6px 0px -1px rgba(135,208,92,1) inset;
+    color: #fff;
 }
 .glashatai{
     margin: 0 auto;
     margin-bottom: 30px;
     width: 200px;
 }
-.glashatai:hover,
+.glashatai:hover{
+    background: linear-gradient(to bottom, rgba(93,181,49,1) 0%, rgba(118,201,71,1) 100%);
+    box-shadow: 1px -6px 0px -1px rgba(135,208,92,1) inset, 1px 6px 0px -1px rgba(85,170,44,1) inset;
+    color: #fff;
+}
 .active-link-page:hover{
     background: linear-gradient(to bottom, rgba(250,188,4,1) 0%, rgba(246,218,27,1) 100%);
     box-shadow: 1px -6px 0px -1px rgba(246, 224,53, 0.7) inset, 1px 6px 0px -1px rgba(238, 176,1, 0.7) inset;
@@ -4650,7 +4690,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .number-medal{
     position: absolute;
     font-size: 14px;
-    color: #ffe58c;
+    color: #643006;
     left: 0;
     right: 0;
     top: 50%;
@@ -5882,6 +5922,15 @@ body.dialogShowing {
     max-width: 77%;
     margin-top: 20px;
     margin-top: 20px;
+}
+.list-variant-header{
+    margin-top: 10px;
+}
+.list-variant-header li{
+    color: #4d4d4d;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: normal;
 }
 .container-questions-faq{
     max-width: 80%;

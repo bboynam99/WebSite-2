@@ -188,7 +188,7 @@
         bottom: -15px;
     }
     .puy-wax .pay-wax {
-        margin-bottom: 65px;
+        margin-bottom: 43px;
     }
     .puy-wax .title-modal h2 {
         font-size: 22px;
@@ -787,7 +787,7 @@
     }
     .new-round-modal-2{
         max-width: 565px;
-        height: 416px;
+        height: 516px;
         padding-top: 72px;
     }
     .hexagon::after{
@@ -977,6 +977,14 @@
         font-size: 16px;
         margin-top: 12px;
     }
+    .wrapper-info-game{
+        margin: 0 auto;
+        margin-left: 0;
+    }
+    .container-list-footer {
+        margin: 0 auto;
+        margin-left: -249px;
+    }
 }
 
 @media only screen and (max-width: 1366px) and (orientation:portrait){
@@ -1006,6 +1014,10 @@
     }
     .wrapper-modal{
         z-index: 100000000000000000000;
+    }
+    .container-list-footer {
+        margin: 0 auto;
+        margin-left: -245px;
     }
 }
 @media screen and (max-width: 1200px) and (min-width: 320px){
@@ -1043,6 +1055,23 @@
     .cripto-transfer::after {
         top: -1px;
         bottom: -1px;
+    }
+}
+@media screen and (max-width: 1051px) and (min-width: 320px){
+    .container-list-footer {
+        margin-left: 56px;
+    }
+    .container-game {
+        overflow-y: hidden;
+    }
+    .tryba-drop:nth-child(26),
+    .tryba-drop:nth-child(27),
+    .tryba-drop:nth-child(28),
+    .tryba-drop:nth-child(29),
+    .tryba-drop:nth-child(30),
+    .tryba-drop:nth-child(31),
+    .tryba-drop:nth-child(32){
+        display: none;
     }
 }
 @media screen and (max-width: 1024px) and (min-width: 320px){
@@ -2231,6 +2260,9 @@
     .paseka-window .table-modal thead th:nth-child(3), .paseka-window .table-modal tbody tr td:nth-child(3){
         width: 22%
     }
+    .container-list-footer{
+        margin-left: 0;
+    }
 
 }
 
@@ -2264,9 +2296,7 @@
         max-width: 75px;
         font-size: 18px;
     }
-    .bottom-footer-content{
-        justify-content: space-around;
-    }
+
     .wrapper-top-footer-logo{
         max-width: 121px;
     }
@@ -3067,7 +3097,6 @@
         font-weight: bold;
     }
     .title-content-box {
-        color: #333333;
         font-size: 16px;
         font-weight: bold;
         margin-bottom: 10px;
@@ -3213,6 +3242,12 @@
     }
     .buy-honey-btn span{
         font-size: 16px;
+    }
+    .button-btn {
+        height: 37px;
+    }
+    .curent-status {
+        margin-top: 10px;
     }
 
 }
@@ -3994,7 +4029,7 @@
         white-space: nowrap;
     }
     .button-btn {
-        height: 37px;
+        height: 47px;
     }
     .wrapper-content-round::before,
     .wrapper-content-round .wrapper-lottie{
