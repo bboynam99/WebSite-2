@@ -20,7 +20,7 @@
             </a>
         </div>
         <div class="btn-back-wrapper" style="display:block;">
-            <button class="button-btn lotery" data-flythat="#modal-text25">
+            <button class="button-btn lotery" name="modal-super-representative-init-button">
                 <span>Super Rep</span>
             </button>
         </div>
@@ -785,8 +785,8 @@
                     <th>Сумма</th>
                 </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="modal-referrals-list">
+                    <tr id="modal-referrals-list-empty">
                         <td colspan="4">
                             <center><span>Тут пока пусто</span></center>
                         </td>
@@ -1713,6 +1713,8 @@
             <span class="about-bee" name="modal-buy-bee-7">DroidBee</span>
             <span class="about-bee" name="modal-buy-bee-8">EtherBee</span>
         </p>
+        <p class="about-bee" name="modal-buy-bee-7">Так же Вам необходимо получить Платиновую медаль</p>
+        <p class="about-bee" id="modal-unlock-bee-about-last" style="display:none;">Чтобы разблокировать пчел дождитесь пока баланс контракта уменьшится на 25% от максимального значения. Блокируется для покупки пчел, когда баланс вернулся к прежнему значению или больше.</p>
         <div class="img-bee">
             <img src="image/3.png" name="modal-buy-bee-img">
         </div>
@@ -2105,6 +2107,7 @@
                     <th>Сумма</th>
                 </tr>
                 </thead>
+<<<<<<< HEAD
                 <tbody id="modal-history-list">
                     <tr>
                         <td colspan="3">
@@ -2287,6 +2290,18 @@
                             <span class="summa summa-transaction"></span>
                         </td>
                     </tr>
+=======
+                <tbody id="modal-history-list" class="mCustomScrollbar _mCS_1 mCS-autoHide" style="position: relative; overflow: visible;">
+                    <div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" tabindex="0" style="max-height: 351px;">
+                        <div id="mCSB_1_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+                            <tr id="modal-history-list-empty">
+                                <td colspan="3">
+                                    <center><span>Тут пока пусто</span></center>
+                                </td>
+                            </tr>
+                        </div>
+                    </div>
+>>>>>>> e106fdcbefd39a8f090798f4edf28f28ecaec333
                 </tbody>
             </table>
         </div>
@@ -2459,7 +2474,7 @@
     </div>
 </div>
 
-<div class="wrapper-modal flythat"  data-autoOpen="false" id="modal-text25">
+<div class="wrapper-modal flythat"  data-autoOpen="false" id="modal-super-representative">
     <a href="#close" class="close-modal close flythat-close"></a>
     <div class="container-modal">
         <div class="header-modal">
@@ -2473,82 +2488,16 @@
                     <tr>
                         <th>№</th>
                         <th>Супер представитель</th>
-                        <th>Начислено</th>
+                        <th>В ожидании</th>
                         <th>Получено</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <span class="nuber-position-super">1</span>
-                        </td>
-                        <td>
-                            <span class="bee-home bee-home-super">https://dsjfhvjsfjshv.fgdjfshd</span>
-                        </td>
-                        <td class="super-row">
-                            <span class="summa-super">405 200</span><span class="monet-style">ETH</span>
-                        </td>
-                        <td class="super-row">
-                            <span class="summa-super">405 200</span><span class="monet-style">ETH</span>
+                <tbody id="modal-super-representative-list">
+                    <tr id="modal-super-representative-list-empty">
+                        <td colspan="4">
+                            <center><span>Тут пока пусто</span></center>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <span class="nuber-position-super">2</span>
-                        </td>
-                        <td>
-                            <span class="bee-home bee-home-super">https://dsjfhvjsfjshv.fgdjfshd</span>
-                        </td>
-                        <td class="super-row">
-                            <span class="summa-super">405 200</span><span class="monet-style">ETH</span>
-                        </td>
-                        <td class="super-row">
-                            <span class="summa-super">405 200</span><span class="monet-style">ETH</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="nuber-position-super">3</span>
-                        </td>
-                        <td>
-                            <span class="bee-home bee-home-super">https://dsjfhvjsfjshv.fgdjfshd</span>
-                        </td>
-                        <td class="super-row">
-                            <span class="summa-super">405 200</span><span class="monet-style">ETH</span>
-                        </td>
-                        <td class="super-row">
-                            <span class="summa-super">405 200</span><span class="monet-style">ETH</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="nuber-position-super">4</span>
-                        </td>
-                        <td>
-                            <span class="bee-home bee-home-super">https://dsjfhvjsfjshv.fgdjfshd</span>
-                        </td>
-                        <td class="super-row">
-                            <span class="summa-super">405 200</span><span class="monet-style">ETH</span>
-                        </td>
-                        <td class="super-row">
-                            <span class="summa-super">405 200</span><span class="monet-style">ETH</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="nuber-position-super">5</span>
-                        </td>
-                        <td>
-                            <span class="bee-home bee-home-super">https://dsjfhvjsfjshv.fgdjfshd</span>
-                        </td>
-                        <td class="super-row">
-                            <span class="summa-super">405 200</span><span class="monet-style">ETH</span>
-                        </td>
-                        <td class="super-row">
-                            <span class="summa-super">405 200</span><span class="monet-style">ETH</span>
-                        </td>
-                    </tr>
-
                 </tbody>
             </table>
         </div>
@@ -2556,7 +2505,7 @@
             <div class="footer-input uley-input distribution-wrapper">
                 <h3>К распределению:</h3>
                 <div class="distribution">
-                    <p>1335</p>
+                    <p id="modal-super-representative-to-charge">--</p>
                     <p class="distribution-monet">ETH</p>
                 </div>
             </div>
@@ -2587,5 +2536,6 @@
 <script src="js/eth/referrals.js"></script>
 <script src="js/eth/rates.js"></script>
 <script src="js/eth/history.js"></script>
+<script src="js/eth/super_representative.js"></script>
 </body>
 </html>

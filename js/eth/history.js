@@ -14,7 +14,8 @@ $('[name="modal-history-init-button"]').click(function(){
             if(operations.length != 0){
                 operations.sort(compareDepositAndWithdraw);
 
-                let op_list = '';
+                let empty_tr = '<tr id="modal-history-list-empty">'+$('#modal-history-list-empty').html()+'</tr>';
+                let op_list = empty_tr;
                 for(let i = operations.length-1; i >= 0; i--){
                     let arrow = '';
                     if(operations[i].type == 'withdraw'){
@@ -39,8 +40,12 @@ $('[name="modal-history-init-button"]').click(function(){
                             '   </td>'+
                             '</tr>';
                 }
-                if(op_list != ''){
+                if(op_list != empty_tr){
                     $('#modal-history-list > div > div').first().html(op_list);
+                    $('#modal-history-list-empty').hide();
+                } else {
+                    $('#modal-history-list > div > div').html(empty_tr);    
+                    $('#modal-history-list-empty').show();
                 }
             }
         }

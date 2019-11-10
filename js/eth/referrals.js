@@ -38,7 +38,7 @@ $('[name="modal-referrals-init-button"]').click(function(){
                 let ref_list_sum = [];
                 let profit = 0;
                 for(let i = 0; i < storage[current_account]['referrerPaid'].length; i++){
-                    profit += parseInt(storage[current_account]['referrerPaid'][i].amount);
+                    profit += parseInt(storage[current_account]['referrerPaid'][i].amount / honeyEqual1eth);
                     let level = '';
                     for(let j = 0; j < storage[current_account]['referrerPaid'][i].level; j++){
                         level += 'I';
@@ -59,7 +59,8 @@ $('[name="modal-referrals-init-button"]').click(function(){
                     }
                 }
 
-                let referrals_list;
+                let empty_tr = '<tr id="modal-referrals-list-empty">'+$('#modal-referrals-list-empty').html()+'</tr>';
+                let referrals_list = empty_tr;
                 for (let addr in ref_list_sum) {
                     referrals_list += '  <tr>'+
                                      '      <td>'+
@@ -72,12 +73,16 @@ $('[name="modal-referrals-init-button"]').click(function(){
                                      '          <span class="reit-referal">'+ref_list_sum[addr].level+'</span>'+
                                      '      </td>'+
                                      '      <td>'+
-                                     '          <span class="summa activ-honey">'+parseInt(ref_list_sum[addr].amount)+'</span>'+
+                                     '          <span class="summa activ-honey">'+parseInt(ref_list_sum[addr].amount / honeyEqual1eth)+'</span>'+
                                      '      </td>'+
                                      '  </tr>';
                 }
-                if(referrals_list != undefined){
-                    $('#modal-referrals-list > div > div').first().html(referrals_list);    
+                if(referrals_list != empty_tr){
+                    $('#modal-referrals-list').html(referrals_list);    
+                    $('#modal-referrals-list-empty').hide();
+                } else {
+                    $('#modal-referrals-list').html(empty_tr);    
+                    $('#modal-referrals-list-empty').show();
                 }
 
                 bees_count = 0;
