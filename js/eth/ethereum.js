@@ -1,9 +1,9 @@
 let TEST = 3;
-let VERSION = '1.1';
+let VERSION = '1.5';
 
 let NETWORK_ADDRESSES = {
 	'kovan': '0xaf466c645c6d73f4f151e5b716eaea2db26ca623',
-	'ropsten': '0x5e1683c219516daf9e8108542c94bc01cd1fead3',
+	'ropsten': '0xe448b9b77648b4af891670862c960c92866c99dd',
 };
 let NETWORK_CREATE_CONTRACT_BLOCK = {
 	'kovan': 14030623,
@@ -29,6 +29,11 @@ let web3infura = new Web3(new Web3.providers.HttpProvider(INFURA_URL));
 let web3ws = new Web3(new Web3.providers.HttpProvider(INFURA_URL_WS));
 
 let COOKIE_NAME = 'storage';
+
+let GOOGLE_API_KEY = "AIzaSyAdhoVexRaBv5xn1JfeDjM-UyYEpIqqU5U";
+let GOOGLE_SPREASHEET_ID = "1UuYYkKjRoIT0pDomdeQztiukZGzMvaMtT4ZGEjDyC0Y";
+let GOOGLE_SHEET_TAB_NAME = "EtherHives Representatives Application";
+
 
 if (!web3infura.isConnected){
 	console.log('Infura is not available');
@@ -65,7 +70,7 @@ if(storage == null){
 	storage = {};
 }
 if(storage['refs'] == undefined){
-	storage['refs'] = [];
+	storage['refs'] = {};
 }
 if(storage['contract'] != CONTRACT_ADDRESS || storage['version'] != VERSION){
 	storage = {};

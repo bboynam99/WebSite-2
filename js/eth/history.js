@@ -41,10 +41,10 @@ $('[name="modal-history-init-button"]').click(function(){
                             '</tr>';
                 }
                 if(op_list != empty_tr){
-                    $('#modal-history-list > div > div').first().html(op_list);
+                    $('#modal-history-list').html(op_list);
                     $('#modal-history-list-empty').hide();
                 } else {
-                    $('#modal-history-list > div > div').html(empty_tr);    
+                    $('#modal-history-list').html(empty_tr);    
                     $('#modal-history-list-empty').show();
                 }
             }

@@ -77,7 +77,7 @@ $('[name="bee_type_button"]').click(function(event){
         $('#modal-unlock-bee-price').html(format_number(bee_levels_prices[id-1]));
         $('#modal-unlock-bee-unlock-price').html(format_number(unlockBeePrice[id-1]));
         $('#modal-unlock-bee-percent').html(bee_monthly_percents[id-1]);
-        $('#modal-unlock-bee-profit').html(format_number(parseFloat(bee_levels_prices[id-1] * bee_monthly_percents[id-1] / 30 / 24), 2));
+        $('#modal-unlock-bee-profit').html(format_number(parseFloat(bee_levels_prices[id-1] * bee_monthly_percents[id-1] / 30 / 24 / 100), 2));
 
         $('[name="modal-buy-bee-img"]').attr('src', 'image/'+id+'.png');
         $('#modal-buy-bee-have').html(playerBees[id-1]);
@@ -128,11 +128,6 @@ $('[name="bee_type_button"]').click(function(event){
                 $('[name="modal-buy-bee-button"]').prop('disabled', false);
                 $('[name="modal-buy-bee-not-enough"]').hide();
                 $('#modal-buy-bee-comment').show();
-            }
-
-            if(id == 8 && superBeeUnlocked){
-                $('[name="modal-buy-bee-button"]').prop('disabled', false);
-                $('[name="modal-buy-bee-not-enough"]').hide();    
             }
 
             $('#modal-buy-bee').flythat("show");
@@ -188,7 +183,7 @@ $('[name="modal-buy-bee-button"]').click(function(){
     checkMetaMask().then(ok => {
         $.getJSON("https://gasprice.poa.network", function(data) {
             let gasPrice = (data ? data.fast : 3) * Math.pow(10,9);
-            if(unlockedBee < id-1){
+            if(unlockedBee < id-1 && id != 8){
                 web3.eth.contract(ABI).at(CONTRACT_ADDRESS).unlock(id-1, {'from':current_account, 'value':0, 'gasPrice':gasPrice}, function(err, hash){
                     actionAfterMetamask(err, hash);
                 });
