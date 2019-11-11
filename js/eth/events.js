@@ -195,7 +195,7 @@ function subscribeReferrerPaid(){
                 }
 
                 if(storage['refs'] == undefined){
-                    storage['refs'] = [];
+                    storage['refs'] = {};
                 }
                 if(storage['refs'][event.args.referrer] == undefined){
                     storage['refs'][event.args.referrer] = [];
@@ -217,6 +217,7 @@ function subscribeReferrerPaid(){
                         storage['refs'][ storage['refs'][ storage['refs'][event.args.referrer]['ref'] ]['ref'] ].indexOf(event.args.user) == -1){
                         storage['refs'][ storage['refs'][ storage['refs'][event.args.referrer]['ref'] ]['ref'] ].push(event.args.user);
                     }
+                    localStorage.setItem(COOKIE_NAME, JSON.stringify(storage));
 
                     let hive_leader = parseInt($('.hive_leader').html());
                     if(hive_leader < storage['refs'][event.args.referrer].length){
@@ -443,7 +444,7 @@ function subscribeBeesBought(){
             let index = storage['rate'].indexOf(storage['rate'].find(x => x.user === event.args.user));
             let hive_leader = parseInt($('.hive_leader').html());
             if(storage['refs'] == undefined){
-                storage['refs'] = [];
+                storage['refs'] = {};
             }
             if(storage['refs'][storage['rate'][index]['user']] != undefined && hive_leader < storage['refs'][storage['rate'][index]['user']].length){
                 $('.hive_leader').html(storage['rate'][index]['count']);
@@ -521,6 +522,29 @@ function subscribeBeeUnlocked(){
         if(err){
             console.log("ERROR", "eth_beeUnlockedEvent", err.toString());
         } else {
+            if(storage['rate'].find(x => x.user === event.args.user) == undefined){
+                let bees = [0,0,0,0,0,0,0,0];
+                bees[web3.toDecimal(event.args.bee)] = 1;
+                storage['rate'].push({
+                    'user': event.args.user,
+                    'bees': bees,
+                    'profit': calculateProfitAtHour(bees, bee_monthly_percents, bee_levels_prices),
+                    'logIndexes': [[event.transactionHash, event.logIndex]],
+                    'count': 1,
+                });
+            } else {
+                let index = storage['rate'].indexOf(storage['rate'].find(x => x.user === event.args.user));
+                if(storage['rate'][index]['logIndexes'].map(function(e) { return JSON.stringify(e); }).indexOf(JSON.stringify([event.transactionHash, event.logIndex])) != -1){
+                    return;
+                }
+
+                storage['rate'][index]['bees'][web3.toDecimal(event.args.bee)] += 1;
+                storage['rate'][index]['profit'] = calculateProfitAtHour(storage['rate'][index]['bees'], bee_monthly_percents, bee_levels_prices);
+                storage['rate'][index]['logIndexes'].push([event.transactionHash, event.logIndex]);
+                storage['rate'][index]['count'] += web3.toDecimal(event.args.count);
+            }
+        
+
             if(current_account != event.args.user){
                 return;
             }
@@ -561,7 +585,7 @@ function subscribeUserAddedToBonus(){
     let fromBlock = (lastUserAddedToBonus == undefined ? CREATE_CONTRACT_BLOCK : lastUserAddedToBonus['blockNumber']);
 
     if(storage['userAddedToBonus'] == undefined){
-        storage['userAddedToBonus'] = [];
+        storage['userAddedToBonus'] = {};
     }
 
     userAddedToBonusEvent = web3.eth.contract(ABI).at(CONTRACT_ADDRESS).UserAddedToBonus({}, {

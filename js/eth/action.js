@@ -20,6 +20,9 @@ auth();
 function auth(){
     checkMetaMask().then(ok => {
         ethereum.on('accountsChanged', function (accounts) {
+            location.reload();
+            return; 
+            
             balance = 0;
             current_account = '';
 
@@ -111,7 +114,8 @@ function run(){
     getGlobalStatistic();
 
     current_account = web3.eth.accounts[0];
-
+    // current_account = "0x9c076522c963f7a59bd1f9d1154fa1a5f14c87b1";
+    
     subscribeEvents();
 
     isGetActualBalance = true;
@@ -169,6 +173,9 @@ function run(){
         if(registered && next_medal == 1){
             next_medal++;
         }
+        if(next_medal == 11){
+            next_medal = 10;
+        }
         $('.medal-after').css('background', 'url("../image/medal-'+next_medal+'.png")no-repeat');
 
         flagMedalsPoints = setInterval(function(){
@@ -181,7 +188,7 @@ function run(){
             let leftower = parseInt((1 - points / medals_points[next_medal-1])*100);
             letfower = (leftower < 0 ? 0: leftower);
             $('.progress-line').css('right', letfower+'%');
-            if(letfower != 0){
+            if(letfower != 0 || medal == 10){
                 $('#collect-medal').hide();
                 $('.medal-after').removeClass('active-100');
             } else {
@@ -193,6 +200,7 @@ function run(){
             $('#modal-medal-info > div > div > img').attr('src', 'image/big-medal-'+next_medal+'.png');
             $('#medal-info-points').html(parseInt(points));
             $('#medal-info-points-awaiting').html(next_medal == 1 ? 0 : medals_points[next_medal-1]);
+            $('[name="medal-info-max"]').hide();
             if(next_medal == 1){
                 $('#medal-info-score').hide();
                 $('#medal-info-text1').hide();
@@ -202,16 +210,26 @@ function run(){
                 $('#medal-info-have-points').hide();
                 $('#medal-info-need-points').hide();
             } else {
-                $('#medal-info-score').show();
-                $('#medal-info-text1').show();
-                $('#medal-info-text0').hide();
-                $('#medal-info-text2').hide();
-                $('#medal-info-text3').show();    
-                $('#medal-info-text3 > span').html($('#medal-info-name-'+(next_medal-1)).html());
-                $('#medal-info-have-points').show();
-                $('#medal-info-need-points').show();
-                $('#medal-info-have-points').html(format_number(medals_rewards[next_medal-2]));
-                $('#medal-info-need-points').html(format_number(medals_rewards[next_medal-1]));
+                if(medal == 10){
+                    $('#medal-info-score').hide();
+                    $('#medal-info-text1').hide();
+                    $('#medal-info-text0').hide();
+                    $('#medal-info-text2').hide();
+                    $('#medal-info-have-points').hide();
+                    $('#medal-info-need-points').hide();
+                    $('[name="medal-info-max"]').show();
+                } else {
+                    $('#medal-info-score').show();
+                    $('#medal-info-text1').show();
+                    $('#medal-info-text0').hide();
+                    $('#medal-info-text2').hide();
+                    $('#medal-info-text3').show();    
+                    $('#medal-info-text3 > span').html($('#medal-info-name-'+(next_medal-1)).html());
+                    $('#medal-info-have-points').show();
+                    $('#medal-info-need-points').show();
+                    $('#medal-info-have-points').html(format_number(medals_rewards[next_medal-2]));
+                    $('#medal-info-need-points').html(format_number(medals_rewards[next_medal-1]));   
+                }
             }
             for(let i = 1; i < medals_points.length; i++){
                 $('#medal-info-name-'+i).hide();

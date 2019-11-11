@@ -32,7 +32,7 @@ $('[name="modal-referrals-init-button"]').click(function(){
 
                 clearInterval(flagIsCount);
 
-                let url = window.location.href
+                let url = window.location.href;
                 $('.reffer-link').html(`${window.location.origin}${window.location.pathname}?${current_account}`);
                 
                 let ref_list_sum = [];
@@ -58,7 +58,7 @@ $('[name="modal-referrals-init-button"]').click(function(){
                         ref_list_sum[storage[current_account]['referrerPaid'][i].user]['amount'] += storage[current_account]['referrerPaid'][i].amount;
                     }
                 }
-
+                
                 let empty_tr = '<tr id="modal-referrals-list-empty">'+$('#modal-referrals-list-empty').html()+'</tr>';
                 let referrals_list = empty_tr;
                 for (let addr in ref_list_sum) {
