@@ -8,6 +8,20 @@ $("#modal-start-game").on('hide.flythat', function(event, el, instance) {
     }
 });
 
+let representatives = [];
+$.get('https://sheets.googleapis.com/v4/spreadsheets/' + GOOGLE_SPREASHEET_ID +
+      '/values/' + GOOGLE_SHEET_TAB_NAME + '!A1:L200' + 
+      '?key=' + GOOGLE_API_KEY, 
+function(data, result){
+    if(result != "success"){
+        console.log("ERROR", "get_google", err);
+    } else {
+        for(let i = 1; i < data.values.length; i++){
+            representatives.push(data.values[i][4]);
+        }
+    }
+});
+
 function start_game(){
     $('#modal-start-game-input').val(reflink);
 
@@ -57,7 +71,7 @@ function checkStartGameAddress(){
                 console.log("ERROR", "web3infura_players", err);
             } else {
                 // check registered
-                if(!player[0] && total_invest > 0){
+                if(!player[0] && total_invest > 0 && representatives.indexOf($('#modal-start-game-input').val()) == -1){
                     $('#modal-start-game-bad-player').show();
                     $('#modal-start-game-button').prop('disabled', true);
                 } else {

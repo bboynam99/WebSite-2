@@ -1,7 +1,3 @@
-let GOOGLE_API_KEY = "AIzaSyAdhoVexRaBv5xn1JfeDjM-UyYEpIqqU5U";
-let GOOGLE_SPREASHEET_ID = "1UuYYkKjRoIT0pDomdeQztiukZGzMvaMtT4ZGEjDyC0Y";
-let GOOGLE_SHEET_TAB_NAME = "EtherHives Representatives Application";
-
 $(document).ready(function () {
     $.get('https://sheets.googleapis.com/v4/spreadsheets/' + GOOGLE_SPREASHEET_ID +
           '/values/' + GOOGLE_SHEET_TAB_NAME + '!A1:L200' + 

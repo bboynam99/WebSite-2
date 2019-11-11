@@ -13,7 +13,8 @@ $('[name="modal-super-representative-init-button"]').click(function(){
                 let getUserBonusCount = 0;
                 let userBonusCount = 0;
                 let empty_tr = '<tr id="modal-super-representative-list-empty">'+$('#modal-super-representative-list-empty').html()+'</tr>';
-                let super_representative_list = empty_tr;
+                let super_representative_arr = [];
+                super_representative_arr[0] = empty_tr;
                 if(storage['userAddedToBonus'] != undefined && storage['userAddedToBonus']['users'] != undefined){
                     userBonusCount = storage['userAddedToBonus']['users'].length;
                     for (let i = 0; i < storage['userAddedToBonus']['users'].length; i++) {
@@ -26,7 +27,7 @@ $('[name="modal-super-representative-init-button"]').click(function(){
                             }
 
                             user_bonus = Math.ceil(web3.toDecimal(user_bonus) / Math.pow(10,18));
-                            super_representative_list += '  <tr>' +
+                            super_representative_arr[i] = '  <tr>' +
                                                     '       <td>' +
                                                     '           <span class="nuber-position-super">'+(i+1)+'</span>' +
                                                     '       </td>' +
@@ -51,6 +52,11 @@ $('[name="modal-super-representative-init-button"]').click(function(){
                     }
 
                     clearInterval(flagGetUserBonus);
+                    let super_representative_list = '';
+                    for(let i = 0; i < super_representative_arr.length; i++){
+                        super_representative_list += super_representative_arr[i];
+                    }
+
                     if(super_representative_list != empty_tr){
                         $('#modal-super-representative-list').html(super_representative_list);    
                         $('#modal-super-representative-list-empty').hide();
