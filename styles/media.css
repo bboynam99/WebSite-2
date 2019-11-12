@@ -985,6 +985,9 @@
         margin: 0 auto;
         margin-left: -249px;
     }
+    .super-representative-modal .table-modal tbody {
+        max-height: 319px;
+    }
 }
 
 @media only screen and (max-width: 1366px) and (orientation:portrait){
@@ -1004,6 +1007,9 @@
         font-size: 22px;
         max-width: 375px;
         margin-bottom: 30px;
+    }
+    .super-representative-modal .table-modal tbody {
+        max-height: 310px;
     }
 }
 
@@ -2263,6 +2269,24 @@
     .container-list-footer{
         margin-left: 0;
     }
+    .represent-footer{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .represent-footer .represent-give-btn{
+        margin-top: 35px;
+        position: relative;
+        width: 256px;
+    }
+    .represent-footer .wrapper-bottom-footer-modal {
+        bottom: initial;
+        top: -12px;
+    }
+    .represent-footer .balance-footer-block {
+        bottom: 0;
+        top: -36px;
+    }
 
 }
 
@@ -2751,6 +2775,9 @@
     .header{
         z-index: 100000;
     }
+    .header-modal{
+        background: linear-gradient(to bottom, rgba(120,202,74,1) 0%, rgba(101,180,63,1) 100%);
+    }
 
 }
 @media screen and (max-width: 1024px)and (min-width: 768px) and (orientation:portrait){
@@ -2760,6 +2787,7 @@
     .wrapper-modal .header-modal{
         padding-left: 0;
         padding-right: 0;
+        background: linear-gradient(to bottom, rgba(120,202,74,1) 0%, rgba(101,180,63,1) 100%);
     }
     .table-modal tbody tr td:last-child,
     .table-modal thead th:last-child{
@@ -3248,6 +3276,20 @@
     }
     .curent-status {
         margin-top: 10px;
+    }
+    .represent-footer {
+        justify-content: space-around;
+    }
+    .represent-footer .wrapper-bottom-footer-modal {
+        bottom: initial;
+        top: 0;
+    }
+    .represent-footer .balance-footer-block {
+        bottom: 0;
+        top: -21px;
+    }
+    .super-representative-modal .table-modal tbody {
+        max-height: 173px;
     }
 
 }
@@ -3790,6 +3832,12 @@
     }
     .paseka-window .table-modal thead th:nth-child(3), .paseka-window .table-modal tbody tr td:nth-child(3){
         width: 20%
+    }
+    .represent-footer {
+        flex-direction: column;
+    }
+    .represent-footer .represent-give-btn{
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 415px) and (min-width: 320px){

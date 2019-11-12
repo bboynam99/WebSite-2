@@ -5937,3 +5937,24 @@ body.dialogShowing {
     margin: 0 auto;
     margin-top: 40px;
 }
+.represent-footer .balance-footer-block{
+    bottom: 0;
+}
+.represent-footer .balance-footer-block span{
+    right: 0;
+    left: 0;
+}
+.represent-footer .represent-give-btn{
+    width: 240px;
+    position: absolute;
+    top: -15px;
+    word-spacing: 3px;
+}
+.represent-footer .represent-give-btn span{
+    color: #643006;
+    margin: 0 5px;
+    font-size: 16px;
+}
+.super-representative-modal .table-modal tbody {
+    max-height: 414px;
+}
