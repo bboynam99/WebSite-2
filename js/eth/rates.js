@@ -2,9 +2,10 @@
 $("#modal-rates").flythat({});
 
 $('[name="modal-rate-init-button"]').click(function(){
-    let rates_list;
     let sort_storage_rate = storage["rate"].sort((a, b) => (a.profit < b.profit) ? 1 : -1);
 
+    let empty_tr = '<tr id="modal-rates-list-empty">'+$('#modal-history-list-empty').html()+'</tr>';
+    let rates_list = empty_tr;
     for(let i = 0; i < sort_storage_rate.length; i++){
         rates_list +=   '  <tr>'+
                         '      <td id="modal-rates-list-pos-'+(i+1)+'">'+
@@ -18,8 +19,11 @@ $('[name="modal-rate-init-button"]').click(function(){
                         '      </td>'+
                         '  </tr>';
     }
-    if(rates_list != undefined){
-        $('#modal-rates-list').html(rates_list);    
+    $('#modal-rates-list > div > div').first().html(rates_list);
+    if(rates_list != empty_tr){
+        $('#modal-rates-list-empty').hide();    
+    } else {
+        $('#modal-rates-list-empty').show();
     }
 
     for(let i = 0; i < sort_storage_rate.length; i++){

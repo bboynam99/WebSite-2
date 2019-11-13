@@ -90,7 +90,7 @@ function subscribeDeposit(){
                     $('[name="modal-success-action-buy-bee"]').hide();
                     $('[name="modal-success-quality-upgrade"]').hide();
                     $('[name="modal-success-bee-unlock"]').hide();
-                    $('[name="modal-success-action-deposit"] > span').html(format_number(Math.ceil(waxEqual1eth * web3.toDecimal(event.args.amount) / Math.pow(10,18))));
+                    $('[name="modal-success-action-deposit"] > span').eq(1).html(format_number(Math.ceil(waxEqual1eth * web3.toDecimal(event.args.amount) / Math.pow(10,18))));
                     $('[name="modal-success-action-deposit"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
                     $('#modal-success-action > div > div > img').attr('src', 'image/ok-medal.png');
 
@@ -153,7 +153,7 @@ function subbscribeWithdraw(){
                 $('[name="modal-success-action-buy-bee"]').hide();
                 $('[name="modal-success-quality-upgrade"]').hide();
                 $('[name="modal-success-bee-unlock"]').hide();
-                $('[name="modal-success-action-withdraw"] > span').html(format_number(web3.toDecimal(event.args.amount) / Math.pow(10,18), 3));
+                $('[name="modal-success-action-withdraw"] > span').eq(1).html(format_number(web3.toDecimal(event.args.amount) / Math.pow(10,18), 3));
                 $('[name="modal-success-action-withdraw"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
                 $('#modal-success-action > div > div > img').attr('src', 'image/ok-medal.png');
 
@@ -286,7 +286,7 @@ function subscribeRewardCollected(){
                 $('[name="modal-success-action-buy-bee"]').hide();
                 $('[name="modal-success-quality-upgrade"]').hide();
                 $('[name="modal-success-bee-unlock"]').hide();
-                $('[name="modal-success-action-airdrop-collect"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
+                // $('[name="modal-success-action-airdrop-collect"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
                 $('#modal-success-action > div > div > img').attr('src', 'image/ok-medal.png');
 
                 $('#modal-success-action').flythat("show");                
@@ -356,7 +356,7 @@ function subscribeMedalAwarded(){
             $('[name="modal-success-action-buy-bee"]').hide();
             $('[name="modal-success-quality-upgrade"]').hide();
             $('[name="modal-success-bee-unlock"]').hide();
-            $('[name="modal-success-action-medal"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
+            // $('[name="modal-success-action-medal"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
             $('#modal-success-action > div > div > img').attr('src', 'image/big-medal-'+medal+'.png');
 
             $('#modal-success-action').flythat("show");
@@ -411,8 +411,8 @@ function subscribeBeesBought(){
                 $('[name="modal-success-action-buy-bee"]').show();
                 $('[name="modal-success-quality-upgrade"]').hide();
                 $('[name="modal-success-bee-unlock"]').hide();
-                $('[name="modal-success-action-buy-bee"] > span').html(storage[current_account]['lastBuyBee']['count']);
-                $('[name="modal-success-action-buy-bee"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
+                $('[name="modal-success-action-buy-bee"] > span').eq(1).html(storage[current_account]['lastBuyBee']['count']);
+                // $('[name="modal-success-action-buy-bee"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
                 $('#modal-success-action > div > div > img').attr('src', 'image/'+(web3.toDecimal(event.args.bee)+1)+'.png');
 
                 $('#modal-success-action').flythat("show");
@@ -491,7 +491,7 @@ function subscribeQualityUpdated(){
             $('[name="modal-success-action-buy-bee"]').hide();
             $('[name="modal-success-quality-upgrade"]').show();
             $('[name="modal-success-bee-unlock"]').hide();
-            $('[name="modal-success-quality-upgrade"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
+            // $('[name="modal-success-quality-upgrade"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
             $('#modal-success-action > div > div > img').attr('src', 'image/ok-medal.png');
 
             $('#modal-success-action').flythat("show");
@@ -567,7 +567,7 @@ function subscribeBeeUnlocked(){
             $('[name="modal-success-action-buy-bee"]').hide();
             $('[name="modal-success-quality-upgrade"]').hide();
             $('[name="modal-success-bee-unlock"]').show();
-            $('[name="modal-success-bee-unlock"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
+            // $('[name="modal-success-bee-unlock"] > a').attr('href', 'https://'+NETWORK+'.etherscan.io/tx/'+event.transactionHash);
             $('#modal-success-action > div > div > img').attr('src', 'image/'+(web3.toDecimal(event.args.bee)+1)+'.png');
 
             $('#modal-success-action').flythat("show");

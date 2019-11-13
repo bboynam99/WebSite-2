@@ -20,6 +20,17 @@ function format_number(number, toFixed = 0){
 	return result;
 }
 
+function getCoinsPerEth(w3){
+	return new Promise(function(ok, fail){
+		w3.eth.contract(ABI).at(CONTRACT_ADDRESS).COINS_PER_ETH(function(err, amount){
+			if(err){ fail(err); }
+
+			amount = w3.toDecimal(amount);
+			ok({'waxEqual1eth':amount, 'honeyEqual1eth':amount});
+		});
+	});
+}
+
 function getMedalsPoints(w3){
 	return new Promise(function(ok, fail){
 		w3.eth.contract(ABI).at(CONTRACT_ADDRESS).MEDALS_COUNT(function(err, medals_count){
@@ -225,9 +236,13 @@ function fillBeesWaxes(playerBees = [], airdropCollected = false, registered = f
 			$('#bee_type_button_'+bee_type).addClass('bay-bee-btn');
 			if(unlockedBee < bee_type-1){
 				$('#bee_type_button_'+bee_type).html('Unlock');
+				$('#bee_type_button_'+bee_type).addClass('UNLOCK');
+				$('#bee_type_button_'+bee_type).removeClass('BUY_A_BEE');
 			} else {
 				$('#bee_type_button_'+bee_type).removeClass('red-btn');
 				$('#bee_type_button_'+bee_type).html('Buy a bee');
+				$('#bee_type_button_'+bee_type).removeClass('UNLOCK');
+				$('#bee_type_button_'+bee_type).addClass('BUY_A_BEE');
 			}
 		}
 
@@ -235,6 +250,8 @@ function fillBeesWaxes(playerBees = [], airdropCollected = false, registered = f
 			$('#bee_type_button_'+bee_type).removeClass('red-btn');
 			$('#bee_type_button_'+bee_type).addClass('none-active');
 			$('#bee_type_button_'+bee_type).addClass('bay-bee-btn');
+			$('#bee_type_button_'+bee_type).addClass('COLLECTED');
+			$('#bee_type_button_'+bee_type).removeClass('COLLECT');
 			$('#bee_type_button_'+bee_type).html('Collected');
 		}
 
@@ -248,6 +265,10 @@ function fillBeesWaxes(playerBees = [], airdropCollected = false, registered = f
 
 	if(registered && !airdropCollected){
 		$('#bee_type_1 > div').addClass('no-active-round');
+
+		$('#bee_type_1 > div > div > a').removeClass('COLLECTED');
+		$('#bee_type_1 > div > div > a').addClass('COLLECT');
+
 		let wax = $('#bee_type_1 > div').html();
 		$('#bee_type_1 > div').html(wax + '<div class="drop-big">'+
             '<img src="image/big-drop.png"/>'+
@@ -260,8 +281,13 @@ function fillBeesWaxes(playerBees = [], airdropCollected = false, registered = f
         $.get('js/eth/airdrop_collect.js');
 	} else {
 		$('#bee_type_1 > div').removeClass('no-active-round');
+
+		$('#bee_type_1 > div > div > a').addClass('COLLECTED');
+		$('#bee_type_1 > div > div > a').removeClass('COLLECT');
 		$('#bee_type_1 > div > .drop-big').remove();
 	}
+
+	setLanguage();
 }
 
 function copyToClipboard(str){

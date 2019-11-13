@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Кабинет</title>
+    <title class="CABINET">Кабинет</title>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,262 +10,341 @@
     <link rel="stylesheet" href="styles/jcarousel.responsive.css">
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/media.css"/>
+    <link rel="stylesheet" href="styles/loader.css"/>
 </head>
 <body class="bg-body light-bg-body">
-<header class="landing-header">
-    <div class="container">
-        <div class="content-header">
-            <a href="" class="logo-landing">
-                <h1>
-                    <div class="container-logo">
-                        <img src="image/logo.png" alt="logo">
-                    </div>
-                </h1>
-            </a>
-            <div class="header-navigation">
-                <div class="navbar-landing-nav">
-                    <div class="btn-back-mobile-wrapper-landing">
-                        <button type="button" class="button-btn btn-menu-landing"></button>
-                    </div>
-                    <ul class="list-nav">
-                        <li class="nav-list-item">
-                            <a class="nav-link land-scroll" href="#ex1">Механика игры</a>
-                        </li>
-                        <li class="nav-list-item">
-                            <a class="nav-link land-scroll" href="#ex2">Медали и бонусы</a>
-                        </li>
-                        <li class="nav-list-item">
-                            <a class="nav-link represent-link" href="representatives.html">Передставители</a>
-                        </li>
-<!--                        <li class="nav-list-item">-->
-<!--                            <a class="nav-link" href="/page.html">Buy ETH</a>-->
-<!--                        </li>-->
-                        <li class="nav-list-item">
-                            <ul class="social-list-icon">
-                                <li class="header-social-item">
-                                    <a href="https://twitter.com/BeehiveDApps" target="_blank" class="header-social-link twitter-link"></a>
+    <div id="spinner" class="show">
+        <img  src="./image/7.png"
+            background="rgba(0, 0, 0, 0)"
+            style="width: 242px; height: 231px;">
+        <section>
+            <div class="sk-three-bounce">
+                <div class="sk-bounce-1 sk-child"></div>
+                <div class="sk-bounce-2 sk-child"></div>
+                <div class="sk-bounce-3 sk-child"></div>
+            </div>
+        </section>
+    </div>
+
+    <div id="website" style="display: none;">
+        <header class="landing-header">
+            <div class="container">
+                <div class="content-header">
+                    <a href="/" class="logo-landing">
+                        <h1>
+                            <div class="container-logo">
+                                <img src="image/logo.png" alt="logo">
+                            </div>
+                        </h1>
+                    </a>
+                    <div class="header-navigation">
+                        <div class="navbar-landing-nav">
+                            <div class="btn-back-mobile-wrapper-landing">
+                                <button type="button" class="button-btn btn-menu-landing"></button>
+                            </div>
+                            <ul class="list-nav">
+                                <li class="nav-list-item">
+                                    <a class="nav-link land-scroll GAME_MECHANICS" href="/index.html#ex1">Механика игры</a>
                                 </li>
-                                <li class="header-social-item">
-                                    <a href="https://discordapp.com/invite/pVFVtPM" target="_blank" class="header-social-link discord-link"></a>
+                                <li class="nav-list-item">
+                                    <a class="nav-link land-scroll MEDALS_AND_BONUSES" href="/index.html#ex2">Медали и бонусы</a>
                                 </li>
-                                <li class="header-social-item">
-                                    <a href="https://www.facebook.com/BeeHiveGame" target="_blank" class="header-social-link facebook-link"></a>
+                                <li class="nav-list-item">
+                                    <a class="nav-link represent-link REPRESENTATIVES" href="representatives.html">Представители</a>
+                                </li>
+        <!--                        <li class="nav-list-item">-->
+        <!--                            <a class="nav-link" href="/page.html">Buy ETH</a>-->
+        <!--                        </li>-->
+                                <li class="nav-list-item">
+                                    <ul class="social-list-icon">
+                                        <li class="header-social-item">
+                                            <a href="https://twitter.com/BeehiveDApps" target="_blank" class="header-social-link twitter-link"></a>
+                                        </li>
+                                        <li class="header-social-item">
+                                            <a href="https://discordapp.com/invite/pVFVtPM" target="_blank" class="header-social-link discord-link"></a>
+                                        </li>
+                                        <li class="header-social-item">
+                                            <a href="https://www.facebook.com/BeeHiveGame" target="_blank" class="header-social-link facebook-link"></a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="wrapper-right-nav">
-                    <button type="button" class="button-btn go-to-game">Играть</button>
-                    <div class="drop-down-lg">
-                        <div class="btn-drop-down">
-                            <span>ru</span>
                         </div>
-                        <ul class="list-db">
-                            <li>
-                                <span>ru</span>
+                        <div class="wrapper-right-nav">
+                            <button type="button" class="button-btn go-to-game PLAY">Играть</button>
+                            <div class="drop-down-lg">
+                                <div class="btn-drop-down">
+                                    <span>ru</span>
+                                </div>
+                                <ul class="list-db">
+                                    <li>
+                                        <span>ru</span>
+                                    </li>
+                                    <li>
+                                        <span>en</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-wrapper-menu-landing">
+                <ul class="list-nav">
+                    <li class="nav-list-item">
+                        <a class="nav-link land-scroll GAME_MECHANICS" href="/index.html#ex1">Механика игры</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-link land-scroll MEDALS_AND_BONUSES" href="/index.html#ex2">Медали и бонусы</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-link represent-link REPRESENTATIVES" href="representatives.html">Представители</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <ul class="social-list-icon">
+                            <li class="header-social-item">
+                                <a href="" class="header-social-link telegram-link"></a>
                             </li>
-                            <li>
-                                <span>en</span>
+                            <li class="header-social-item">
+                                <a href="" class="header-social-link bitcoin-link"></a>
+                            </li>
+                            <li class="header-social-item">
+                                <a href="" class="header-social-link messag-link"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="section-content grey-section">
+            <div class="container" >
+                <header class="header-sections">
+                    <h2 class="section-title">FAQ</h2>
+                </header>
+                <div class="question-content">
+                    <div class="container-questions-faq">
+                        <ul class="list-questions">
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_1">Что нужно для начала игры?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_1">Игра работает на смартконтракте блокчейна Ethereum и для взаимодействия у вас должно быть установлено браузерное расширение MetaMask. Для старта игры у вас на счету должно быть достаточное количество ETH для оплаты Gas.</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_2">Как я могу получить Airdrop бонус?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_2">На старте, каждому зарегистрированному игроку открывается рамка на которой живут 32 пчелы породы AirdropBee, с который Вы можете бесплатно собрать 1000 Воска.</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_3">Как пополнять баланс и выводить средства?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_3">Покупка воска за ETH в кабинете игры и есть пополнением Вашего баланса. Собранный же мед Вы можете выводить в любой момент времени и в любом количестве без каких либо ограничений! Курс обмена: 1 ETH = 500 000 воска, 500 000 меда = 1 ETH.</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_4">Как зарабатывать больше?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_4">Все просто: больше пчел = больше меда! Каждая следующая рамка прибыльнее предыдущей! Улучшайте качество очистки меда, чем выше оно, тем больше меда будут производить ваши пчелы. Стройте свою пасеку, приглашая новых пчеловодов и получайте до 10% в меде от каждой покупки воска в ульях Вашей пасеки.</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_5">Как происходит начисление прибыли?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_5">Доход начисляется автоматически на Ваш баланс в режиме реального времени, согласно доходности купленных Вами пчелок.</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_6">Возможна ли регистрация без спонсора?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_6">В игре нельзя принимать участия не имея спонсора. Потому если у Вас его нет, то Вы можете выбрать его на странице Представителей.</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_7">Кто такой Представитель и как им стать?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_7">Представитель - игрок, хорошо разбирающийся во всех тонкостях игры и готовый делиться своими знаниями с молодыми пчеловодами, привлекая их в свою пасеку. Список представителей с их контактными данными, а также кнопкой для подачи заявки размещен на оф сайте игры.</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_8">Пчела SuperBee - когда будет доступна?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_8">Пчёлка знает себе цену и работает, когда она сама этого пожелает. Будьте внимательны и Вы не упустите шанс поймать SuperBee!</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_9">Каков размер вашей комиссии?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_9">Комиссия за обслуживания и развития игры составляет 10% от суммы монет, затраченных на покупку воска.</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_10">Как играть с мобильного телефона?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_10">Скачайте приложение MetaMask, TrustWallet или MathWallet из магазина приложений. После установки вы можете создать новый кошелек ETH или импортировать существующий кошелек, а затем перенести на него монеты ETH. После перейдите на наш сайт https://EtherHives.com с помощью встроенного дапп браузера в кошельке.</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_11">Надежна ли игра BeeHive?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_11">Да! Игра BeeHive работает на смартконтракте блокчейна Ethereum. Смартконтракт не может быть изменен или удален кем-либо, а все внутренние транзакции строго регламентируются и выполняются независимо ни от чего, и никто не может помешать его работе.</p>
+                                </div>
+                            </li>
+                            <li class="item-questions">
+                                <div class="header-item">
+                                    <h3 class="title-item-questions QUESTION_12">На сколько рискованны инвестиции в игру?</h3>
+                                    <button type="button" class="click-chevron"></button>
+                                </div>
+                                <div class="block-questions">
+                                    <p class="ANSWER_12">Игра работае по принципу Investor-based games и ее баланс всецело зависит от других игроков. Расценивайте игру, как высокрисковые инвестиции и инвестируйте только свободные средства.</p>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="mobile-wrapper-menu-landing">
-        <ul class="list-nav">
-            <li class="nav-list-item">
-                <a class="nav-link land-scroll" href="#ex1">Механика игры</a>
-            </li>
-            <li class="nav-list-item">
-                <a class="nav-link land-scroll" href="#ex2">Медали и бонусы</a>
-            </li>
-            <li class="nav-list-item">
-                <a class="nav-link represent-link" href="representatives.html">Передставители</a>
-            </li>
-            <li class="nav-list-item">
-                <ul class="social-list-icon">
-                    <li class="header-social-item">
-                        <a href="" class="header-social-link telegram-link"></a>
-                    </li>
-                    <li class="header-social-item">
-                        <a href="" class="header-social-link bitcoin-link"></a>
-                    </li>
-                    <li class="header-social-item">
-                        <a href="" class="header-social-link messag-link"></a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</header>
+        </section>
 
-<section class="section-content grey-section">
-    <div class="container" >
-        <header class="header-sections">
-            <h2 class="section-title">FAQ</h2>
-        </header>
-        <div class="question-content">
-            <div class="container-questions-faq">
-                <ul class="list-questions">
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Что нужно для начала игры?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>Игра работает на смартконтракте блокчейна Ethereum и для взаимодействия у вас должно быть установлено браузерное расширение MetaMask. Для старта игры у вас на счету должно быть достаточное количество ETH для оплаты Gas.</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Как я могу получить Airdrop бонус?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>На старте, каждому зарегистрированному игроку открывается рамка на которой живут 32 пчелы породы AirdropBee, с который Вы можете бесплатно собрать 1000 Воска.</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Как пополнять баланс и выводить средства?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>Покупка воска за ETH в кабинете игры и есть пополнением Вашего баланса. Собранный же мед Вы можете выводить в любой момент времени и в любом количестве без каких либо ограничений! Курс обмена: 1 ETH = 500 000 воска, 500 000 меда = 1 ETH.</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Как зарабатывать больше?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>Все просто: больше пчел = больше меда! Каждая следующая рамка прибыльнее предыдущей! Улучшайте качество очистки меда, чем выше оно, тем больше меда будут производить ваши пчелы. Стройте свою пасеку, приглашая новых пчеловодов и получайте до 10% в меде от каждой покупки воска в ульях Вашей пасеки.</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Как происходит начисление прибыли?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>Доход начисляется автоматически на Ваш баланс в режиме реального времени, согласно доходности купленных Вами пчелок.</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Возможна ли регистрация без спонсора?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>В игре нельзя принимать участия не имея спонсора. Потому если у Вас его нет, то Вы можете выбрать его на странице Представителей.</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Кто такой Представитель и как им стать?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>Представитель - игрок, хорошо разбирающийся во всех тонкостях игры и готовый делиться своими знаниями с молодыми пчеловодами, привлекая их в свою пасеку. Список представителей с их контактными данными, а также кнопкой для подачи заявки размещен на оф сайте игры.</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Пчела SuperBee - когда будет доступна?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>Пчёлка знает себе цену и работает, когда она сама этого пожелает. Будьте внимательны и Вы не упустите шанс поймать SuperBee!</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Каков размер вашей комиссии?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>Комиссия за обслуживания и развития игры составляет 10% от суммы монет, затраченных на покупку воска.</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Как играть с мобильного телефона?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>Скачайте приложение MetaMask, TrustWallet или MathWallet из магазина приложений. После установки вы можете создать новый кошелек ETH или импортировать существующий кошелек, а затем перенести на него монеты ETH. После перейдите на наш сайт https://EtherHives.com с помощью встроенного дапп браузера в кошельке.</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">Надежна ли игра BeeHive?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>Да! Игра BeeHive работает на смартконтракте блокчейна Ethereum. Смартконтракт не может быть изменен или удален кем-либо, а все внутренние транзакции строго регламентируются и выполняются независимо ни от чего, и никто не может помешать его работе.</p>
-                        </div>
-                    </li>
-                    <li class="item-questions">
-                        <div class="header-item">
-                            <h3 class="title-item-questions">На сколько рискованны инвестиции в игру?</h3>
-                            <button type="button" class="click-chevron"></button>
-                        </div>
-                        <div class="block-questions">
-                            <p>Игра работае по принципу Investor-based games и ее баланс всецело зависит от других игроков. Расценивайте игру, как высокрисковые инвестиции и инвестируйте только свободные средства.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+        <a href="https://tronhives.com/" class="cripto-transfer">TRX</a>
 
-
-<footer class="footer">
-    <div class="wrapper-footer-content">
-        <div class="content-footer">
-            <div class="top-footer-content">
-                <div class="wrapper-top-footer-logo">
-                    <div class="logo">
-                        <img src="image/logo.png" alt="logo">
-                    </div>
-                    <a href="" class="footer-btn mobile-footer-btn">F.A.Q.</a>
-                </div>
-                <ul class="list-top-footer">
-                    <li class="item-footer-top-list">
-                        <p>Для игры требуется браузерное
-                            расширение <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" target="_blank">MetaMask</a></p>
-                    </li>
-                    <li class="item-footer-top-list">
-                        <p>
-                            Для игры на мобильных устройствах
-                            используйте <a href=" https://trustwallet.com/" target="_blank">Trust</a></p>
-                    </li>
-                </ul>
-                <a href="" class="footer-btn">F.A.Q.</a>
-            </div>
-            <div class="bottom-footer-content">
-                <div class="wrapper-info-game">
-                    <p>BeeHive Game © 2019</p>
-                </div>
-                <div class="container-list-footer">
-                    <ul class="list-social-footer">
-                        <li class="item-social-footer">
-                            <a href="" class="link-social audit">Аудит контракта</a>
+        <div class="wrapper-social-list">
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="https://t.me/beehive_game" class="social-link telegram-icon" target="_blank"><span class="social-icon telegram-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <span class="social-icon telegram-chat-icon"></span>
+                    <ul class="social-sub-list">
+                        <li class="social-sub-item">
+                            <a href="https://t.me/BeeHives_game" class="social-link ru-icon" target="_blank">RU</a>
                         </li>
-                        <li class="item-social-footer">
-                            <a href="" class="link-social smart" name="link_contract_address" target="_blank">Смартконтракт</a>
+                        <li class="social-sub-item">
+                            <a href="https://t.me/BeeHive_game_EN" class="social-link en-icon" target="_blank">EN</a>
+                        </li>
+                        <!-- <li class="social-sub-item">
+                            <a href="" class="social-link china-icon">中文</a>
+                        </li> -->
+                        <li class="social-sub-item">
+                            <a href="https://t.me/BeeHive_game_ES" class="social-link es-icon" target="_blank">ES</a>
+                        </li>
+                        <li class="social-sub-item">
+                            <a href="https://t.me/beehive_game_IN" class="social-link in-icon" target="_blank">IN</a>
+                        </li>
+                        <li class="social-sub-item">
+                            <a href="https://t.me/BeeHive_game_Brazil" class="social-link bra-icon" target="_blank">BRA</a>
+                        </li>
+                        <li class="social-sub-item">
+                            <a href="https://t.me/beehive_game_Philippines" class="social-link fil-icon" target="_blank">PHL</a>
+                        </li>
+                        <li class="social-sub-item">
+                            <a href="https://t.me/BeeHive_game_VN" class="social-link vn-icon" target="_blank">VNM</a>
                         </li>
                     </ul>
+                </li>
+                <li class="social-item">
+                    <a href="https://t.me/beehive_game" class="social-link telegram-icon" target="_blank"><span class="social-icon telegram-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://discord.gg/pVFVtPM" class="social-link diskord-icon" target="_blank"><span class="social-icon diskord-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://twitter.com/BeeHive55127692" class="social-link twitter-icon" target="_blank"><span class="social-icon twitter-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.facebook.com/BeeHiveGame" class="social-link fb-icon" target="_blank"><span class="social-icon fb-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://vk.com/beehive_game" class="social-link vk-icon" target="_blank"><span class="social-icon vk-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="http://guildchat.io/g/iiIOYa" class="social-link gld-icon" target="_blank"><span class="social-icon gld-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://medium.com/@anthonylapidlab/how-to-play-beehive-on-pc-and-phone-bd49a847dc97" class="social-link md-icon" target="_blank"><span class="social-icon md-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.youtube.com/beehivedapps" class="social-icon yt-icon" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+
+
+        <footer class="footer">
+            <div class="wrapper-footer-content">
+                <div class="content-footer">
+                    <div class="top-footer-content">
+                        <div class="wrapper-top-footer-logo">
+                            <div class="logo">
+                                <img src="image/logo.png" alt="logo">
+                            </div>
+                            <a href="" class="footer-btn mobile-footer-btn">F.A.Q.</a>
+                        </div>
+                        <ul class="list-top-footer">
+                            <li class="item-footer-top-list">
+                                <p><span class="GAME_REQUIRES_EXTENSION_SHORT">Для игры требуется браузерное
+                                    расширение</span> <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" target="_blank">MetaMask</a></p>
+                            </li>
+                            <li class="item-footer-top-list">
+                                <p><span class="GAME_REQUIRES_MOBILE_SHORT">
+                                    Для игры на мобильных устройствах
+                                    используйте </span> <a href=" https://trustwallet.com/" target="_blank">Trust</a></p>
+                            </li>
+                        </ul>
+                        <a href="faq.html" class="footer-btn">F.A.Q.</a>
+                    </div>
+                    <div class="bottom-footer-content">
+                        <div class="wrapper-info-game">
+                            <p>BeeHive Game © 2019</p>
+                        </div>
+                        <div class="container-list-footer">
+                            <ul class="list-social-footer">
+                                <li class="item-social-footer">
+                                    <a href="" class="link-social audit CONTRACT_AUDIT">Аудит контракта</a>
+                                </li>
+                                <li class="item-social-footer">
+                                    <a href="" class="link-social smart SMARTCONTRACT" name="link_contract_address" target="_blank">Смартконтракт</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
-</footer>
 
 <!--   <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script> -->
 <script src="js/jquery-3.2.1.js"></script>
@@ -280,6 +359,7 @@
 <script src="js/jquery.flythat.js"></script>
 <script src="js/lottie-player.js"></script>
 <script src="js/main.js"></script>
+<script src="js/language.js"></script>
 <script src="js/eth/web3.min.js"></script>
 <script src="js/eth/common.js"></script>
 <script src="js/eth/ethereum.js"></script>

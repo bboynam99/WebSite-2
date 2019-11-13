@@ -10,872 +10,887 @@
     <link rel="stylesheet" href="styles/jcarousel.responsive.css">
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/media.css"/>
+    <link rel="stylesheet" href="styles/loader.css"/>
 </head>
 <body class="bg-body light-bg-body">
-<header class="landing-header">
-    <div class="container">
-        <div class="content-header">
-            <a href="" class="logo-landing">
-                <h1>
-                    <div class="container-logo">
-                        <img src="image/logo.png" alt="logo">
-                    </div>
-                </h1>
-            </a>
-            <div class="header-navigation">
-                 <div class="navbar-landing-nav">
-                  <div class="btn-back-mobile-wrapper-landing">
-                     <button type="button" class="button-btn btn-menu-landing"></button>
-                  </div>
-                    <ul class="list-nav">
-                      <li class="nav-list-item">
-                        <a class="nav-link land-scroll" href="#ex1">Механика игры</a>
-                      </li>
-                      <li class="nav-list-item">
-                         <a class="nav-link land-scroll" href="#ex2">Медали и бонусы</a>
-                      </li>
-                       <li class="nav-list-item">
-                          <a class="nav-link represent-link" href="representatives.html">Передставители</a>
-                      </li>
-<!--                      <li class="nav-list-item">-->
-<!--                            <a class="nav-link" href="/page.html">Buy ETH</a>-->
-<!--                        </li>-->
-                      <li class="nav-list-item">
-                        <ul class="social-list-icon">
-                            <li class="header-social-item">
-                                <a href="https://twitter.com/BeehiveDApps" target="_blank" class="header-social-link twitter-link"></a>
-                            </li>
-                            <li class="header-social-item">
-                                <a href="https://discordapp.com/invite/pVFVtPM" target="_blank" class="header-social-link discord-link"></a>
-                            </li>
-                            <li class="header-social-item">
-                                <a href="https://www.facebook.com/BeeHiveGame" target="_blank" class="header-social-link facebook-link"></a>
-                            </li>
-                        </ul>
-                      </li>
-                    </ul>
-                </div>
-                <div class="wrapper-right-nav">
-                     <button type="button" class="button-btn go-to-game">Играть</button>
-                     <div class="drop-down-lg">
-                        <div class="btn-drop-down">
-                            <span>ru</span>
-                        </div>
-                        <ul class="list-db">
-                            <li>
-                                <span>ru</span>
-                            </li>
-                            <li>
-                                <span>en</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="mobile-wrapper-menu-landing">
-      <ul class="list-nav">
-          <li class="nav-list-item">
-            <a class="nav-link land-scroll" href="#ex1">Механика игры</a>
-          </li>
-          <li class="nav-list-item">
-             <a class="nav-link land-scroll" href="#ex2">Медали и бонусы</a>
-          </li>
-           <li class="nav-list-item">
-              <a class="nav-link represent-link" href="representatives.html">Передставители</a>
-          </li>
-          <li class="nav-list-item">
-            <ul class="social-list-icon">
-                <li class="header-social-item">
-                    <a href="" class="header-social-link telegram-link"></a>
-                </li>
-                <li class="header-social-item">
-                    <a href="" class="header-social-link bitcoin-link"></a>
-                </li>
-                <li class="header-social-item">
-                    <a href="" class="header-social-link messag-link"></a>
-                </li>
-            </ul>
-          </li>
-        </ul>
-    </div>
-</header>
-<section class="section-content first-slider-section">
-    <div class="container-fluid">
-        <div id="carouselExampleIndicators" class="carousel slide carousel-bee" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container-bee-carousel-item">
-                  <img src="image/banner-1.jpg" class="banner carousel">
-                  <img src="image/mobile-banner-1.jpg" class="mobile-banner">
-                  <div class="content-carousel-text">
-                      <h2 class="title-carousel">Покупай пчел!</h2>
-                      <p class="sub-title-carousel">Собери их всех вместе!</p>
-                      <button type="button" class="button-btn go-to-game slider-btn">Играть</button>
-                  </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container-bee-carousel-item">
-                    <img src="image/banner-2.jpg" class="banner carousel">
-                    <img src="image/mobile-banner-2.jpg" class="mobile-banner">
-                    <div class="content-carousel-text">
-                        <h2 class="title-carousel">Начни играть легко!</h2>
-                        <p class="sub-title-carousel">Собирайте бесплатный воск с первых секунд игры!</p>
-                        <button type="button" class="button-btn go-to-game slider-btn">Играть</button>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container-bee-carousel-item">
-                    <img src="image/banner-3.jpg" class="banner carousel">
-                    <img src="image/mobile-banner-3.jpg" class="mobile-banner">
-                    <div class="content-carousel-text">
-                        <h2 class="title-carousel">Получите бонус до 10%</h2>
-                        <p class="sub-title-carousel">От покупок пасечников, которых
-                            Вы пригласили лично!</p>
-                        <button type="button" class="button-btn go-to-game slider-btn">Играть</button>
-                    </div>
-                </div>
-            </div>
+  <div id="spinner" class="show">
+      <img  src="./image/7.png"
+            background="rgba(0, 0, 0, 0)"
+            style="width: 242px; height: 231px;">
+      <section>
+          <div class="sk-three-bounce">
+              <div class="sk-bounce-1 sk-child"></div>
+              <div class="sk-bounce-2 sk-child"></div>
+              <div class="sk-bounce-3 sk-child"></div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-    </div>  
-</section>
-<section class="section-content">
-    <div class="container">
-        <div class="content-header-section">
-            <div class="wrapper-list-statistic">
-                <ul class="list-statistic">
-                    <li class="statistic-item investment landing-statistic-item">
-                        <div class="container-list-stat-item">
-                            <div class="info-item">
-                                <h2 class="title-item">Оборот:</h2>
-                                <div class="result">
-                                    <p class="result-info"><span class="total_invest">0</span> ETH</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="statistic-item players landing-statistic-item">
-                        <div class="container-list-stat-item">
-                            <div class="info-item">
-                                <h2 class="title-item">Игроков:</h2>
-                                <div class="result">
-                                    <p class="result-info"><span class='total_players'>0</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="statistic-item bee landing-statistic-item">
-                        <div class="container-list-stat-item">
-                            <div class="info-item">
-                                <h2 class="title-item">Куплено пчел:</h2>
-                                <div class="result">
-                                    <p class="result-info"><span class='total_bee_bought'>0</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="statistic-item won landing-statistic-item">
-                        <div class="container-list-stat-item">
-                            <div class="info-item">
-                                <h2 class="title-item">Выиграно:</h2>
-                                <div class="result">
-                                    <p class="result-info"><span class='total_withdraw'>0</span> ETH</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="statistic-item hive landing-statistic-item">
-                        <div class="container-list-stat-item">
-                            <div class="info-item">
-                                <h2 class="title-item">Лидер ульев:</h2>
-                                <div class="result">
-                                    <p class="result-info"><span class='hive_leader'>0</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <header class="header-sections" id="ex1">
-            <h2 class="section-title">Механика игры</h2>
-        </header>
-        <div class="row mehanica-game">
-            <div class="col">
-                <div class="wrapper-game-screen">
-                    <img src="image/game-screen.png" alt="game screen">
-                </div>
-            </div>
-            <div class="col text-col-right">
-                <div class="text-about-game">
-                    <p><span class="title-text">BeeHive</span>представляет из себя экономическую игру благодаря которой Вы можете приумножить монеты ETH.</p>
-                    <p>Игра позволяет почувствовать себя в роли пасечника, развивая свой улей, приобретая разные породы пчел и проводя улучшения производственного процесса, получая за эту реальную прибыль.</p>
-                </div>
-            </div>
-            <div class="w-100"></div>
-             <div class="col text-col-left">
-                 <div class="text-about-game">
-                     <p>В игре присутствует два ресурса <span class="title-text">воск и мед.</span> Воск можно купить или получить от пчел. Используется для покупки пчел, открытия новых рамок и развития улья.</p>
-                     <p>Мед же производят только Ваши пчелы, а также его можно получить от других ульев в вашей пасеке. Мед очень ценен, он может заменить воск в случае его нехватки, а также используется для улучшения качества производства и свободно конвертируется в ETH.</p>
-                </div>
-             </div>
-            <div class="col wrapper-content-list-result">
-                <ul class="wrapper-result-mehanica">
-                   <li class="item-result">
-                       <span class="first-rsult medal-before">1 ETH</span>
-                       <span class="span-text">=</span>
-                       <span class="first-last wax-before">500 000</span>
-                   </li>
-                    <li class="item-result">
-                       <span class="first-rsult honey-before">500 000</span>
-                       <span class="span-text">=</span>
-                       <span class="first-last medal-before">1 ETH</span>
-                   </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section-content grey-section">
-    <div class="container" >
-        <header class="header-sections">
-            <h2 class="section-title">Покупай пчелок</h2>
-            <p class="text-header-about-bee">
-                В игре присутствует <span class="dark-text">8 пород пчел</span>, каждая из которых приносит определенную прибыль в виде сырого меда, который после переработки разделяется на <span class="dark-text">мед и воск</span>
-            </p>
-        </header>
-        <div class="container-list-all-bee">
-            <ul class="list-all-bee">
-                <li class="item-all-bee">
-                    <div class="container-img-bee airdrop-bee">
-                        <lottie-player
-                                src="./image/AirdropBee.json"
-                                background="rgba(0, 0, 0, 0)"
-                                speed="1"
-                                style="width: 170px; height: 153px;"
-                                loop  autoplay >
-                        </lottie-player>
-                    </div>
-                    <div class="footer-about-bee">
-                        <h3 class="title-footer-about-bee">1. AirdropBee</h3>
-                        <div class="status-pay-bee">
-                            <h5 class="title-price-bee"></h5>
-                            <p class="price-bee-text">Прилетает бесплатно</p>
-                        </div>
-                        <div class="result-bee-product">
-                            <h5 class="result-bee-title">Приносит:</h5>
-                            <p class="product-bee-text">300 воска в сутки</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="item-all-bee">
-                    <div class="container-img-bee smart-bee">
-                        <lottie-player
-                                src="./image/SmartBee.json"
-                                background="rgba(0, 0, 0, 0)"
-                                speed="1"
-                                style="width: 170px; height: 153px;"
-                                loop  autoplay >
-                        </lottie-player>
-                    </div>
-                    <div class="footer-about-bee">
-                        <h3 class="title-footer-about-bee">2. SmartBee</h3>
-                        <div class="status-pay-bee">
-                            <h5 class="title-price-bee">Стоимость:</h5>
-                            <p class="price-bee-text">4 000 воска/меда</p>
-                        </div>
-                        <div class="result-bee-product">
-                            <h5 class="result-bee-title">Приносит:</h5>
-                            <p class="product-bee-text percent-big">100%<span class="small-percent">/мес</span></p>
-                        </div>
-                    </div>
-                </li>
-                <li class="item-all-bee">
-                    <div class="container-img-bee crypto-bee">
-                        <lottie-player
-                                src="./image/CryptoBee.json"
-                                background="rgba(0, 0, 0, 0)"
-                                speed="1"
-                                style="width: 170px; height: 153px;"
-                                loop  autoplay >
-                        </lottie-player>
-                    </div>
-                    <div class="footer-about-bee">
-                        <h3 class="title-footer-about-bee">3. CryptoBee</h3>
-                        <div class="status-pay-bee">
-                            <h5 class="title-price-bee">Стоимость:</h5>
-                            <p class="price-bee-text">20 000 воска/меда</p>
-                        </div>
-                        <div class="result-bee-product">
-                            <h5 class="result-bee-title">Приносит:</h5>
-                            <p class="product-bee-text percent-big">102%<span class="small-percent">/мес</span></p>
-                        </div>
-                    </div>
-                </li>
-                <li class="item-all-bee">
-                    <div class="container-img-bee beetcoin-bee">
-                        <lottie-player
-                                src="./image/Beetcoin.json"
-                                background="rgba(0, 0, 0, 0)"
-                                speed="1"
-                                style="width: 170px; height: 153px;"
-                                loop  autoplay >
-                        </lottie-player>
-                    </div>
-                    <div class="footer-about-bee">
-                        <h3 class="title-footer-about-bee">4. Beetcoin</h3>
-                        <div class="status-pay-bee">
-                            <h5 class="title-price-bee">Стоимость:</h5>
-                            <p class="price-bee-text">100 000 воска/меда</p>
-                        </div>
-                        <div class="result-bee-product">
-                            <h5 class="result-bee-title">Приносит:</h5>
-                            <p class="product-bee-text percent-big">104%<span class="small-percent">/мес</span></p>
-                        </div>
-                    </div>
-                </li>
-                <li class="item-all-bee">
-                    <div class="container-img-bee space-bee">
-                        <lottie-player
-                                src="./image/Black.json"
-                                background="rgba(0, 0, 0, 0)"
-                                speed="1"
-                                style="width: 170px; height: 153px;"
-                                loop  autoplay >
-                        </lottie-player>
-                    </div>
-                    <div class="footer-about-bee">
-                        <h3 class="title-footer-about-bee">5. BroBee</h3>
-                        <div class="status-pay-bee">
-                            <h5 class="title-price-bee">Стоимость:</h5>
-                            <p class="price-bee-text">300 000 воска/меда</p>
-                        </div>
-                        <div class="result-bee-product">
-                            <h5 class="result-bee-title">Приносит:</h5>
-                            <p class="product-bee-text percent-big">106%<span class="small-percent">/мес</span></p>
-                        </div>
-                    </div>
-                </li>
-                <li class="item-all-bee">
-                    <div class="container-img-bee droid-bee">
-                        <lottie-player
-                                src="./image/DroidBee.json"
-                                background="rgba(0, 0, 0, 0)"
-                                speed="1"
-                                style="width: 170px; height: 153px;"
-                                loop  autoplay >
-                        </lottie-player>
-                    </div>
-                    <div class="footer-about-bee">
-                        <h3 class="title-footer-about-bee">6. DroidBee</h3>
-                        <div class="status-pay-bee">
-                            <h5 class="title-price-bee">Стоимость:</h5>
-                            <p class="price-bee-text"><span class="dark-result">1 000 000</span> воска/меда</p>
-                        </div>
-                        <div class="result-bee-product">
-                            <h5 class="result-bee-title">Приносит:</h5>
-                            <p class="product-bee-text percent-big">108%<span class="small-percent">/мес</span></p>
-                        </div>
-                    </div>
-                </li>
-                 <li class="item-all-bee">
-                    <div class="container-img-bee tron-bee">
-                        <lottie-player
-                                src="./image/BeeGirl.json"
-                                background="rgba(0, 0, 0, 0)"
-                                speed="1"
-                                style="width: 170px; height: 153px;"
-                                loop  autoplay >
-                        </lottie-player>
-                    </div>
-                    <div class="footer-about-bee">
-                        <h3 class="title-footer-about-bee">7. EtherBee</h3>
-                        <div class="status-pay-bee">
-                            <h5 class="title-price-bee">Стоимость:</h5>
-                            <p class="price-bee-text"><span class="dark-result">2 000 000</span> воска/меда</p>
-                        </div>
-                        <div class="result-bee-product">
-                            <h5 class="result-bee-title">Приносит:</h5>
-                            <p class="product-bee-text percent-big">111%<span class="small-percent">/мес</span></p>
-                        </div>
-                    </div>
-                </li>
-                <li class="item-all-bee">
-                    <div class="container-img-bee super-bee">
-                        <lottie-player
-                                src="./image/SuperBee.json"
-                                background="rgba(0, 0, 0, 0)"
-                                speed="1"
-                                style="width: 170px; height: 153px;"
-                                loop  autoplay >
-                        </lottie-player>
-                    </div>
-                    <div class="footer-about-bee">
-                        <h3 class="title-footer-about-bee">8. SuperBee</h3>
-                        <div class="status-pay-bee">
-                            <h5 class="title-price-bee">Стоимость:</h5>
-                            <p class="price-bee-text"><span class="dark-result">625 000</span> воска/меда</p>
-                        </div>
-                        <div class="result-bee-product">
-                            <h5 class="result-bee-title">Приносит:</h5>
-                            <p class="product-bee-text percent-big">125%<span class="small-percent">/мес</span></p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-<section class="section-content section-medal">
-  <div class="container">
-     <header class="header-sections" id="ex2">
-        <h2 class="section-title"> Получай медали пчеловода</h2>
-        <p class="text-header-block">  Улучшайте свои навыки управления ульем и развития пасеки и получайте медали за достижения:</p>
-    </header>
-     <div class="jcarousel-wrapper">
-        <div class="jcarousel" id="mycrousel">
-            <ul>
-                <li>
-                  <div class="container-type-medal">
-                    <div class="container-img-type-medal">
-                      <img src="image/paper-medal.png" alt="type medal">
-                    </div>
-                    <div class="footer-type-medal">
-                      <h3 class="name-type-medal">Paper medal</h3>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                   <div class="container-type-medal">
-                      <div class="container-img-type-medal">
-                        <img src="image/leather.png" alt="type medal">
-                      </div>
-                      <div class="footer-type-medal">
-                        <h3 class="name-type-medal">Leather medal</h3>
-                        <div class="wrapper-about-medal">
-                           <div class="item-about-medal">
-                              <h5 class="title-about-medal">Награда:</h5>
-                              <p class="block-tetx-medal-result"><span class="big-text">6 250</span> воска</p>
-                            </div>
-                            <div  class="item-about-medal">
-                              <h5 class="title-about-medal">Очки достижения:</h5>
-                              <p class="block-tetx-medal-result">100 000</p>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </li>
-                 <li>
-                   <div class="container-type-medal">
-                      <div class="container-img-type-medal">
-                        <img src="image/wooden.png" alt="type medal">
-                      </div>
-                      <div class="footer-type-medal">
-                        <h3 class="name-type-medal">Wooden medal</h3>
-                        <div class="wrapper-about-medal">
-                           <div class="item-about-medal">
-                              <h5 class="title-about-medal">Награда:</h5>
-                              <p class="block-tetx-medal-result"><span class="big-text"> 12 500</span> воска</p>
-                            </div>
-                            <div  class="item-about-medal">
-                              <h5 class="title-about-medal">Очки достижения:</h5>
-                              <p class="block-tetx-medal-result">200 000</p>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </li>
-               <li>
-                   <div class="container-type-medal">
-                      <div class="container-img-type-medal">
-                        <img src="image/copper.png" alt="type medal">
-                      </div>
-                      <div class="footer-type-medal">
-                        <h3 class="name-type-medal">Copper medal</h3>
-                        <div class="wrapper-about-medal">
-                           <div class="item-about-medal">
-                              <h5 class="title-about-medal">Награда:</h5>
-                              <p class="block-tetx-medal-result"><span class="big-text">31 250</span> воска</p>
-                            </div>
-                            <div  class="item-about-medal">
-                              <h5 class="title-about-medal">Очки достижения:</h5>
-                              <p class="block-tetx-medal-result">520 000</p>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </li>
-                <li>
-                   <div class="container-type-medal">
-                      <div class="container-img-type-medal">
-                        <img src="image/steel.png" alt="type medal">
-                      </div>
-                      <div class="footer-type-medal">
-                        <h3 class="name-type-medal">Steel Medal</h3>
-                        <div class="wrapper-about-medal">
-                           <div class="item-about-medal">
-                              <h5 class="title-about-medal">Награда:</h5>
-                              <p class="block-tetx-medal-result"><span class="big-text">62 500</span> воска</p>
-                            </div>
-                            <div  class="item-about-medal">
-                              <h5 class="title-about-medal">Очки достижения:</h5>
-                              <p class="block-tetx-medal-result">1 040 000</p>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </li>
-                <li>
-                   <div class="container-type-medal">
-                      <div class="container-img-type-medal">
-                        <img src="image/silver.png" alt="type medal">
-                      </div>
-                      <div class="footer-type-medal">
-                        <h3 class="name-type-medal">Silver medal</h3>
-                        <div class="wrapper-about-medal">
-                           <div class="item-about-medal">
-                              <h5 class="title-about-medal">Награда:</h5>
-                              <p class="block-tetx-medal-result"><span class="big-text">125 000</span> воска</p>
-                            </div>
-                            <div  class="item-about-medal">
-                              <h5 class="title-about-medal">Очки достижения:</h5>
-                              <p class="block-tetx-medal-result">2 080 000</p>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </li>
-                <li>
-                   <div class="container-type-medal">
-                      <div class="container-img-type-medal">
-                        <img src="image/golden.png" alt="type medal">
-                      </div>
-                      <div class="footer-type-medal">
-                        <h3 class="name-type-medal">Golden medal</h3>
-                        <div class="wrapper-about-medal">
-                           <div class="item-about-medal">
-                              <h5 class="title-about-medal">Награда:</h5>
-                              <p class="block-tetx-medal-result"><span class="big-text"> 312 500</span> воска</p>
-                            </div>
-                            <div  class="item-about-medal">
-                              <h5 class="title-about-medal">Очки достижения:</h5>
-                              <p class="block-tetx-medal-result">5 200 000</p>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </li>
-                <li>
-                   <div class="container-type-medal">
-                      <div class="container-img-type-medal">
-                        <img src="image/pearl.png" alt="type medal">
-                      </div>
-                      <div class="footer-type-medal">
-                        <h3 class="name-type-medal">Pearl Medal</h3>
-                        <div class="wrapper-about-medal">
-                           <div class="item-about-medal">
-                              <h5 class="title-about-medal">Награда:</h5>
-                              <p class="block-tetx-medal-result"><span class="big-text">625 000</span> воска</p>
-                            </div>
-                            <div  class="item-about-medal">
-                              <h5 class="title-about-medal">Очки достижения:</h5>
-                              <p class="block-tetx-medal-result">10 400 000</p>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </li>
-                <li>
-                   <div class="container-type-medal">
-                      <div class="container-img-type-medal">
-                        <img src="image/platinum.png" alt="type medal">
-                      </div>
-                      <div class="footer-type-medal">
-                        <h3 class="name-type-medal">Platinum Medal</h3>
-                        <div class="wrapper-about-medal">
-                           <div class="item-about-medal">
-                              <h5 class="title-about-medal">Награда:</h5>
-                              <p class="block-tetx-medal-result"><span class="big-text">937 500</span> воска</p>
-                            </div>
-                            <div  class="item-about-medal">
-                              <h5 class="title-about-medal">Очки достижения:</h5>
-                              <p class="block-tetx-medal-result">15 600 000</p>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </li>
-                <li>
-                   <div class="container-type-medal">
-                      <div class="container-img-type-medal">
-                        <img src="image/emerald.png" alt="type medal">
-                      </div>
-                      <div class="footer-type-medal">
-                        <h3 class="name-type-medal">Emerald Medal</h3>
-                        <div class="wrapper-about-medal">
-                           <div class="item-about-medal">
-                              <h5 class="title-about-medal">Награда:</h5>
-                              <p class="block-tetx-medal-result"><span class="big-text">1 562 500</span> воска</p>
-                            </div>
-                            <div  class="item-about-medal">
-                              <h5 class="title-about-medal">Очки достижения:</h5>
-                              <p class="block-tetx-medal-result">26 100 000</p>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
-                </li>
-            </ul>
-        </div>
-
-        <a href="#" class="jcarousel-control-prev"></a>
-        <a href="#" class="jcarousel-control-next"></a>
-    </div>
-    <p class="regomendation-about-medal">Вы можете зарабатывать очки достижений от личных покупок воска, а также от покупок пасечников, присоединившихся к игре по Вашей рекомендации. Причем лично купленный воск = 1 ОД, купленный 1 воск вашим приглашенным первой линии равняется 0,5 ОД и со второй линии за 1 воск 0,25 ОД.
-        Кроме того, получив <span class="dark-text">Platinum Medal</span>, для вас открывается
-    бонусная доска с <span class="dark-text">EtherBee!</span></p>
+      </section>
   </div>
-</section>
 
-<section class="section-content grey-section">
-  <div class="container">
-     <header class="header-sections">
-        <h2 class="section-title">Улучшай качество производства</h2>
-        <p class="sub-title-header">Развивайте свой улей!</p>
-        <p class="text-header-block">Полученный мед Вы можете использовать для улучшения переработки меда, а именно:</p>
-    </header>
-     <div class="jcarousel-wrapper">
-        <div class="jcarousel mycrousel" id="mycrousel1">
-            <ul>
-                <li>
-                  <div class="container-mehanizm-item">
-                    <div class="wrapper-mehanizm-block">
-                       <img src="image/mehanizm-1.png" alt="mehanizm">
-                       <div class="result-text-block">
-                         <p>40/60</p>
-                       </div>
-                    </div>
-                    <div class="container-text-mehanizm">
-                      <p class="text-mehanizm">BEAR</p>
-                    </div>
-                  </div>
-                </li>
-                 <li>
-                  <div class="container-mehanizm-item">
-                    <div class="wrapper-mehanizm-block">
-                       <img src="image/mehanizm-2.png" alt="mehanizm">
-                       <div class="result-text-block">
-                         <p>42/58</p>
-                       </div>
-                    </div>
-                    <div class="container-text-mehanizm">
-                      <p class="text-mehanizm">HONEY BADGER</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="container-mehanizm-item">
-                    <div class="wrapper-mehanizm-block">
-                       <img src="image/mehanizm-3.png" alt="mehanizm">
-                       <div class="result-text-block">
-                         <p>44/56</p>
-                       </div>
-                    </div>
-                    <div class="container-text-mehanizm">
-                      <p class="text-mehanizm">RACCOON</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="container-mehanizm-item">
-                    <div class="wrapper-mehanizm-block">
-                       <img src="image/opossum.png" alt="mehanizm">
-                       <div class="result-text-block">
-                         <p>46/54</p>
-                       </div>
-                    </div>
-                    <div class="container-text-mehanizm">
-                      <p class="text-mehanizm">OPOSSUM</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="container-mehanizm-item">
-                    <div class="wrapper-mehanizm-block">
-                       <img src="image/beek.png" alt="mehanizm">
-                       <div class="result-text-block">
-                         <p>48/52</p>
-                       </div>
-                    </div>
-                    <div class="container-text-mehanizm">
-                      <p class="text-mehanizm">BEEKEEPER</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="container-mehanizm-item">
-                    <div class="wrapper-mehanizm-block">
-                       <img src="image/ai.png" alt="mehanizm">
-                       <div class="result-text-block">
-                         <p>50/50</p>
-                       </div>
-                    </div>
-                    <div class="container-text-mehanizm">
-                      <p class="text-mehanizm">AI</p>
-                    </div>
-                  </div>
-                </li>
-            </ul>
-        </div>
-        <a href="#" class="jcarousel-control-prev"></a>
-        <a href="#" class="jcarousel-control-next"></a>
-    </div>
-    <p class="regomendation-about-medal">Чем выше уровень очистки, тем больше чистого меда вы получаете!</p>
-  </div>
-</section>
-
-<section class="section-conten section-bonus">
-  <div class="container">
-     <header class="header-sections">
-        <h2 class="section-title">Развивай свою пасеку</h2>
-    </header>
-    <div class="row container-row">
-      <div class="col">
-        <div class="container-item-block">
-          <h3 class="title-item-block">Зарабатывайте больше!</h3>
-          <div class="wrapper-tetx-item-block">
-            <p class="item-text">Если Вы очень дружелюбный пасечник, развиваете свой улей, а также всегда смотрите за развитием своей пасеки, то получайте <span class="title-text">бонус</span> от каждого нового улья в Вашей пасеке. Тем более бонусы Вы получаете чистым медом.</p>
-          </div>
-          <button type="button" class="button-btn go-to-game slider-btn">Играть</button>
-        </div>
-      </div>
-       <div class="col">
-         <div class="wrapper-my-honey">
-           <img src="image/my-honey.png" alt="butle honey">
-         </div>
-       </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-    <div class="wrapper-footer-content">
-        <div class="content-footer">
-            <div class="top-footer-content">
-                <div class="wrapper-top-footer-logo">
-                       <div class="logo">
+  <div id="website" style="display: none;">
+    <header class="landing-header">
+        <div class="container">
+            <div class="content-header">
+                <a href="" class="logo-landing">
+                    <h1>
+                        <div class="container-logo">
                             <img src="image/logo.png" alt="logo">
                         </div>
-                         <a href="" class="footer-btn mobile-footer-btn">F.A.Q.</a>
+                    </h1>
+                </a>
+                <div class="header-navigation">
+                     <div class="navbar-landing-nav">
+                      <div class="btn-back-mobile-wrapper-landing">
+                         <button type="button" class="button-btn btn-menu-landing"></button>
+                      </div>
+                        <ul class="list-nav">
+                          <li class="nav-list-item">
+                            <a class="nav-link land-scroll GAME_MECHANICS" href="#ex1">Механика игры</a>
+                          </li>
+                          <li class="nav-list-item">
+                             <a class="nav-link land-scroll MEDALS_AND_BONUSES" href="#ex2">Медали и бонусы</a>
+                          </li>
+                           <li class="nav-list-item">
+                              <a class="nav-link represent-link REPRESENTATIVES" href="representatives.html">Представители</a>
+                          </li>
+    <!--                      <li class="nav-list-item">-->
+    <!--                            <a class="nav-link" href="/page.html">Buy ETH</a>-->
+    <!--                        </li>-->
+                          <li class="nav-list-item">
+                            <ul class="social-list-icon">
+                                <li class="header-social-item">
+                                    <a href="https://twitter.com/BeehiveDApps" target="_blank" class="header-social-link twitter-link"></a>
+                                </li>
+                                <li class="header-social-item">
+                                    <a href="https://discordapp.com/invite/pVFVtPM" target="_blank" class="header-social-link discord-link"></a>
+                                </li>
+                                <li class="header-social-item">
+                                    <a href="https://www.facebook.com/BeeHiveGame" target="_blank" class="header-social-link facebook-link"></a>
+                                </li>
+                            </ul>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="wrapper-right-nav">
+                         <button type="button" class="button-btn go-to-game PLAY">Играть</button>
+                         <div class="drop-down-lg">
+                            <div class="btn-drop-down">
+                                <span>ru</span>
+                            </div>
+                            <ul class="list-db">
+                                <li>
+                                    <span>ru</span>
+                                </li>
+                                <li>
+                                    <span>en</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <ul class="list-top-footer">
-                    <li class="item-footer-top-list">
-                        <p>Для игры требуется браузерное
-                            расширение <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" target="_blank">MetaMask</a></p>
+            </div>
+        </div>
+        <div class="mobile-wrapper-menu-landing">
+          <ul class="list-nav">
+              <li class="nav-list-item">
+                <a class="nav-link land-scroll GAME_MECHANICS" href="#ex1">Механика игры</a>
+              </li>
+              <li class="nav-list-item">
+                 <a class="nav-link land-scroll MEDALS_AND_BONUSES" href="#ex2">Медали и бонусы</a>
+              </li>
+               <li class="nav-list-item">
+                  <a class="nav-link represent-link REPRESENTATIVES" href="representatives.html">Представители</a>
+              </li>
+              <li class="nav-list-item">
+                <ul class="social-list-icon">
+                    <li class="header-social-item">
+                        <a href="" class="header-social-link telegram-link"></a>
                     </li>
-                    <li class="item-footer-top-list">
-                        <p>
-                            Для игры на мобильных устройствах
-                            используйте <a href=" https://trustwallet.com/" target="_blank">Trust</a></p>
+                    <li class="header-social-item">
+                        <a href="" class="header-social-link bitcoin-link"></a>
+                    </li>
+                    <li class="header-social-item">
+                        <a href="" class="header-social-link messag-link"></a>
                     </li>
                 </ul>
-                <a href="faq.html" class="footer-btn">F.A.Q.</a>
-            </div>
-            <div class="bottom-footer-content">
-                <div class="wrapper-info-game">
-                    <p>BeeHive Game © 2019</p>
+              </li>
+            </ul>
+        </div>
+    </header>
+    <section class="section-content first-slider-section">
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-bee" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container-bee-carousel-item">
+                      <img src="image/banner-1.jpg" class="banner carousel">
+                      <img src="image/mobile-banner-1.jpg" class="mobile-banner">
+                      <div class="content-carousel-text">
+                          <h2 class="title-carousel BANNER_1">Покупай пчел!</h2>
+                          <p class="sub-title-carousel BRING_THEM_ALL_TOGETHER">Собери их всех вместе!</p>
+                          <button type="button" class="button-btn go-to-game slider-btn PLAY">Играть</button>
+                      </div>
+                  </div>
                 </div>
-                <div class="container-list-footer">
-                     <ul class="list-social-footer">
-                        <li class="item-social-footer">
-                            <a href="" class="link-social audit">Аудит контракта</a>
+                <div class="carousel-item">
+                    <div class="container-bee-carousel-item">
+                        <img src="image/banner-2.jpg" class="banner carousel">
+                        <img src="image/mobile-banner-2.jpg" class="mobile-banner">
+                        <div class="content-carousel-text">
+                            <h2 class="title-carousel BANNER_2">Начни играть легко!</h2>
+                            <p class="sub-title-carousel GET_TOGETHER_A_FREE_WAX">Собирайте бесплатный воск с первых секунд игры!</p>
+                            <button type="button" class="button-btn go-to-game slider-btn PLAY">Играть</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-bee-carousel-item">
+                        <img src="image/banner-3.jpg" class="banner carousel">
+                        <img src="image/mobile-banner-3.jpg" class="mobile-banner">
+                        <div class="content-carousel-text">
+                            <h2 class="title-carousel GET_A_PERCENT">Получите бонус до 10%</h2>
+                            <p class="sub-title-carousel PURCHASES_BEEKEPER">От покупок пасечников, которых
+                                Вы пригласили лично!</p>
+                            <button type="button" class="button-btn go-to-game slider-btn PLAY">Играть</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only PREVIOUS">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only NEXT">Next</span>
+              </a>
+            </div>
+        </div>  
+    </section>
+    <section class="section-content">
+        <div class="container">
+            <div class="content-header-section">
+                <div class="wrapper-list-statistic">
+                    <ul class="list-statistic">
+                        <li class="statistic-item investment landing-statistic-item">
+                            <div class="container-list-stat-item">
+                                <div class="info-item">
+                                    <h2 class="title-item INVESTED">Оборот:</h2>
+                                    <div class="result">
+                                        <p class="result-info"><span class="total_invest">0</span> ETH</p>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="item-social-footer">
-                            <a href="" class="link-social smart" name="link_contract_address" target="_blank">Смартконтракт</a>
+                        <li class="statistic-item players landing-statistic-item">
+                            <div class="container-list-stat-item">
+                                <div class="info-item">
+                                    <h2 class="title-item PLAYERS">Игроков:</h2>
+                                    <div class="result">
+                                        <p class="result-info"><span class='total_players'>0</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="statistic-item bee landing-statistic-item">
+                            <div class="container-list-stat-item">
+                                <div class="info-item">
+                                    <h2 class="title-item BOUGHT_BEES">Куплено пчел:</h2>
+                                    <div class="result">
+                                        <p class="result-info"><span class='total_bee_bought'>0</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="statistic-item won landing-statistic-item">
+                            <div class="container-list-stat-item">
+                                <div class="info-item">
+                                    <h2 class="title-item WON">Выиграно:</h2>
+                                    <div class="result">
+                                        <p class="result-info"><span class='total_withdraw'>0</span> ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="statistic-item hive landing-statistic-item">
+                            <div class="container-list-stat-item">
+                                <div class="info-item">
+                                    <h2 class="title-item HIVE_LEADER">Лидер ульев:</h2>
+                                    <div class="result">
+                                        <p class="result-info"><span class='hive_leader'>0</span></p>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
+            <header class="header-sections" id="ex1">
+                <h2 class="section-title GAME_MECHANICS">Механика игры</h2>
+            </header>
+            <div class="row mehanica-game">
+                <div class="col">
+                    <div class="wrapper-game-screen">
+                        <img src="image/game-screen.png" alt="game screen">
+                    </div>
+                </div>
+                <div class="col text-col-right">
+                    <div class="text-about-game">
+                        <p><span class="title-text">BeeHive</span><span class="text-header-block EARNS_COINS">представляет из себя экономическую игру благодаря которой Вы можете приумножить монеты ETH.</span></p>
+                        <p class="EXPERIENCE">Игра позволяет почувствовать себя в роли пасечника, развивая свой улей, приобретая разные породы пчел и проводя улучшения производственного процесса, получая за эту реальную прибыль.</p>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                 <div class="col text-col-left">
+                     <div class="text-about-game">
+                         <p><span class="text-header-block FISH_TEXT_2_1">В игре присутствует два ресурса </span><span class="title-text FISH_TEXT_2_2">воск и мед.</span> <span class="text-header-block FISH_TEXT_2_3">Воск можно купить или получить от пчел. Используется для покупки пчел, открытия новых рамок и развития улья.</span></p>
+                         <p class="FISH_TEXT_3">Мед же производят только Ваши пчелы, а также его можно получить от других ульев в вашей пасеке. Мед очень ценен, он может заменить воск в случае его нехватки, а также используется для улучшения качества производства и свободно конвертируется в ETH.</p>
+                    </div>
+                 </div>
+                <div class="col wrapper-content-list-result">
+                    <ul class="wrapper-result-mehanica">
+                       <li class="item-result">
+                           <span class="first-rsult medal-before">1 ETH</span>
+                           <span class="span-text">=</span>
+                           <span class="first-last wax-before" id="ethToWax">0</span>
+                       </li>
+                        <li class="item-result">
+                           <span class="first-rsult honey-before" id="waxToEth">0</span>
+                           <span class="span-text">=</span>
+                           <span class="first-last medal-before">1 ETH</span>
+                       </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </section>
+    <section class="section-content grey-section">
+        <div class="container" >
+            <header class="header-sections">
+                <h2 class="section-title BUY_BEES">Покупай пчелок</h2>
+                <p class="text-header-about-bee">
+                    <span class="text-header-block SPECIES_OF_BEES_1">В игре присутствует</span> <span class="dark-text SPECIES_OF_BEES_2">8 пород пчел</span><span class="text-header-block SPECIES_OF_BEES_3">, каждая из которых приносит определенную прибыль в виде сырого меда, который после переработки разделяется на</span> <span class="dark-text SPECIES_OF_BEES_4">мед и воск</span>
+                </p>
+            </header>
+            <div class="container-list-all-bee">
+                <ul class="list-all-bee">
+                    <li class="item-all-bee">
+                        <div class="container-img-bee airdrop-bee">
+                            <lottie-player
+                                    src="./image/AirdropBee.json"
+                                    background="rgba(0, 0, 0, 0)"
+                                    speed="1"
+                                    style="width: 170px; height: 153px;"
+                                    loop  autoplay >
+                            </lottie-player>
+                        </div>
+                        <div class="footer-about-bee">
+                            <h3 class="title-footer-about-bee">1. AirdropBee</h3>
+                            <div class="status-pay-bee">
+                                <h5 class="title-price-bee"></h5>
+                                <p class="price-bee-text FLEW_FREE">Прилетает бесплатно</p>
+                            </div>
+                            <div class="result-bee-product">
+                                <h5 class="result-bee-title BRINGS">Приносит:</h5>
+                                <p class="product-bee-text">1000</p><pre> </pre><p class="product-bee-text WAX_">воска</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-all-bee">
+                        <div class="container-img-bee smart-bee">
+                            <lottie-player
+                                    src="./image/SmartBee.json"
+                                    background="rgba(0, 0, 0, 0)"
+                                    speed="1"
+                                    style="width: 170px; height: 153px;"
+                                    loop  autoplay >
+                            </lottie-player>
+                        </div>
+                        <div class="footer-about-bee">
+                            <h3 class="title-footer-about-bee">2. SmartBee</h3>
+                            <div class="status-pay-bee">
+                                <h5 class="title-price-bee COST">Стоимость:</h5>
+                                <p class="price-bee-text">1 500</p><pre> </pre><p class="product-bee-text WAX_HONEY">воска/меда</p>
+                            </div>
+                            <div class="result-bee-product">
+                                <h5 class="result-bee-title BRINGS">Приносит:</h5>
+                                <p class="product-bee-text percent-big">100%<span class="small-percent AT_MONTH">/мес</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-all-bee">
+                        <div class="container-img-bee crypto-bee">
+                            <lottie-player
+                                    src="./image/CryptoBee.json"
+                                    background="rgba(0, 0, 0, 0)"
+                                    speed="1"
+                                    style="width: 170px; height: 153px;"
+                                    loop  autoplay >
+                            </lottie-player>
+                        </div>
+                        <div class="footer-about-bee">
+                            <h3 class="title-footer-about-bee">3. CryptoBee</h3>
+                            <div class="status-pay-bee">
+                                <h5 class="title-price-bee COST">Стоимость:</h5>
+                                <p class="price-bee-text">7 500</p><pre> </pre><p class="product-bee-text WAX_HONEY">воска/меда</p>
+                            </div>
+                            <div class="result-bee-product">
+                                <h5 class="result-bee-title BRINGS">Приносит:</h5>
+                                <p class="product-bee-text percent-big">102%<span class="small-percent AT_MONTH">/мес</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-all-bee">
+                        <div class="container-img-bee beetcoin-bee">
+                            <lottie-player
+                                    src="./image/Beetcoin.json"
+                                    background="rgba(0, 0, 0, 0)"
+                                    speed="1"
+                                    style="width: 170px; height: 153px;"
+                                    loop  autoplay >
+                            </lottie-player>
+                        </div>
+                        <div class="footer-about-bee">
+                            <h3 class="title-footer-about-bee">4. Beetcoin</h3>
+                            <div class="status-pay-bee">
+                                <h5 class="title-price-bee COST">Стоимость:</h5>
+                                <p class="price-bee-text">30 000</p><pre> </pre><p class="product-bee-text WAX_HONEY">воска/меда</p>
+                            </div>
+                            <div class="result-bee-product">
+                                <h5 class="result-bee-title BRINGS">Приносит:</h5>
+                                <p class="product-bee-text percent-big">104%<span class="small-percent AT_MONTH">/мес</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-all-bee">
+                        <div class="container-img-bee space-bee">
+                            <lottie-player
+                                    src="./image/Black.json"
+                                    background="rgba(0, 0, 0, 0)"
+                                    speed="1"
+                                    style="width: 170px; height: 153px;"
+                                    loop  autoplay >
+                            </lottie-player>
+                        </div>
+                        <div class="footer-about-bee">
+                            <h3 class="title-footer-about-bee">5. BroBee</h3>
+                            <div class="status-pay-bee">
+                                <h5 class="title-price-bee COST">Стоимость:</h5>
+                                <p class="price-bee-text">75 000</p><pre> </pre><p class="product-bee-text WAX_HONEY">воска/меда</p>
+                            </div>
+                            <div class="result-bee-product">
+                                <h5 class="result-bee-title BRINGS">Приносит:</h5>
+                                <p class="product-bee-text percent-big">106%<span class="small-percent AT_MONTH">/мес</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-all-bee">
+                        <div class="container-img-bee droid-bee">
+                            <lottie-player
+                                    src="./image/DroidBee.json"
+                                    background="rgba(0, 0, 0, 0)"
+                                    speed="1"
+                                    style="width: 170px; height: 153px;"
+                                    loop  autoplay >
+                            </lottie-player>
+                        </div>
+                        <div class="footer-about-bee">
+                            <h3 class="title-footer-about-bee">6. DroidBee</h3>
+                            <div class="status-pay-bee">
+                                <h5 class="title-price-bee COST">Стоимость:</h5>
+                                <p class="price-bee-text"><span class="dark-result">250 000</span></p><pre> </pre><p class="product-bee-text WAX_HONEY">воска/меда</p>
+                            </div>
+                            <div class="result-bee-product">
+                                <h5 class="result-bee-title BRINGS">Приносит:</h5>
+                                <p class="product-bee-text percent-big">108%<span class="small-percent AT_MONTH">/мес</span></p>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="item-all-bee">
+                        <div class="container-img-bee tron-bee">
+                            <lottie-player
+                                    src="./image/BeeGirl.json"
+                                    background="rgba(0, 0, 0, 0)"
+                                    speed="1"
+                                    style="width: 170px; height: 153px;"
+                                    loop  autoplay >
+                            </lottie-player>
+                        </div>
+                        <div class="footer-about-bee">
+                            <h3 class="title-footer-about-bee">7. EtherBee</h3>
+                            <div class="status-pay-bee">
+                                <h5 class="title-price-bee COST">Стоимость:</h5>
+                                <p class="price-bee-text"><span class="dark-result">750 000</span></p><pre> </pre><p class="product-bee-text WAX_HONEY">воска/меда</p>
+                            </div>
+                            <div class="result-bee-product">
+                                <h5 class="result-bee-title BRINGS">Приносит:</h5>
+                                <p class="product-bee-text percent-big">111%<span class="small-percent AT_MONTH">/мес</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-all-bee">
+                        <div class="container-img-bee super-bee">
+                            <lottie-player
+                                    src="./image/SuperBee.json"
+                                    background="rgba(0, 0, 0, 0)"
+                                    speed="1"
+                                    style="width: 170px; height: 153px;"
+                                    loop  autoplay >
+                            </lottie-player>
+                        </div>
+                        <div class="footer-about-bee">
+                            <h3 class="title-footer-about-bee">8. SuperBee</h3>
+                            <div class="status-pay-bee">
+                                <h5 class="title-price-bee COST">Стоимость:</h5>
+                                <p class="price-bee-text"><span class="dark-result">150 000</span></p><pre> </pre><p class="product-bee-text WAX_HONEY">воска/меда</p>
+                            </div>
+                            <div class="result-bee-product">
+                                <h5 class="result-bee-title BRINGS">Приносит:</h5>
+                                <p class="product-bee-text percent-big">125%<span class="small-percent AT_MONTH">/мес</span></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section-content section-medal">
+      <div class="container">
+         <header class="header-sections" id="ex2">
+            <h2 class="section-title GET_BEEKEEPER_MEDALS"> Получай медали пчеловода</h2>
+            <p class="text-header-block IMPROVE_YOUR_SKILLS">  Улучшайте свои навыки управления ульем и развития пасеки и получайте медали за достижения:</p>
+        </header>
+         <div class="jcarousel-wrapper">
+            <div class="jcarousel" id="mycrousel">
+                <ul>
+                    <li>
+                      <div class="container-type-medal">
+                        <div class="container-img-type-medal">
+                          <img src="image/paper-medal.png" alt="type medal">
+                        </div>
+                        <div class="footer-type-medal">
+                          <h3 class="name-type-medal PAPER_MEDAL">Paper medal</h3>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                       <div class="container-type-medal">
+                          <div class="container-img-type-medal">
+                            <img src="image/leather.png" alt="type medal">
+                          </div>
+                          <div class="footer-type-medal">
+                            <h3 class="name-type-medal LEATHER_MEDAL">Leather medal</h3>
+                            <div class="wrapper-about-medal">
+                               <div class="item-about-medal">
+                                  <h5 class="title-about-medal REWARD">Награда:</h5>
+                                  <p class="block-tetx-medal-result"><span class="big-text"> 3 500</span></p> <p class="product-bee-text WAX_ ">воска</p>
+                                </div>
+                                <div  class="item-about-medal">
+                                  <h5 class="title-about-medal ACHIEVEMENT_POINTS">Очки достижения:</h5>
+                                  <p class="block-tetx-medal-result">50 000</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                     <li>
+                       <div class="container-type-medal">
+                          <div class="container-img-type-medal">
+                            <img src="image/wooden.png" alt="type medal">
+                          </div>
+                          <div class="footer-type-medal">
+                            <h3 class="name-type-medal WOODEN_MEDAL">Wooden medal</h3>
+                            <div class="wrapper-about-medal">
+                               <div class="item-about-medal">
+                                  <h5 class="title-about-medal REWARD">Награда:</h5>
+                                  <p class="block-tetx-medal-result"><span class="big-text"> 10 500</span></p> <p class="product-bee-text WAX_ ">воска</p>
+                                </div>
+                                <div  class="item-about-medal">
+                                  <h5 class="title-about-medal ACHIEVEMENT_POINTS">Очки достижения:</h5>
+                                  <p class="block-tetx-medal-result">190 000</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                   <li>
+                       <div class="container-type-medal">
+                          <div class="container-img-type-medal">
+                            <img src="image/copper.png" alt="type medal">
+                          </div>
+                          <div class="footer-type-medal">
+                            <h3 class="name-type-medal COPPER_MEDAL">Copper medal</h3>
+                            <div class="wrapper-about-medal">
+                               <div class="item-about-medal">
+                                  <h5 class="title-about-medal REWARD">Награда:</h5>
+                                  <p class="block-tetx-medal-result"><span class="big-text">24 000</span></p> <p class="product-bee-text WAX_ ">воска</p>
+                                </div>
+                                <div  class="item-about-medal">
+                                  <h5 class="title-about-medal ACHIEVEMENT_POINTS">Очки достижения:</h5>
+                                  <p class="block-tetx-medal-result">510 000</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                       <div class="container-type-medal">
+                          <div class="container-img-type-medal">
+                            <img src="image/steel.png" alt="type medal">
+                          </div>
+                          <div class="footer-type-medal">
+                            <h3 class="name-type-medal STEEL_MEDAL">Steel Medal</h3>
+                            <div class="wrapper-about-medal">
+                               <div class="item-about-medal">
+                                  <h5 class="title-about-medal REWARD">Награда:</h5>
+                                  <p class="block-tetx-medal-result"><span class="big-text">65 000</span></p> <p class="product-bee-text WAX_ ">воска</p>
+                                </div>
+                                <div  class="item-about-medal">
+                                  <h5 class="title-about-medal ACHIEVEMENT_POINTS">Очки достижения:</h5>
+                                  <p class="block-tetx-medal-result">1 350 000</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                       <div class="container-type-medal">
+                          <div class="container-img-type-medal">
+                            <img src="image/silver.png" alt="type medal">
+                          </div>
+                          <div class="footer-type-medal">
+                            <h3 class="name-type-medal SILVER_MEDAL">Silver medal</h3>
+                            <div class="wrapper-about-medal">
+                               <div class="item-about-medal">
+                                  <h5 class="title-about-medal REWARD">Награда:</h5>
+                                  <p class="block-tetx-medal-result"><span class="big-text">140 000</span></p> <p class="product-bee-text WAX_ ">воска</p>
+                                </div>
+                                <div  class="item-about-medal">
+                                  <h5 class="title-about-medal ACHIEVEMENT_POINTS">Очки достижения:</h5>
+                                  <p class="block-tetx-medal-result">3 225 000</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                       <div class="container-type-medal">
+                          <div class="container-img-type-medal">
+                            <img src="image/golden.png" alt="type medal">
+                          </div>
+                          <div class="footer-type-medal">
+                            <h3 class="name-type-medal GOLDEN_MEDAL">Golden medal</h3>
+                            <div class="wrapper-about-medal">
+                               <div class="item-about-medal">
+                                  <h5 class="title-about-medal REWARD">Награда:</h5>
+                                  <p class="block-tetx-medal-result"><span class="big-text"> 185 000</span></p> <p class="product-bee-text WAX_ ">воска</p>
+                                </div>
+                                <div  class="item-about-medal">
+                                  <h5 class="title-about-medal ACHIEVEMENT_POINTS">Очки достижения:</h5>
+                                  <p class="block-tetx-medal-result">5 725 000</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                       <div class="container-type-medal">
+                          <div class="container-img-type-medal">
+                            <img src="image/pearl.png" alt="type medal">
+                          </div>
+                          <div class="footer-type-medal">
+                            <h3 class="name-type-medal PEARL_MEDAL">Pearl Medal</h3>
+                            <div class="wrapper-about-medal">
+                               <div class="item-about-medal">
+                                  <h5 class="title-about-medal REWARD">Награда:</h5>
+                                  <p class="block-tetx-medal-result"><span class="big-text">235 000</span></p> <p class="product-bee-text WAX_ ">воска</p>
+                                </div>
+                                <div  class="item-about-medal">
+                                  <h5 class="title-about-medal ACHIEVEMENT_POINTS">Очки достижения:</h5>
+                                  <p class="block-tetx-medal-result">8 850 000</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                       <div class="container-type-medal">
+                          <div class="container-img-type-medal">
+                            <img src="image/platinum.png" alt="type medal">
+                          </div>
+                          <div class="footer-type-medal">
+                            <h3 class="name-type-medal PLATINUM_MEDAL">Platinum Medal</h3>
+                            <div class="wrapper-about-medal">
+                               <div class="item-about-medal">
+                                  <h5 class="title-about-medal REWARD">Награда:</h5>
+                                  <p class="block-tetx-medal-result"><span class="big-text">290 000</span></p> <p class="product-bee-text WAX_ ">воска</p>
+                                </div>
+                                <div  class="item-about-medal">
+                                  <h5 class="title-about-medal ACHIEVEMENT_POINTS">Очки достижения:</h5>
+                                  <p class="block-tetx-medal-result">12 725 000</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                       <div class="container-type-medal">
+                          <div class="container-img-type-medal">
+                            <img src="image/emerald.png" alt="type medal">
+                          </div>
+                          <div class="footer-type-medal">
+                            <h3 class="name-type-medal EMERALD_MEDAL">Emerald Medal</h3>
+                            <div class="wrapper-about-medal">
+                               <div class="item-about-medal">
+                                  <h5 class="title-about-medal REWARD">Награда:</h5>
+                                  <p class="block-tetx-medal-result"><span class="big-text">800 000</span></p> <p class="product-bee-text WAX_ ">воска</p>
+                                </div>
+                                <div  class="item-about-medal">
+                                  <h5 class="title-about-medal ACHIEVEMENT_POINTS">Очки достижения:</h5>
+                                  <p class="block-tetx-medal-result">23 500 000</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" class="jcarousel-control-prev"></a>
+            <a href="#" class="jcarousel-control-next"></a>
+        </div>
+        <p class="regomendation-about-medal"><span class="text-header-block EARN_ACHIEVEMENT_POINTS_2_1">Вы можете зарабатывать очки достижений от личных покупок воска, а также от покупок пасечников, присоединившихся к игре по Вашей рекомендации. Причем лично купленный воск = 1 ОД, купленный 1 воск вашим приглашенным первой линии равняется 0,5 ОД и со второй линии за 1 воск 0,25 ОД.
+            Кроме того, получив</span> <span class="dark-text PLATINUM_MEDAL">Platinum Medal</span><span class="text-header-block EARN_ACHIEVEMENT_POINTS_2_3">, для вас открывается
+        бонусная доска с</span> <span class="dark-text">EtherBee</span> <span class="text-header-block EARN_ACHIEVEMENT_POINTS_2_4">!</span></p>
+      </div>
+    </section>
+
+    <section class="section-content grey-section">
+      <div class="container">
+         <header class="header-sections">
+            <h2 class="section-title IMPROVE_QUALITY">Улучшай качество производства</h2>
+            <p class="sub-title-header GROW_YOUR_HIVE">Развивайте свой улей!</p>
+            <p class="text-header-block IMPROVE_PROCESSING">Полученный мед Вы можете использовать для улучшения переработки меда, а именно:</p>
+        </header>
+         <div class="jcarousel-wrapper">
+            <div class="jcarousel mycrousel" id="mycrousel1">
+                <ul>
+                    <li>
+                      <div class="container-mehanizm-item">
+                        <div class="wrapper-mehanizm-block">
+                           <img src="image/mehanizm-1.png" alt="mehanizm">
+                           <div class="result-text-block">
+                             <p>40/60</p>
+                           </div>
+                        </div>
+                        <div class="container-text-mehanizm">
+                          <p class="text-mehanizm">BEAR</p>
+                        </div>
+                      </div>
+                    </li>
+                     <li>
+                      <div class="container-mehanizm-item">
+                        <div class="wrapper-mehanizm-block">
+                           <img src="image/mehanizm-2.png" alt="mehanizm">
+                           <div class="result-text-block">
+                             <p>42/58</p>
+                           </div>
+                        </div>
+                        <div class="container-text-mehanizm">
+                          <p class="text-mehanizm">HONEY BADGER</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="container-mehanizm-item">
+                        <div class="wrapper-mehanizm-block">
+                           <img src="image/mehanizm-3.png" alt="mehanizm">
+                           <div class="result-text-block">
+                             <p>44/56</p>
+                           </div>
+                        </div>
+                        <div class="container-text-mehanizm">
+                          <p class="text-mehanizm">RACCOON</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="container-mehanizm-item">
+                        <div class="wrapper-mehanizm-block">
+                           <img src="image/opossum.png" alt="mehanizm">
+                           <div class="result-text-block">
+                             <p>46/54</p>
+                           </div>
+                        </div>
+                        <div class="container-text-mehanizm">
+                          <p class="text-mehanizm">OPOSSUM</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="container-mehanizm-item">
+                        <div class="wrapper-mehanizm-block">
+                           <img src="image/beek.png" alt="mehanizm">
+                           <div class="result-text-block">
+                             <p>48/52</p>
+                           </div>
+                        </div>
+                        <div class="container-text-mehanizm">
+                          <p class="text-mehanizm">BEEKEEPER</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="container-mehanizm-item">
+                        <div class="wrapper-mehanizm-block">
+                           <img src="image/ai.png" alt="mehanizm">
+                           <div class="result-text-block">
+                             <p>50/50</p>
+                           </div>
+                        </div>
+                        <div class="container-text-mehanizm">
+                          <p class="text-mehanizm">AI</p>
+                        </div>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev"></a>
+            <a href="#" class="jcarousel-control-next"></a>
+        </div>
+        <p class="regomendation-about-medal HIGHER_LEVEL_PURIFICATION">Чем выше уровень очистки, тем больше чистого меда вы получаете!</p>
+      </div>
+    </section>
+
+    <section class="section-conten section-bonus">
+      <div class="container">
+         <header class="header-sections">
+            <h2 class="section-title DEVELOP_YOUR_BEE_GARDEN">Развивай свою пасеку</h2>
+        </header>
+        <div class="row container-row">
+          <div class="col">
+            <div class="container-item-block">
+              <h3 class="title-item-block EARN_MORE">Зарабатывайте больше!</h3>
+              <div class="wrapper-tetx-item-block">
+                <p class="item-text"><span class="text-header-block FRIENDLY_BEEKEEPER_HIVE_1">Если Вы очень дружелюбный пасечник, развиваете свой улей, а также всегда смотрите за развитием своей пасеки, то получайте</span> <span class="title-text FRIENDLY_BEEKEEPER_HIVE_2">бонус</span> <span class="text-header-block FRIENDLY_BEEKEEPER_HIVE_3">от каждого нового улья в Вашей пасеке. Тем более бонусы Вы получаете чистым медом.</span></p>
+              </div>
+              <button type="button" class="button-btn go-to-game slider-btn PLAY">Играть</button>
+            </div>
+          </div>
+           <div class="col">
+             <div class="wrapper-my-honey">
+               <img src="image/my-honey.png" alt="butle honey">
+             </div>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper-footer-content">
+            <div class="content-footer">
+                <div class="top-footer-content">
+                    <div class="wrapper-top-footer-logo">
+                           <div class="logo">
+                                <img src="image/logo.png" alt="logo">
+                            </div>
+                             <a href="" class="footer-btn mobile-footer-btn">F.A.Q.</a>
+                    </div>
+                    <ul class="list-top-footer">
+                        <li class="item-footer-top-list">
+                            <p><span class="GAME_REQUIRES_EXTENSION">Для игры требуется браузерное
+                                расширение</span> <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" target="_blank">MetaMask</a></p>
+                        </li>
+                        <li class="item-footer-top-list">
+                            <p><span class="GAME_REQUIRES_MOBILE_SHORT">Для игры на мобильных устройствах
+                                используйте</span> <a href=" https://trustwallet.com/" target="_blank">Trust Wallet</a></p>
+                        </li>
+                    </ul>
+                    <a href="faq.html" class="footer-btn">F.A.Q.</a>
+                </div>
+                <div class="bottom-footer-content">
+                    <div class="wrapper-info-game">
+                        <p>BeeHive Game © 2019</p>
+                    </div>
+                    <div class="container-list-footer">
+                         <ul class="list-social-footer">
+                            <li class="item-social-footer">
+                                <a href="" class="link-social audit CONTRACT_AUDIT">Аудит контракта</a>
+                            </li>
+                            <li class="item-social-footer">
+                                <a href="" class="link-social smart SMARTCONTRACT" name="link_contract_address" target="_blank">Смартконтракт</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://tronhives.com/" class="cripto-transfer">TRX</a>
+
+    <div class="wrapper-social-list">
+        <ul class="social-list">
+            <li class="social-item">
+                <a href="https://t.me/beehive_game" class="social-link telegram-icon" target="_blank"><span class="social-icon telegram-icon"></span></a>
+            </li>
+            <li class="social-item">
+                <span class="social-icon telegram-chat-icon"></span>
+                <ul class="social-sub-list">
+                    <li class="social-sub-item">
+                        <a href="https://t.me/BeeHives_game" class="social-link ru-icon" target="_blank">RU</a>
+                    </li>
+                    <li class="social-sub-item">
+                        <a href="https://t.me/BeeHive_game_EN" class="social-link en-icon" target="_blank">EN</a>
+                    </li>
+                    <!-- <li class="social-sub-item">
+                        <a href="" class="social-link china-icon">中文</a>
+                    </li> -->
+                    <li class="social-sub-item">
+                        <a href="https://t.me/BeeHive_game_ES" class="social-link es-icon" target="_blank">ES</a>
+                    </li>
+                    <li class="social-sub-item">
+                        <a href="https://t.me/beehive_game_IN" class="social-link in-icon" target="_blank">IN</a>
+                    </li>
+                    <li class="social-sub-item">
+                        <a href="https://t.me/BeeHive_game_Brazil" class="social-link bra-icon" target="_blank">BRA</a>
+                    </li>
+                    <li class="social-sub-item">
+                        <a href="https://t.me/beehive_game_Philippines" class="social-link fil-icon" target="_blank">PHL</a>
+                    </li>
+                    <li class="social-sub-item">
+                        <a href="https://t.me/BeeHive_game_VN" class="social-link vn-icon" target="_blank">VNM</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="social-item">
+                <a href="https://discord.gg/pVFVtPM" class="social-link diskord-icon" target="_blank"><span class="social-icon diskord-icon"></span></a>
+            </li>
+            <li class="social-item">
+                <a href="https://twitter.com/BeehiveDApps" class="social-link twitter-icon" target="_blank"><span class="social-icon twitter-icon"></span></a>
+            </li>
+            <li class="social-item">
+                <a href="https://www.facebook.com/BeeHiveGame" class="social-link fb-icon" target="_blank"><span class="social-icon fb-icon"></span></a>
+            </li>
+            <li class="social-item">
+                <a href="https://vk.com/beehive_game" class="social-link vk-icon" target="_blank"><span class="social-icon vk-icon"></span></a>
+            </li>
+            <li class="social-item">
+                <a href="http://guildchat.io/g/iiIOYa" class="social-link gld-icon" target="_blank"><span class="social-icon gld-icon"></span></a>
+            </li>
+            <li class="social-item">
+                <a href="https://medium.com/@anthonylapidlab/how-to-play-beehive-on-pc-and-phone-bd49a847dc97" class="social-link md-icon" target="_blank"><span class="social-icon md-icon"></span></a>
+            </li>
+            <li class="social-item">
+                <a href="https://www.youtube.com/beehivedapps" class="social-icon yt-icon" target="_blank"></a>
+            </li>
+        </ul>
     </div>
-</footer>
-
-<a href="" class="cripto-transfer">TRX</a>
-
-<div class="wrapper-social-list">
-    <ul class="social-list">
-        <li class="social-item">
-            <a href="https://t.me/beehive_game" class="social-link telegram-icon" target="_blank"><span class="social-icon telegram-icon"></span></a>
-        </li>
-        <li class="social-item">
-            <span class="social-icon telegram-chat-icon"></span>
-            <ul class="social-sub-list">
-                <li class="social-sub-item">
-                    <a href="https://t.me/BeeHives_game" class="social-link ru-icon" target="_blank">RU</a>
-                </li>
-                <li class="social-sub-item">
-                    <a href="https://t.me/BeeHive_game_EN" class="social-link en-icon" target="_blank">EN</a>
-                </li>
-                <!-- <li class="social-sub-item">
-                    <a href="" class="social-link china-icon">中文</a>
-                </li> -->
-                <li class="social-sub-item">
-                    <a href="https://t.me/BeeHive_game_ES" class="social-link es-icon" target="_blank">ES</a>
-                </li>
-                <li class="social-sub-item">
-                    <a href="https://t.me/beehive_game_IN" class="social-link in-icon" target="_blank">IN</a>
-                </li>
-                <li class="social-sub-item">
-                    <a href="https://t.me/BeeHive_game_Brazil" class="social-link bra-icon" target="_blank">BRA</a>
-                </li>
-                <li class="social-sub-item">
-                    <a href="https://t.me/beehive_game_Philippines" class="social-link fil-icon" target="_blank">PHL</a>
-                </li>
-                <li class="social-sub-item">
-                    <a href="https://t.me/BeeHive_game_VN" class="social-link vn-icon" target="_blank">VNM</a>
-                </li>
-            </ul>
-        </li>
-        <li class="social-item">
-            <a href="https://discord.gg/pVFVtPM" class="social-link diskord-icon" target="_blank"><span class="social-icon diskord-icon"></span></a>
-        </li>
-        <li class="social-item">
-            <a href="https://twitter.com/BeehiveDApps" class="social-link twitter-icon" target="_blank"><span class="social-icon twitter-icon"></span></a>
-        </li>
-        <li class="social-item">
-            <a href="https://www.facebook.com/BeeHiveGame" class="social-link fb-icon" target="_blank"><span class="social-icon fb-icon"></span></a>
-        </li>
-        <li class="social-item">
-            <a href="https://vk.com/beehive_game" class="social-link vk-icon" target="_blank"><span class="social-icon vk-icon"></span></a>
-        </li>
-        <li class="social-item">
-            <a href="http://guildchat.io/g/iiIOYa" class="social-link gld-icon" target="_blank"><span class="social-icon gld-icon"></span></a>
-        </li>
-        <li class="social-item">
-            <a href="https://medium.com/@anthonylapidlab/how-to-play-beehive-on-pc-and-phone-bd49a847dc97" class="social-link md-icon" target="_blank"><span class="social-icon md-icon"></span></a>
-        </li>
-        <li class="social-item">
-            <a href="https://www.youtube.com/beehivedapps" class="social-icon yt-icon" target="_blank"></a>
-        </li>
-    </ul>
-</div>
+  </div>
 
 <!--   <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script> -->
 <script src="js/jquery-3.2.1.js"></script>
@@ -893,5 +908,6 @@
 <script src="js/eth/web3.min.js"></script>
 <script src="js/eth/common.js"></script>
 <script src="js/eth/ethereum.js"></script>
+<script src="js/language.js"></script>
 </body>
 </html>

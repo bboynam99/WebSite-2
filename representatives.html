@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Кабинет</title>
+    <title class="CABINET">Кабинет</title>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,191 +10,271 @@
     <link rel="stylesheet" href="styles/jcarousel.responsive.css">
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/media.css"/>
+    <link rel="stylesheet" href="styles/loader.css"/>
 </head>
 <body class="bg-body light-bg-body">
-<header class="landing-header">
-    <div class="container">
-        <div class="content-header">
-            <a href="/" class="logo-landing">
-                <h1>
-                    <div class="container-logo">
-                        <img src="image/logo.png" alt="logo">
-                    </div>
-                </h1>
-            </a>
-            <div class="header-navigation">
-                 <div class="navbar-landing-nav">
-                  <div class="btn-back-mobile-wrapper-landing">
-                     <button type="button" class="button-btn btn-menu-landing"></button>
-                  </div>
-                    <ul class="list-nav">
-                      <li class="nav-list-item">
-                        <a class="nav-link" href="/#ex1">Механика игры</a>
-                      </li>
-                      <li class="nav-list-item">
-                         <a class="nav-link" href="/#ex2">Медали и бонусы</a>
-                      </li>
-                       <li class="nav-list-item">
-                          <a class="nav-link" href="#">Передставители</a>
-                      </li>
-                        <li class="nav-list-item">
-                            <ul class="social-list-icon">
-                                <li class="header-social-item">
-                                    <a href="https://twitter.com/BeehiveDApps" target="_blank" class="header-social-link twitter-link"></a>
-                                </li>
-                                <li class="header-social-item">
-                                    <a href="https://discordapp.com/invite/pVFVtPM" target="_blank" class="header-social-link discord-link"></a>
-                                </li>
-                                <li class="header-social-item">
-                                    <a href="https://www.facebook.com/BeeHiveGame" target="_blank" class="header-social-link facebook-link"></a>
+    <div id="spinner" class="show">
+        <img  src="./image/7.png"
+            background="rgba(0, 0, 0, 0)"
+            style="width: 242px; height: 231px;">
+        <section>
+            <div class="sk-three-bounce">
+                <div class="sk-bounce-1 sk-child"></div>
+                <div class="sk-bounce-2 sk-child"></div>
+                <div class="sk-bounce-3 sk-child"></div>
+            </div>
+        </section>
+    </div>
+
+    <div id="website" style="display: none;">
+        <header class="landing-header">
+            <div class="container">
+                <div class="content-header">
+                    <a href="/" class="logo-landing">
+                        <h1>
+                            <div class="container-logo">
+                                <img src="image/logo.png" alt="logo">
+                            </div>
+                        </h1>
+                    </a>
+                    <div class="header-navigation">
+                         <div class="navbar-landing-nav">
+                          <div class="btn-back-mobile-wrapper-landing">
+                             <button type="button" class="button-btn btn-menu-landing"></button>
+                          </div>
+                            <ul class="list-nav">
+                              <li class="nav-list-item">
+                                <a class="nav-link GAME_MECHANICS" href="/index.html#ex1">Механика игры</a>
+                              </li>
+                              <li class="nav-list-item">
+                                 <a class="nav-link MEDALS_AND_BONUSES" href="/index.html#ex2">Медали и бонусы</a>
+                              </li>
+                               <li class="nav-list-item">
+                                  <a class="nav-link REPRESENTATIVES" href="#">Представители</a>
+                              </li>
+                                <li class="nav-list-item">
+                                    <ul class="social-list-icon">
+                                        <li class="header-social-item">
+                                            <a href="https://twitter.com/BeehiveDApps" target="_blank" class="header-social-link twitter-link"></a>
+                                        </li>
+                                        <li class="header-social-item">
+                                            <a href="https://discordapp.com/invite/pVFVtPM" target="_blank" class="header-social-link discord-link"></a>
+                                        </li>
+                                        <li class="header-social-item">
+                                            <a href="https://www.facebook.com/BeeHiveGame" target="_blank" class="header-social-link facebook-link"></a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="wrapper-right-nav">
-                     <button type="button" class="button-btn go-to-game">Играть</button>
-                     <div class="drop-down-lg">
-                        <div class="btn-drop-down">
-                            <span>ru</span>
                         </div>
-                        <ul class="list-db">
-                            <li>
-                                <span>ru</span>
-                            </li>
-                            <li>
-                                <span>en</span>
-                            </li>
-                        </ul>
+                        <div class="wrapper-right-nav">
+                             <button type="button" class="button-btn go-to-game PLAY">Играть</button>
+                             <div class="drop-down-lg">
+                                <div class="btn-drop-down">
+                                    <span>ru</span>
+                                </div>
+                                <ul class="list-db">
+                                    <li>
+                                        <span>ru</span>
+                                    </li>
+                                    <li>
+                                        <span>en</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="mobile-wrapper-menu-landing">
-      <ul class="list-nav">
-          <li class="nav-list-item">
-            <a class="nav-link" href="/#ex1">Механика игры</a>
-          </li>
-          <li class="nav-list-item">
-             <a class="nav-link" href="/#ex2">Медали и бонусы</a>
-          </li>
-           <li class="nav-list-item">
-              <a class="nav-link" href="#">Передставители</a>
-          </li>
-          <li class="nav-list-item">
-            <ul class="social-list-icon">
-                <li class="header-social-item">
-                    <a href="" class="header-social-link telegram-link"></a>
-                </li>
-                <li class="header-social-item">
-                    <a href="" class="header-social-link bitcoin-link"></a>
-                </li>
-                <li class="header-social-item">
-                    <a href="" class="header-social-link messag-link"></a>
-                </li>
-            </ul>
-          </li>
-        </ul>
-    </div>
-</header>
-
-<section class="section-content grey-section">
-    <div class="container" >
-        <header class="header-sections">
-            <h2 class="section-title">  Представители</h2>
-            <p class="sub-header-title">
-                Также Вы можете стать Супер Представителем и принимать участие в разделении еженедельного бонуса в размере 1% от баланса игры!
-                Для этого нужно выполнить несколько условий:
-            </p>
-            <ul class="list-variant-header">
-                <li> 1. Сделать личный вклад: от 5 ETH</li>
-                <li>2. Лично пригласить более 10 человек</li>
-                <li> 3. Сделать оборот первой линии более 50 ETH</li>
-            </ul>
-        </header>
-       <div class="container-representative-content">
-           <!-- <div class="sort-country">
-               <h4 class="title-sort">Сортировать по стране:</h4>
-               <div class="custom-select" style="width:250px;">
-                   <select>
-                       <option value="0">Все страны</option>
-                       <option value="1">Украина</option>
-                       <option value="2">Россия</option>
-                       <option value="3">Казахстан</option>
-                       <option value="4">Блорусь</option>
-                       <option value="5">США</option>
-                   </select>
-               </div>
-           </div> -->
-           <ul class="list-representative">
-               
-           </ul>
-       </div>
-        <!-- <nav aria-label="Page navigation example" class="paination-list">
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link pagination-btn" href="#" aria-label="Previous">
-                        <span aria-hidden="true" class="prev-btn"></span>
-                    </a>
-                </li>
-                <li class="page-item"><a class="page-link active-link-page" href="#">01</a></li>
-                <li class="page-item"><a class="page-link" href="#">02</a></li>
-                <li class="page-item"><a class="page-link" href="#">03</a></li>
-                <li class="page-item"><span class="pagination-more">...</span></li>
-                <li class="page-item"><a class="page-link" href="#">12</a></li>
-                <li class="page-item">
-                    <a class="page-link pagination-btn active-btn-next" href="#" aria-label="Next">
-                        <span aria-hidden="true" class="next-btn"></span>
-                    </a>
-                </li>
-            </ul>
-        </nav> -->
-        <button type="button" class="button-btn glashatai" id="representative_button">Стать представителем</button>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="wrapper-footer-content">
-        <div class="content-footer">
-            <div class="top-footer-content">
-                <div class="wrapper-top-footer-logo">
-                       <div class="logo">
-                            <img src="image/logo.png" alt="logo">
-                        </div>
-                         <a href="" class="footer-btn mobile-footer-btn">F.A.Q.</a>
-                </div>
-                <ul class="list-top-footer">
-                    <li class="item-footer-top-list">
-                        <p>Для игры требуется браузерное
-                            расширение <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" target="_blank">MetaMask</a></p>
-                    </li>
-                    <li class="item-footer-top-list">
-                        <p>
-                            Для игры на мобильных устройствах
-                            используйте <a href=" https://trustwallet.com/" target="_blank">Trust</a></p>
-                    </li>
-                </ul>
-                <a href="" class="footer-btn">F.A.Q.</a>
-            </div>
-            <div class="bottom-footer-content">
-                <div class="wrapper-info-game">
-                    <p>BeeHive Game © 2019</p>
-                </div>
-                <div class="container-list-footer">
-                     <ul class="list-social-footer">
-                        <li class="item-social-footer">
-                            <a href="" class="link-social audit">Аудит контракта</a>
+            <div class="mobile-wrapper-menu-landing">
+              <ul class="list-nav">
+                  <li class="nav-list-item">
+                    <a class="nav-link GAME_MECHANICS" href="/index.html#ex1">Механика игры</a>
+                  </li>
+                  <li class="nav-list-item">
+                     <a class="nav-link MEDALS_AND_BONUSES" href="/index.html#ex2">Медали и бонусы</a>
+                  </li>
+                   <li class="nav-list-item">
+                      <a class="nav-link REPRESENTATIVES" href="#">Представители</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <ul class="social-list-icon">
+                        <li class="header-social-item">
+                            <a href="" class="header-social-link telegram-link"></a>
                         </li>
-                        <li class="item-social-footer">
-                            <a href="" class="link-social smart" name="link_contract_address" target="_blank">Смартконтракт</a>
+                        <li class="header-social-item">
+                            <a href="" class="header-social-link bitcoin-link"></a>
+                        </li>
+                        <li class="header-social-item">
+                            <a href="" class="header-social-link messag-link"></a>
                         </li>
                     </ul>
+                  </li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="section-content grey-section">
+            <div class="container" >
+                <header class="header-sections">
+                    <h2 class="section-title REPRESENTATIVES">  Представители</h2>
+                    <p class="sub-header-title REPRESENTATIVE_CONDITIONS">
+                        Также Вы можете стать Супер Представителем и принимать участие в разделении еженедельного бонуса в размере 1% от баланса игры!
+                        Для этого нужно выполнить несколько условий:
+                    </p>
+                    <ul class="list-variant-header">
+                        <li class="REPRESENTATIVE_CONDITION_1"> 1. Сделать личный вклад: от 5 ETH</li>
+                        <li class="REPRESENTATIVE_CONDITION_2">2. Лично пригласить более 10 человек</li>
+                        <li class="REPRESENTATIVE_CONDITION_3"> 3. Сделать оборот первой линии более 50 ETH</li>
+                    </ul>
+                </header>
+               <div class="container-representative-content">
+                   <!-- <div class="sort-country">
+                       <h4 class="title-sort">Сортировать по стране:</h4>
+                       <div class="custom-select" style="width:250px;">
+                           <select>
+                               <option value="0">Все страны</option>
+                               <option value="1">Украина</option>
+                               <option value="2">Россия</option>
+                               <option value="3">Казахстан</option>
+                               <option value="4">Блорусь</option>
+                               <option value="5">США</option>
+                           </select>
+                       </div>
+                   </div> -->
+                   <ul class="list-representative">
+                       
+                   </ul>
+               </div>
+                <!-- <nav aria-label="Page navigation example" class="paination-list">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link pagination-btn" href="#" aria-label="Previous">
+                                <span aria-hidden="true" class="prev-btn"></span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active-link-page" href="#">01</a></li>
+                        <li class="page-item"><a class="page-link" href="#">02</a></li>
+                        <li class="page-item"><a class="page-link" href="#">03</a></li>
+                        <li class="page-item"><span class="pagination-more">...</span></li>
+                        <li class="page-item"><a class="page-link" href="#">12</a></li>
+                        <li class="page-item">
+                            <a class="page-link pagination-btn active-btn-next" href="#" aria-label="Next">
+                                <span aria-hidden="true" class="next-btn"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav> -->
+                <button type="button" class="button-btn glashatai BECOME_REPRESENTATIVE" id="representative_button">Стать представителем</button>
+            </div>
+        </section>
+
+        <a href="https://tronhives.com/" class="cripto-transfer">TRX</a>
+
+        <div class="wrapper-social-list">
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="https://t.me/beehive_game" class="social-link telegram-icon" target="_blank"><span class="social-icon telegram-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <span class="social-icon telegram-chat-icon"></span>
+                    <ul class="social-sub-list">
+                        <li class="social-sub-item">
+                            <a href="https://t.me/BeeHives_game" class="social-link ru-icon" target="_blank">RU</a>
+                        </li>
+                        <li class="social-sub-item">
+                            <a href="https://t.me/BeeHive_game_EN" class="social-link en-icon" target="_blank">EN</a>
+                        </li>
+                        <!-- <li class="social-sub-item">
+                            <a href="" class="social-link china-icon">中文</a>
+                        </li> -->
+                        <li class="social-sub-item">
+                            <a href="https://t.me/BeeHive_game_ES" class="social-link es-icon" target="_blank">ES</a>
+                        </li>
+                        <li class="social-sub-item">
+                            <a href="https://t.me/beehive_game_IN" class="social-link in-icon" target="_blank">IN</a>
+                        </li>
+                        <li class="social-sub-item">
+                            <a href="https://t.me/BeeHive_game_Brazil" class="social-link bra-icon" target="_blank">BRA</a>
+                        </li>
+                        <li class="social-sub-item">
+                            <a href="https://t.me/beehive_game_Philippines" class="social-link fil-icon" target="_blank">PHL</a>
+                        </li>
+                        <li class="social-sub-item">
+                            <a href="https://t.me/BeeHive_game_VN" class="social-link vn-icon" target="_blank">VNM</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="social-item">
+                    <a href="https://t.me/beehive_game" class="social-link telegram-icon" target="_blank"><span class="social-icon telegram-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://discord.gg/pVFVtPM" class="social-link diskord-icon" target="_blank"><span class="social-icon diskord-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://twitter.com/BeeHive55127692" class="social-link twitter-icon" target="_blank"><span class="social-icon twitter-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.facebook.com/BeeHiveGame" class="social-link fb-icon" target="_blank"><span class="social-icon fb-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://vk.com/beehive_game" class="social-link vk-icon" target="_blank"><span class="social-icon vk-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="http://guildchat.io/g/iiIOYa" class="social-link gld-icon" target="_blank"><span class="social-icon gld-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://medium.com/@anthonylapidlab/how-to-play-beehive-on-pc-and-phone-bd49a847dc97" class="social-link md-icon" target="_blank"><span class="social-icon md-icon"></span></a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.youtube.com/beehivedapps" class="social-icon yt-icon" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+
+
+        <footer class="footer">
+            <div class="wrapper-footer-content">
+                <div class="content-footer">
+                    <div class="top-footer-content">
+                        <div class="wrapper-top-footer-logo">
+                               <div class="logo">
+                                    <img src="image/logo.png" alt="logo">
+                                </div>
+                                 <a href="faq.html" class="footer-btn mobile-footer-btn">F.A.Q.</a>
+                        </div>
+                        <ul class="list-top-footer">
+                            <li class="item-footer-top-list">
+                                <p><span class="GAME_REQUIRES_EXTENSION_SHORT">Для игры требуется браузерное
+                                    расширение</span> <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" target="_blank">MetaMask</a></p>
+                            </li>
+                            <li class="item-footer-top-list">
+                                <p><span class="GAME_REQUIRES_MOBILE_SHORT">
+                                    Для игры на мобильных устройствах
+                                    используйте </span> <a href=" https://trustwallet.com/" target="_blank">Trust</a></p>
+                            </li>
+                        </ul>
+                        <a href="faq.html" class="footer-btn">F.A.Q.</a>
+                    </div>
+                    <div class="bottom-footer-content">
+                        <div class="wrapper-info-game">
+                            <p>BeeHive Game © 2019</p>
+                        </div>
+                        <div class="container-list-footer">
+                             <ul class="list-social-footer">
+                                <li class="item-social-footer">
+                                    <a href="" class="link-social audit CONTRACT_AUDIT">Аудит контракта</a>
+                                </li>
+                                <li class="item-social-footer">
+                                    <a href="" class="link-social smart SMARTCONTRACT" name="link_contract_address" target="_blank">Смартконтракт</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
-</footer>
 <!--   <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script> -->
 <script src="js/jquery-3.2.1.js"></script>
 <script src="bootstrap-4.2.1/js/bootstrap.bundle.js"></script>
@@ -211,5 +291,6 @@
 <script src="js/eth/common.js"></script>
 <script src="js/eth/ethereum.js"></script>
 <script src="js/representative.js"></script>
+<script src="js/language.js"></script>
 </body>
 </html>

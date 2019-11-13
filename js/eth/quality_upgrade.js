@@ -40,7 +40,7 @@ $('[name="modal-quality-upgrade-init-button"]').click(function(){
             $('#cur_wax_percent').html(100-quality_honey_percents[qualityLevel]);
             $('#next_honey_percent').html(quality_honey_percents[qualityLevel+1]);
             $('#next_wax_percent').html(100-quality_honey_percents[qualityLevel+1]);
-            $('#modal-quality-upgrade-balance').html(format_number(balanceHoney));
+            $('[name="modal-quality-upgrade-balance"]').html(format_number(balanceHoney));
 
             $('#modal-quality-upgrade').flythat("show");
         }, 200);

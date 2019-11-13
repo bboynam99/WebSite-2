@@ -224,7 +224,7 @@ function run(){
                     $('#medal-info-text0').hide();
                     $('#medal-info-text2').hide();
                     $('#medal-info-text3').show();    
-                    $('#medal-info-text3 > span').html($('#medal-info-name-'+(next_medal-1)).html());
+                    $('#medal-info-text3 > span').eq(1).html($('#medal-info-name-'+(next_medal-1)).html());
                     $('#medal-info-have-points').show();
                     $('#medal-info-need-points').show();
                     $('#medal-info-have-points').html(format_number(medals_rewards[next_medal-2]));
@@ -319,25 +319,26 @@ function checkMetaMask(){
                 fail('Please install the Metamask browser extension or similar');
         }
         
-        try { 
-            window.ethereum.enable().then(function() {
-                web3.version.getNetwork((err, netId) => { 
-                    if(netId != NETID[NETWORK])
-                        fail("Please switch to appropriate network: "+NETWORK);
-                        
-                    if(!web3.eth.accounts[0]){
-                        if(isMobileSiteVersion)
-                            fail('Please add account to the App Trust');
-                        else
-                            fail("Please login to Metamask");
-                    }
-                        
-                    ok(web3.eth.accounts[0]);
-                });
+        
+            web3.version.getNetwork((err, netId) => { 
+                if(netId != NETID[NETWORK])
+                    fail("Please switch to appropriate network: "+NETWORK);
+                    
+                if(!web3.eth.accounts[0]){
+                    if(isMobileSiteVersion)
+                        fail('Please add account to the App Trust');
+                    else
+                        fail("Please login to Metamask");
+                }
+                    
+                try { 
+                    window.ethereum.enable().then(function() {
+                        ok(web3.eth.accounts[0]);
+                    });
+                } catch(e) {
+                   fail('User denied access to Metamask');
+                }
             });
-        } catch(e) {
-            fail('User denied access to Metamask');
-        }
     });
 }
 

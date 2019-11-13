@@ -77,11 +77,10 @@ $('[name="modal-referrals-init-button"]').click(function(){
                                      '      </td>'+
                                      '  </tr>';
                 }
+                $('#modal-referrals-list > div > div').first().html(referrals_list);
                 if(referrals_list != empty_tr){
-                    $('#modal-referrals-list').html(referrals_list);    
                     $('#modal-referrals-list-empty').hide();
                 } else {
-                    $('#modal-referrals-list').html(empty_tr);    
                     $('#modal-referrals-list-empty').show();
                 }
 
